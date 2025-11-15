@@ -1,0 +1,33 @@
+{
+  "name": "curso-leilao-judicial-tjpe",
+  "version": "1.0.0",
+  "description": "Curso de Leilão Judicial para Servidores Públicos do TJPE",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Renato Gracie",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.tjpe.leilao-judicial",
+    "productName": "Curso Leilão Judicial TJPE",
+    "win": {
+      "target": "portable",
+      "sign": false
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!.git/**/*",
+      "!backup-exclude.txt",
+      "!criar-backup.*",
+      "!*.ps1",
+      "!*.bat"
+    ]
+  }
+}

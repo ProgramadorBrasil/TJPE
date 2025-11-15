@@ -1,0 +1,65 @@
+═══════════════════════════════════════════════════════════════
+  CURSO DE LEILÃO JUDICIAL - TJPE
+  Tribunal de Justiça de Pernambuco
+  Instrutor: Renato Gracie - Leiloeiro Oficial JUCEPE 366
+═══════════════════════════════════════════════════════════════
+
+📦 COMO USAR ESTE CURSO:
+
+OPÇÃO 1 - LOCAL (Recomendado):
+  1. Clique duas vezes em "INICIAR-CURSO.bat"
+  2. O navegador abrirá automaticamente
+  3. Para fechar, feche a janela do terminal
+
+OPÇÃO 2 - ONLINE:
+  Acesse: https://programadorbrasil.github.io/TJPE/
+
+═══════════════════════════════════════════════════════════════
+
+📋 REQUISITOS:
+
+Para executar local localmente:
+- Windows 7 ou superior
+- Python 3.x instalado (https://python.org)
+- Navegador web moderno (Chrome, Edge, Firefox)
+
+Não possui Python? Use a OPÇÃO 2 (Online).
+
+═══════════════════════════════════════════════════════════════
+
+🎯 RECURSOS DO CURSO:
+
+✅ 10 Módulos Completos
+✅ Áudio narrado em português (10 MP3s, 27.95 MB)
+✅ Player de áudio com controles (velocidade padrão: 1.3x)
+✅ Tooltips jurídicos interativos
+✅ Sistema de navegação intuitivo
+✅ Design moderno e profissional
+✅ Acessibilidade (VLibras, Alto Contraste)
+✅ Modo noturno integrado
+
+═══════════════════════════════════════════════════════════════
+
+📁 ESTRUTURA DO CURSO:
+
+modules/         - 10 módulos em JSON
+assets/audio/    - 10 áudios MP3 + scripts de narração
+styles/          - CSS do design moderno
+scripts/         - JavaScript (player, tooltips, navegação)
+data/            - Base de dados de artigos legais
+
+═══════════════════════════════════════════════════════════════
+
+🔧 SUPORTE TÉCNICO:
+
+Problemas ou dúvidas?
+- GitHub: https://github.com/ProgramadorBrasil/TJPE
+- Issues: https://github.com/ProgramadorBrasil/TJPE/issues
+
+═══════════════════════════════════════════════════════════════
+
+📜 LICENÇA: MIT
+📅 Versão: 1.0.0
+🤖 Gerado com Claude Code (Anthropic)
+
+═══════════════════════════════════════════════════════════════
