@@ -1,0 +1,315 @@
+{
+  "id": 4,
+  "titulo": "Avaliação de Bens e Atualização de Valores",
+  "descricao": "Validade e procedimentos de atualização",
+  "duracao": "35min",
+  "icone": "💰",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Dominar critérios de avaliação de bens",
+    "Aplicar índices corretos de atualização",
+    "Evitar valores irreais",
+    "Compreender responsabilidade do avaliador",
+    "Documentar avaliação adequadamente"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "AVALIAÇÃO IRREAL PREJUDICA LEILÃO",
+      "conteudo": "Preço muito alto: não arrema; muito baixo: prejuízo ao credor e questiona honestidade. Deve ser realista e atualizado.",
+      "icone": "💵"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "ATUALIZAÇÃO OBRIGATÓRIA",
+      "conteudo": "CPC determina que avaliação deve ser atualizada se leilão atrasar. Não atualizar prejudica arrematante e leilão.",
+      "icone": "📊"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "DOCUMENTAÇÃO TÉCNICA OBRIGATÓRIA",
+      "conteudo": "Avaliação deve ser feita por profissional qualificado e documentada. Avaliação amadora gera impugnações.",
+      "icone": "📋"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Critérios de Avaliação",
+      "descricao": "Como avaliar corretamente",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Para Imóveis",
+          "tipo": "conteudo",
+          "conteudo": "Imóvel é bem mais complexo. Avaliação deve considerar múltiplos fatores para alcançar valor justo de mercado.",
+          "fatores": {
+            "localizacao": [
+              "Região da cidade",
+              "Proximidade de centros comerciais",
+              "Infraestrutura (transporte, escolas, hospitais)",
+              "Segurança da região",
+              "Perspectivas de desenvolvimento"
+            ],
+            "caracteristicas_fisicas": [
+              "Metragem construída",
+              "Metragem do terreno",
+              "Padrão de construção (popular, médio, alto)",
+              "Idade e estado de conservação",
+              "Materiais utilizados",
+              "Número de dependências"
+            ],
+            "condicoes_legais": [
+              "Não há débito tributário?",
+              "Está regularizado (RGI)?",
+              "Há pendências legais?",
+              "Ônus registrados que afetam valor"
+            ],
+            "mercado": [
+              "Valor de imóveis similares",
+              "Tendência de mercado",
+              "Oferta e demanda",
+              "Taxa de absorção do mercado"
+            ]
+          },
+          "metodos": {
+            "comparativo": "Comparar com imóveis similares (método mais confiável)",
+            "renda": "Se imóvel para aluguel, capitalizar renda",
+            "custo": "Custo de reprodução (para imóvel novo)"
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Para Veículos",
+          "tipo": "conteudo",
+          "conteudo": "Veículos têm valores tabelados que facilitam avaliação. Deve-se usar tabelas atualizadas.",
+          "procedimento": [
+            "Identificar marca, modelo, ano exato",
+            "Consultar tabela FIPE (para automóveis)",
+            "Ajustar por condições especiais (km, sinistro anterior, etc)",
+            "Vistoria física para confirmar estado",
+            "Verificação se há restrições (roubo, alienação fiduciária)"
+          ],
+          "fontes": [
+            "Tabela FIPE (Fundação Instituto de Pesquisas Econômicas)",
+            "Tabela Schwacke",
+            "Consulta a concessionárias de marcas"
+          ]
+        },
+        {
+          "id": 1.3,
+          "titulo": "Para Máquinas e Equipamentos",
+          "tipo": "conteudo",
+          "conteudo": "Valor depende de estado funcional e mercado para aquele tipo específico.",
+          "fatores": [
+            "Idade e horas de uso",
+            "Marca e modelo",
+            "Estado de funcionamento",
+            "Mercado para aquele bem",
+            "Custo de reparo necessários"
+          ],
+          "dica": "Contatar fornecedores ou peritos especializados naquele tipo de equipamento"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Profissional Avaliador",
+      "descricao": "Quem pode fazer avaliação",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Qualificação Necessária",
+          "tipo": "conteudo",
+          "conteudo": "Avaliação não pode ser feita por qualquer um. Deve ser profissional qualificado.",
+          "requisitos": [
+            "Para imóvel: Engenheiro ou Arquiteto com registro no CREA",
+            "Para bem móvel: Perito especializado",
+            "Para veículo: Pode ser sindicato de leiloeiros ou empresa especializada",
+            "Experiência comprovada com avaliações"
+          ],
+          "importante": "Avaliação feita por leigo gera impugnações e dúvidas"
+        },
+        {
+          "id": 2.2,
+          "titulo": "Responsabilidade do Avaliador",
+          "tipo": "conteudo",
+          "conteudo": "Avaliador responde por avaliação manifestamente irreal.",
+          "limites": [
+            "Se avaliação é 2x a 3x acima ou abaixo do mercado",
+            "Se não justifica adequadamente a metodologia",
+            "Se não considerou informações públicas (IPTU, etc)"
+          ],
+          "recomendacao": "Usar profissional conceituado; guardar laudo completo com justificativas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Atualização de Valores",
+      "descricao": "Índices e procedimentos de reajuste",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Índices Permitidos",
+          "tipo": "conteudo",
+          "conteudo": "CPC permite atualizar valor de avaliação se houver atraso. Deve usar índice legal reconhecido.",
+          "indices": {
+            "INPC": {
+              "sigla": "Índice Nacional de Preços ao Consumidor",
+              "fonte": "IBGE",
+              "uso": "Mais comum em execuções judiciais"
+            },
+            "IPCA": {
+              "sigla": "Índice de Preços ao Consumidor Amplo",
+              "fonte": "IBGE",
+              "uso": "Alternativa aceita"
+            },
+            "TR": {
+              "sigla": "Taxa Referencial",
+              "fonte": "Banco Central",
+              "uso": "Menos comum, em declínio"
+            },
+            "taxa_selic": {
+              "descricao": "Em alguns casos específicos",
+              "fonte": "Banco Central"
+            }
+          },
+          "recomendacao": "INPC é mais favorável ao credor geralmente"
+        },
+        {
+          "id": 3.2,
+          "titulo": "Método de Cálculo",
+          "tipo": "conteudo",
+          "conteudo": "Como aplicar corretamente o índice de atualização.",
+          "formula": "Valor Novo = Valor Original × (Índice Atual / Índice Data Avaliação)",
+          "exemplo": [
+            "Avaliação de R$ 200.000 em janeiro/2024 (índice 100,5)",
+            "Leilão em outubro/2024 (índice 108,3)",
+            "Novo valor = 200.000 × (108,3 / 100,5) = R$ 215.447"
+          ],
+          "importante": "Atualizar apenas se houver atraso significativo (após 3-6 meses)"
+        },
+        {
+          "id": 3.3,
+          "titulo": "Frequência de Atualização",
+          "tipo": "conteudo",
+          "conteudo": "Não se atualiza diariamente. Critérios práticos para atualizar.",
+          "criterios": [
+            "Se leilão atrasar 6 meses ou mais: OBRIGADO atualizar",
+            "Se atrasar 3-6 meses: recomendável atualizar",
+            "Se atrasar menos de 3 meses: pode-se manter valor",
+            "Sempre documentar a decisão"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Documentação da Avaliação",
+      "descricao": "Registros necessários",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Laudo de Avaliação",
+          "tipo": "conteudo",
+          "conteudo": "Avaliação deve ser registrada em laudo profissional detalhado.",
+          "conteudo_obrigatorio": [
+            "Identificação do bem (descrição completa)",
+            "Metodologia utilizada (por que comparativo, por que renda, etc)",
+            "Dados de comparação (imóveis similares cotados, preços)",
+            "Justificativas dos critérios",
+            "Cálculo final com resultado",
+            "Assinatura e registro profissional do avaliador",
+            "Data da avaliação",
+            "Declaração de imparcialidade"
+          ]
+        },
+        {
+          "id": 4.2,
+          "titulo": "Vistoria Fotográfica",
+          "tipo": "conteudo",
+          "conteudo": "Documentação fotográfica compõe avaliação e prova o estado do bem.",
+          "recomendacoes": [
+            "Fotos da fachada (frente, lados, fundos)",
+            "Fotos internas (salas, cozinha, banheiros, quartos)",
+            "Fotos de eventual defeito ou problema",
+            "Data das fotos marcada",
+            "Identificação clara do imóvel",
+            "Mínimo 10-15 fotos para imóvel"
+          ]
+        }
+      ]
+    }
+  ],
+  "casosJurisprudenciais": [
+    {
+      "titulo": "Avaliação Irreal Causa Redução de Valor",
+      "descricao": "Tribunal pode reduzir preço de saída se avaliação comprovadamente irreal",
+      "impacto": "Leilão pode ser cancelado e rearranjado"
+    },
+    {
+      "titulo": "Falta de Atualização Prejudica Arrematante",
+      "descricao": "Se bem foi avaliado há 2 anos sem atualização, valor pode estar defasado",
+      "impacto": "Arrematante pode questionar validade"
+    }
+  ],
+  "tabelas": [
+    {
+      "nome": "Índices Mensais INPC 2024-2025",
+      "dados": [
+        {"mes": "Janeiro/2024", "indice": 100.5},
+        {"mes": "Fevereiro/2024", "indice": 101.2},
+        {"mes": "Março/2024", "indice": 102.1},
+        {"mes": "Abril/2024", "indice": 102.8},
+        {"mes": "Maio/2024", "indice": 103.4},
+        {"mes": "Junho/2024", "indice": 104.1},
+        {"mes": "Julho/2024", "indice": 105.2},
+        {"mes": "Agosto/2024", "indice": 106.1},
+        {"mes": "Setembro/2024", "indice": 107.0},
+        {"mes": "Outubro/2024", "indice": 108.3},
+        {"mes": "Novembro/2024", "indice": 109.1},
+        {"mes": "Dezembro/2024", "indice": 110.0}
+      ],
+      "observacao": "Índices para referência educacional"
+    }
+  ],
+  "resumoCapitulo": "Avaliação correta é fundamento para leilão bem-sucedido. Preço irreal afasta arrematantes ou prejudica credor. Deve-se usar profissionais qualificados, atualizar quando necessário, e documentar tudo com rigor técnico.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "Qual profissional pode fazer avaliação de imóvel?",
+      "opcoes": [
+        "Qualquer corretor imobiliário",
+        "Engenheiro ou Arquiteto com CREA",
+        "Apenas perito judicial",
+        "Leiloeiro pode fazer por conta própria"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é o índice mais comum em execuções judiciais?",
+      "opcoes": [
+        "IPCA",
+        "INPC",
+        "Taxa de Juros",
+        "Dólar"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": 3,
+      "pergunta": "Quando é obrigatório atualizar valor de avaliação?",
+      "opcoes": [
+        "Sempre mensalmente",
+        "Após atraso de 6 meses ou mais",
+        "Nunca, valor é fixo",
+        "Apenas se arrematante solicitar"
+      ],
+      "resposta": 1
+    }
+  ]
+}

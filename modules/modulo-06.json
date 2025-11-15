@@ -1,0 +1,356 @@
+{
+  "id": 6,
+  "titulo": "Débitos Fiscais e Condominiais",
+  "descricao": "Art. 130 CTN e Tema 1.134/2024 do STJ",
+  "duracao": "50min",
+  "icone": "💳",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender responsabilidade tributária do arrematante",
+    "Aplicar jurisprudência STJ tema 1.134/2024",
+    "Identificar débitos antes do leilão",
+    "Divulgar corretamente responsabilidades",
+    "Evitar litígios pós-arrematação"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "STJ TEMA 1.134/2024 - JURISPRUDÊNCIA VINCULANTE",
+      "conteudo": "Arrematante responde SEMPRE por débito de condomínio, MESMO COM EXCLUSÃO DE PASSIVOS NO EDITAL. Esta é súmula vinculante do STJ - não há exceção.",
+      "icone": "⚖️"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "DÉBITO TRIBUTÁRIO TAMBÉM TRANSFERE",
+      "conteudo": "Art. 130 CTN: arrematante responde solidariamente por débito tributário inscrito em dívida ativa. Responsabilidade pessoal, não apenas do bem.",
+      "icone": "💰"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "SILÊNCIO SOBRE DÉBITO = RESPONSABILIDADE DO LEILOEIRO",
+      "conteudo": "Se edital não menciona débito conhecido, leiloeiro pode ser responsabilizado civilmente. Deve-se pesquisar e divulgar TODOS os débitos.",
+      "icone": "⚠️"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Responsabilidade Tributária - Art. 130 CTN",
+      "descricao": "Débito fiscal do arrematante",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "O que diz Art. 130 do CTN",
+          "tipo": "conteudo",
+          "conteudo": "Lei Complementar 5.172/66 art. 130 estabelece responsabilidade solidária do arrematante por débito tributário do bem anterior ao leilão.",
+          "texto": "Art. 130: A pessoa natural ou jurídica que adquirir, a qualquer título, bem imóvel ou direitos relativos a bem imóvel, responde pelos tributos que sobre o bem incidam até a data da aquisição.",
+          "analise": [
+            "Arrematante responde por débito DO BEM (IPTU, ITBI anterior, contribuições de melhoria)",
+            "Responsabilidade é SOLIDÁRIA (junto com devedor original)",
+            "Abrange débitos inscritos em dívida ativa",
+            "Não há exclusão automática; precisa estar explícito no edital"
+          ]
+        },
+        {
+          "id": 1.2,
+          "titulo": "Débitos Tributários Abrangidos",
+          "tipo": "conteudo",
+          "conteudo": "Quais tributos o arrematante terá que pagar.",
+          "tributosfederais": [
+            "IPTU (Imposto Predial Territorial Urbano) - PRINCIPAL",
+            "ITBI (Imposto de Transmissão de Bens Imóveis) anterior",
+            "Contribuições de melhoria (ruas, praças beneficiadas)",
+            "Taxa de serviços (limpeza pública, coleta de lixo)"
+          ],
+          "tributosmunicipais": [
+            "IPTU em atraso",
+            "Taxas e contribuições municipais",
+            "Multas por atraso de tributo",
+            "Juros e atualização monetária"
+          ],
+          "importante": "Não se trata de débito do devedor, mas do bem. Inescapável."
+        },
+        {
+          "id": 1.3,
+          "titulo": "Como Calcular e Divulgar",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro precisa antes do leilão: pesquisar, calcular e divulgar débito tributário.",
+          "procedimento": [
+            "Consultar prefeitura - débito de IPTU (pode pedir certidão)",
+            "Consultar cartório - débito registrado (ITBI anterior, etc)",
+            "Consultar Receita Federal - débito fiscal federal (raramente)",
+            "Calcular débito + juros + multas até data do edital",
+            "MENCIONAR EXPLICITAMENTE NO EDITAL o débito e valor estimado",
+            "Avisar que responsabilidade passa ao arrematante"
+          ],
+          "documentacao": "Guardar cópia de certidões consultadas como comprovação"
+        },
+        {
+          "id": 1.4,
+          "titulo": "Menção no Edital",
+          "tipo": "conteudo",
+          "conteudo": "Edital DEVE mencionar expressamente débito tributário.",
+          "exemplo": "O arrematante responde solidariamente, conforme Art. 130 CTN, por débito tributário inscrito em dívida ativa, estimado em R$ [valor]. O bem tem débito de IPTU em atraso conforme consulta à Prefeitura de [município], período de [data] a [data], estimado em R$ [valor].",
+          "recomendacao": "Quanto mais detalhado e claro, melhor protege o leiloeiro"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Débito de Condomínio - Tema 1.134/2024 STJ",
+      "descricao": "Jurisprudência vinculante",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Decisão do STJ",
+          "tipo": "conteudo",
+          "conteudo": "Em 2024, STJ consolidou jurisprudência importante sobre débito condominial em leilão judicial. Tema 1.134 é agora SÚMULA VINCULANTE.",
+          "teor": "O arrematante de bem imóvel em leilão judicial responde pelos débitos de condomínio vencidos até a data do leilão, mesmo que o edital exclua passivos ou declare o bem livre de ônus.",
+          "consequencias": [
+            "Exclusão de passivos NO EDITAL NÃO AFASTA RESPONSABILIDADE",
+            "Arrematante deve pagar débito de condomínio",
+            "Não é reembolsável; é obrigação legal",
+            "Condomínio pode cobrar do arrematante",
+            "Leiloeiro deve avisar expressamente no edital"
+          ]
+        },
+        {
+          "id": 2.2,
+          "titulo": "Como Funciona na Prática",
+          "tipo": "conteudo",
+          "conteudo": "Exemplo prático de como débito condominial afeta arrematante.",
+          "cenario": [
+            "Apartamento foi arrematado por R$ 500.000",
+            "Edital dizia 'venda livre de ônus'",
+            "Débito de condomínio: R$ 50.000 (12 meses em atraso)",
+            "Arrematante esperava pagar apenas R$ 500.000",
+            "Condomínio cobra os R$ 50.000 do novo proprietário"
+          ],
+          "resultado": "Arrematante fica com débito inesperado de R$ 50.000 mesmo com exclusão no edital"
+        },
+        {
+          "id": 2.3,
+          "titulo": "Pesquisa de Débito Condominial",
+          "tipo": "conteudo",
+          "conteudo": "Antes do leilão, leiloeiro deve pesquisar débito de condomínio.",
+          "como": [
+            "Contatar síndico ou administradora do condomínio",
+            "Solicitar certidão de débito/adimplência",
+            "Solicitar período exato (de quando a quando)",
+            "Confirmar valor de taxa condominial mensal",
+            "Calcular quanto venceu até data do edital",
+            "Adicionar multa por atraso (geralmente 10-20%)",
+            "Documentar tudo"
+          ],
+          "dica": "Síndico geralmente coopera para receber; é seu incentivo"
+        },
+        {
+          "id": 2.4,
+          "titulo": "Menção no Edital",
+          "tipo": "conteudo",
+          "conteudo": "Edital DEVE avisar sobre responsabilidade condominial.",
+          "texto_obrigatorio": "Em conformidade com a jurisprudência consolidada do STJ (tema 1.134/2024), o arrematante responderá pelos débitos de condomínio vencidos até a data deste leilão, estimados em R$ [valor], referentes ao período de [data] a [data]. Esta responsabilidade é INESCAPÁVEL mesmo que este edital exclua passivos.",
+          "importante": "Deve estar em DESTAQUE, com letras maiores, ou em caixa de alerta"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Outros Débitos a Pesquisar",
+      "descricao": "Levantamento completo de responsabilidades",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Débito de Água/Esgoto",
+          "tipo": "conteudo",
+          "conteudo": "Companhia de saneamento mantém registro de débito de água/esgoto. Arrematante pode herdar.",
+          "informacoes": [
+            "Consultar COMPESA (Pernambuco) ou companhia local",
+            "Verificar se tem débito em aberto",
+            "Calcular quanto vence até data do leilão",
+            "Verificar se há registro de inscrição em dívida ativa",
+            "Mencionar no edital a possibilidade"
+          ]
+        },
+        {
+          "id": 3.2,
+          "titulo": "Débito de Energia/Gás",
+          "tipo": "conteudo",
+          "conteudo": "Companhias de energia podem ter ações de execução. Verificar.",
+          "observacao": "Menos frequente em leilão de imóvel; mais em móveis. Mas pode existir se há débito do serviço."
+        },
+        {
+          "id": 3.3,
+          "titulo": "Multas Administrativas",
+          "tipo": "conteudo",
+          "conteudo": "Prefeitura pode ter multa registrada (construção irregular, etc).",
+          "como": [
+            "Consultar prefeitura municipal",
+            "Perguntar sobre multas administrativas",
+            "Perguntar se há inscrição em dívida ativa"
+          ]
+        },
+        {
+          "id": 3.4,
+          "titulo": "Débito de Encargos Financeiros",
+          "tipo": "conteudo",
+          "conteudo": "Se imóvel ainda tem financiamento, pode haver débito de juros/encargos.",
+          "importante": "Deve estar registrado na matrícula como alienação fiduciária ou hipoteca, então aparece facilmente"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Proteção do Leiloeiro",
+      "descricao": "Como evitar responsabilidade",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Pesquisa Exaustiva",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro deve fazer pesquisa completa antes do leilão.",
+          "checklist": [
+            "Prefeitura - IPTU, multas, ITBI anterior",
+            "Cartório - débitos registrados, matrícula completa",
+            "Condomínio - débito condominial exato",
+            "Companhia de água - débito de água/esgoto",
+            "Receita Federal - débito tributário (menos comum)",
+            "Guardar cópia de TODOS os documentos consultados"
+          ]
+        },
+        {
+          "id": 4.2,
+          "titulo": "Divulgação Clara e Explícita",
+          "tipo": "conteudo",
+          "conteudo": "Edital deve mencionar TODOS os débitos encontrados e a responsabilidade do arrematante.",
+          "recomendacoes": [
+            "Usar caixa de alerta destacada",
+            "Mencionar expressamente tema 1.134 STJ",
+            "Listar cada débito separadamente com valor",
+            "Dizer que responsabilidade é inescapável",
+            "Avisar que arrematante não pode alegar desconhecimento"
+          ]
+        },
+        {
+          "id": 4.3,
+          "titulo": "Documentação Completa",
+          "tipo": "conteudo",
+          "conteudo": "Guardar prova de que pesquisou e divulgou.",
+          "documentos": [
+            "Cópias de certidões consultadas",
+            "Cópia do edital publicado",
+            "Comprovante de publicação",
+            "Se houver dúvida, parecer de advogado"
+          ],
+          "beneficio": "Prova de diligência protege leiloeiro em ação posterior"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Impacto no Valor de Arrematação",
+      "descricao": "Como débito afeta o preço",
+      "topicos": [
+        {
+          "id": 5.1,
+          "titulo": "Redução de Interesse",
+          "tipo": "conteudo",
+          "conteudo": "Bem com débito significativo atrai menos arrematantes. Deve-se antecipar isso.",
+          "efeito": [
+            "Débito de R$ 100.000 em bem de R$ 500.000 é relevante",
+            "Potencial arrematante desconta esse débito do lance",
+            "Resultado: bem pode não atingir preço mínimo",
+            "Melhor avisar claro: arrematante já sabe e ajusta oferta"
+          ]
+        },
+        {
+          "id": 5.2,
+          "titulo": "Preço de Saída Pode Ser Reduzido",
+          "tipo": "conteudo",
+          "conteudo": "Juiz pode autorizar redução de preço de saída se débito for muito elevado.",
+          "logica": [
+            "Se bem vale R$ 500.000 mas tem R$ 200.000 de débito",
+            "Preço de saída pode ser reduzido para R$ 300.000 ou menos",
+            "Busca-se leilão bem-sucedido, não resultado nulo"
+          ],
+          "recomendacao": "Se débito alto, solicitar ao juiz redução de preço mínimo"
+        }
+      ]
+    }
+  ],
+  "jurisprudenciaCompleta": [
+    {
+      "tribunal": "STJ",
+      "tema": "1.134/2024",
+      "titulo": "Responsabilidade Condominial em Leilão Judicial",
+      "ementa": "O arrematante de bem imóvel em leilão judicial responde pelos débitos de condomínio vencidos até a data do leilão.",
+      "vinculacao": "SÚMULA VINCULANTE - obriga todos os juízos brasileiros",
+      "consequencias": "Não há exceção; nem exclusão de passivos no edital afasta responsabilidade"
+    },
+    {
+      "tribunal": "Jurisprudência Pacífica",
+      "titulo": "Art. 130 CTN - Responsabilidade Tributária",
+      "descricao": "Arrematante responde por débito tributário anterior",
+      "consolidacao": "Jurisprudência consolidada em múltiplas decisões do STJ"
+    }
+  ],
+  "tabelas": [
+    {
+      "nome": "Checklist de Débitos a Pesquisar",
+      "itens": [
+        {"debito": "IPTU", "responsavel": "Prefeitura", "frequencia": "Muito frequente", "impacto": "Alto"},
+        {"debito": "Condomínio", "responsavel": "Síndico/Administradora", "frequencia": "Muito frequente", "impacto": "Alto"},
+        {"debito": "Água/Esgoto", "responsavel": "COMPESA ou similar", "frequencia": "Frequente", "impacto": "Médio"},
+        {"debito": "ITBI anterior", "responsavel": "Cartório/Prefeitura", "frequencia": "Frequente", "impacto": "Médio"},
+        {"debito": "Multas administrativas", "responsavel": "Prefeitura", "frequencia": "Ocasional", "impacto": "Variável"},
+        {"debito": "Receita Federal", "responsavel": "Receita Federal", "frequencia": "Raro", "impacto": "Alto"}
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "nome": "Trecho de Edital Sobre Débitos",
+      "conteudo": "AVISO IMPORTANTE SOBRE RESPONSABILIDADES DO ARREMATANTE:\n\n1. RESPONSABILIDADE CONDOMINIAL (STJ TEMA 1.134/2024):\nConforme jurisprudência vinculante do Superior Tribunal de Justiça (tema 1.134/2024), o arrematante RESPONDERÁ pelos débitos de condomínio vencidos até a data deste leilão, no valor estimado de R$ [XXX,XX], referentes ao período de [DATA] a [DATA]. ESTA RESPONSABILIDADE É INESCAPÁVEL, mesmo que este edital mencione 'venda livre de ônus' ou 'exclusão de passivos'. Não há exceção legal.\n\n2. RESPONSABILIDADE TRIBUTÁRIA (ART. 130 CTN):\nConforme Lei Complementar 5.172/66 art. 130, o arrematante RESPONDERÁ SOLIDARIAMENTE por débito tributário anterior, incluindo:\n- IPTU em atraso: R$ [XXX,XX] (período [DATA] a [DATA])\n- Outras taxas municipais: [DESCREVER]\n\n3. DÉBITO DE ÁGUA/ESGOTO:\nConsulta realizada em [DATA] indica débito de R$ [XXX,XX] junto à COMPESA/[COMPANHIA], referente ao período [DATA] a [DATA].\n\nO ARREMATANTE NÃO PODERÁ ALEGAR DESCONHECIMENTO DESTAS RESPONSABILIDADES."
+    }
+  ],
+  "resumoCapitulo": "Débitos fiscais e condominiais são aspecto CRÍTICO do leilão que leiloeiro frequentemente subestima. STJ tema 1.134/2024 é VINCULANTE: arrematante paga condomínio independente de edital. Leiloeiro deve pesquisar exaustivamente, calcular com precisão, divulgar expressamente no edital com destaque máximo. Falha nisto expõe leiloeiro a ação indenizatória do arrematante.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "O que diz STJ tema 1.134/2024 sobre débito de condomínio?",
+      "opcoes": [
+        "Arrematante não paga se edital exclui passivos",
+        "Arrematante responde SEMPRE, mesmo com exclusão de passivos",
+        "Apenas o devedor original responde",
+        "Condomínio absorve a perda"
+      ],
+      "resposta": 1,
+      "explicacao": "É súmula vinculante; não há exceção"
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é a base legal da responsabilidade tributária do arrematante?",
+      "opcoes": [
+        "CPC art. 895",
+        "Lei 9.514/97",
+        "Art. 130 CTN (Lei Complementar 5.172/66)",
+        "Decreto 6.015"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é a consequência de edital que NÃO menciona débito conhecido?",
+      "opcoes": [
+        "Leilão é válido; leiloeiro não responde",
+        "Responsabilidade civil do leiloeiro perante arrematante",
+        "Nulidade automática do leilão",
+        "Responsabilidade exclusiva do juiz"
+      ],
+      "resposta": 1,
+      "explicacao": "Leiloeiro deve pesquisar e divulgar; silêncio é negligência"
+    }
+  ]
+}

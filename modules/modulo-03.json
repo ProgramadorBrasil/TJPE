@@ -1,0 +1,296 @@
+{
+  "id": 3,
+  "titulo": "Notificações e Intimações",
+  "descricao": "Quem notificar e como fazer corretamente",
+  "duracao": "40min",
+  "icone": "📧",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender obrigações de notificação",
+    "Identificar todos os sujeitos que devem ser notificados",
+    "Usar meios corretos de notificação",
+    "Documentar comprovantes de entrega",
+    "Evitar nulidade por vício de intimação"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "VÍCIO NA INTIMAÇÃO = NULIDADE PROCESSUAL",
+      "conteudo": "Falta de notificação adequada é vício insanável. O executado ou terceiro interessado pode impugnar tudo alegando desconhecimento.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "MÚLTIPLOS SUJEITOS PARA NOTIFICAR",
+      "conteudo": "Não é apenas o devedor. Fiador, cônjuge, terceiro proprietário, credor concorrente - todos precisam ser notificados adequadamente.",
+      "icone": "📋"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "COMPROVANTES SÃO OBRIGATÓRIOS",
+      "conteudo": "Guardar recibos, ARs, confirmações de recebimento. Sem prova de notificação, o processo é questionável.",
+      "icone": "📄"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Pessoas que Devem ser Notificadas",
+      "descricao": "Identificação de todos os sujeitos",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "O Executado (Devedor Principal)",
+          "tipo": "conteudo",
+          "conteudo": "Obrigação fundamental notificar o devedor. Ele tem direito de conhecer a execução, prazos, edital. Sem notificação adequada, toda execução pode ser nula.",
+          "detalhes": [
+            "Deve ser identificado com precisão (nome, CPF, endereço)",
+            "Se desconhecido o endereço, requer diligências",
+            "Se mudou-se, requer pesquisa de novo endereço",
+            "Notificação deve alcançar pessoalmente o devedor",
+            "Se desconhecido, publicação por edital"
+          ],
+          "meios": [
+            "Cartório de intimação (mais formal)",
+            "Aviso dirigido por correios (AR)",
+            "Publicação por edital (se desconhecido)",
+            "Pessoalmente pelo oficial de justiça"
+          ]
+        },
+        {
+          "id": 1.2,
+          "titulo": "Cônjuge do Executado",
+          "tipo": "conteudo",
+          "conteudo": "Em regra, cônjuge do executado também deve ser notificado, especialmente se há regime de comunhão de bens. Suas defesas e direitos precisam ser preservados.",
+          "requisitos": [
+            "Identificação do cônjuge",
+            "Endereço para notificação",
+            "Cópia das notificações ao devedor também ao cônjuge",
+            "Se separado/divorciado, pode ser dispensado"
+          ],
+          "importante": "Omissão pode viciar arrematação se imóvel for bem de comunhão"
+        },
+        {
+          "id": 1.3,
+          "titulo": "Terceiros Interessados",
+          "tipo": "conteudo",
+          "conteudo": "Pessoas que têm direitos sobre o bem (credor hipotecário, fideicomissário, etc) precisam ser notificadas para salvaguardar seus direitos.",
+          "exemplos": [
+            "Credor hipotecário segundo (bem tem penhora)",
+            "Proprietário legítimo (se bem da comunidade condominial)",
+            "Beneficiário de usufruto",
+            "Terceiro proprietário em caso de condomínio"
+          ],
+          "procedimento": "Consultar matrícula imobiliária para identificar all ônus registrados"
+        },
+        {
+          "id": 1.4,
+          "titulo": "Fiador ou Avalista",
+          "tipo": "conteudo",
+          "conteudo": "Se há fiador ou avalista da obrigação, pode ser necessário notificá-lo. Depende da causa de execução.",
+          "quando": [
+            "Se fiança está ligada ao crédito",
+            "Se avalista responde pela obrigação",
+            "Raramente obrigatório, mas recomendável"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Meios e Procedimentos de Notificação",
+      "descricao": "Como notificar adequadamente",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Notificação por Cartório",
+          "tipo": "conteudo",
+          "conteudo": "Meio formal mais confiável. Cartório processa a notificação e emite comprovante.",
+          "procedimento": [
+            "Preparar documento com dados completos do notificando",
+            "Entregar cópia ao cartório competente",
+            "Cartório enviará aviso dirigido",
+            "Cartório arquiva comprovante de entrega",
+            "Leiloeiro recebe cópia do comprovante"
+          ],
+          "vantagem": "Segurança máxima; comprovante oficial",
+          "desvantagem": "Custo e tempo maiores"
+        },
+        {
+          "id": 2.2,
+          "titulo": "Notificação por Aviso Dirigido",
+          "tipo": "conteudo",
+          "conteudo": "Correios envia documento com aviso de recebimento (AR). Prova de entrega mediante assinatura.",
+          "procedimento": [
+            "Preparar envelope com edital e notificação",
+            "Enviar via Correios com AR",
+            "Aguardar retorno do AR assinado",
+            "Guardar cópia do AR como comprovante"
+          ],
+          "eficacia": "Válida se há comprovante de entrega",
+          "risco": "Se não-recebimento, pode questionar"
+        },
+        {
+          "id": 2.3,
+          "titulo": "Intimação Pessoal pelo Oficial de Justiça",
+          "tipo": "conteudo",
+          "conteudo": "Oficial de justiça vai até o executado e entrega pessoalmente. Segurança máxima de entrega.",
+          "procedimento": [
+            "Requisitar ao juízo mandado de intimação",
+            "Entregar ao oficial de justiça",
+            "Oficial realiza diligência em dias úteis",
+            "Lavra termo de intimação com assinatura do intimado",
+            "Devolve ao juízo com comprovante"
+          ],
+          "eficacia": "Máxima; prova pessoal",
+          "custo": "Variável conforme local"
+        },
+        {
+          "id": 2.4,
+          "titulo": "Publicação por Edital",
+          "tipo": "conteudo",
+          "conteudo": "Quando endereço é desconhecido ou execução esgotou meios. Publicação no Diário Oficial vale como notificação.",
+          "requisitos": [
+            "Comprovação de diligências anteriores sem sucesso",
+            "Publicação no DJE do TJPE",
+            "Publicação no Diário Oficial da União ou Estado",
+            "Afixação no Fórum",
+            "Afixação em local público (prefeitura, etc)"
+          ],
+          "eficacia": "Legal, mas prova ficta (presume-se conhecimento)",
+          "prazo": "Conta-se da última publicação"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Documentação e Comprovantes",
+      "descricao": "Como registrar e manter prova",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Arquivos Essenciais",
+          "tipo": "conteudo",
+          "conteudo": "Documentação cuidadosa é defesa do leiloeiro contra alegações de nulidade.",
+          "documentos": [
+            "Cópia da sentença/título executivo",
+            "Comprovante de publicação do edital",
+            "Comprovante de aviso ao executado (AR ou cartório)",
+            "Comprovante de notificação de terceiros interessados",
+            "Comprovante de afixação do edital",
+            "Comprovante de publicação em jornais (se houver)",
+            "Termos de vistoria do bem",
+            "Relatório de avaliação"
+          ]
+        },
+        {
+          "id": 3.2,
+          "titulo": "Prazo de Guarda de Documentos",
+          "tipo": "conteudo",
+          "conteudo": "Documentação não é destruída imediatamente. Deve manter por prazo razoável.",
+          "prazos": [
+            "Mínimo 3 anos após conclusão (prescreção)",
+            "Até 5 anos é seguro",
+            "Se litigância, enquanto não transitar em julgado",
+            "Originais podem ser devolvidos ao juízo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Erros Comuns em Notificação",
+      "descricao": "Vícios que causam nulidade",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Endereço Incompleto ou Incorreto",
+          "tipo": "conteudo",
+          "conteudo": "Notificação não chega ao destinatário, presumindo-se não recebimento.",
+          "consequencias": [
+            "Nulidade da notificação",
+            "Nulidade de todo procedimento subsequente",
+            "Arrematação pode ser anulada"
+          ],
+          "prevencao": "Verificar endereço em documentos recentes, pesquisar em sistemas de localização"
+        },
+        {
+          "id": 4.2,
+          "titulo": "Falta de Comprovante",
+          "tipo": "conteudo",
+          "conteudo": "Não guardar prova de notificação deixa o leiloeiro vulnerável.",
+          "risco": "Arrematante ou terceiro questiona se realmente foi notificado",
+          "solucao": "Nunca notificar sem comprovante; guardar originais ou cópias autenticadas"
+        },
+        {
+          "id": 4.3,
+          "titulo": "Omissão de Notificar Terceiro Interessado",
+          "tipo": "conteudo",
+          "conteudo": "Se bem tem credor hipotecário registrado e não é notificado, ele pode impugnar.",
+          "exemplo": "Imóvel tem segundo credor hipotecário; leiloeiro ignora e realiza leilão; segundo credor impugna"
+        },
+        {
+          "id": 4.4,
+          "titulo": "Prazos Inadequados",
+          "tipo": "conteudo",
+          "conteudo": "Notificação deve ser feita com tempo suficiente antes do leilão.",
+          "minimos": [
+            "Notificação com pelo menos 15 dias antes",
+            "Impugnação com 15 dias de prazo",
+            "Edital com 30 dias de antecedência"
+          ]
+        }
+      ]
+    }
+  ],
+  "casosJurisprudenciais": [
+    {
+      "titulo": "Nulidade por Vício na Notificação",
+      "descricao": "Jurisprudência pacífica: falta de notificação adequada causa nulidade de arrematação",
+      "impacto": "Risco máximo para leiloeiro"
+    },
+    {
+      "titulo": "Notificação Incompleta de Terceiros",
+      "descricao": "Omissão de notificar terceiro interessado pode gerar ação de reintegração de posse pós-arrematação",
+      "impacto": "Responsabilidade civil do leiloeiro"
+    }
+  ],
+  "resumoCapitulo": "Notificação adequada é fundamento do direito de defesa. O leiloeiro tem responsabilidade de notificar correctamente TODOS os interessados, documentar tudo e guardar comprovantes. Vício nesta fase derruba todo leilão. Recomenda-se usar cartório quando valor o justifica.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "Além do executado, quem SEMPRE deve ser notificado?",
+      "opcoes": [
+        "Apenas o juiz",
+        "Cônjuge e terceiros interessados (credor hipotecário, etc)",
+        "Vizinhos do bem",
+        "Apenas a prefeitura municipal"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é o prazo mínimo antes do leilão para notificação?",
+      "opcoes": [
+        "5 dias",
+        "15 dias",
+        "30 dias",
+        "Sem prazo mínimo"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": 3,
+      "pergunta": "Se endereço do executado é desconhecido, qual é o meio correto?",
+      "opcoes": [
+        "Notificação por email",
+        "Aviso em rádio local",
+        "Publicação por edital no Diário Oficial",
+        "Dispensa-se notificação"
+      ],
+      "resposta": 2
+    }
+  ]
+}

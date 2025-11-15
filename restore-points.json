@@ -1,0 +1,17 @@
+{
+  "pontos": [
+    {
+      "id": 1,
+      "data": "2025-11-15T00:00:00Z",
+      "descricao": "Inicialização do sistema - Estrutura base criada",
+      "autor": "Sistema Automatizado",
+      "arquivos": [
+        "config.json",
+        "restore-points.json"
+      ],
+      "hash": "init_001"
+    }
+  ],
+  "versaoAtual": 1,
+  "ultimaAtualizacao": "2025-11-15T00:00:00Z"
+}

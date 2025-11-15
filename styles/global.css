@@ -1,0 +1,443 @@
+/* ========================================
+   CURSO TJPE - SISTEMA DE DESIGN GLOBAL
+   Híbrido: TJPE + Gracie Leilões
+   Versão 1.0.0
+   ======================================== */
+
+:root {
+  /* Cores TJPE */
+  --cor-primaria: #003366;
+  --cor-secundaria: #0066cc;
+  --cor-tjpe-azul: #003366;
+
+  /* Cores Gracie Leilões */
+  --cor-dourado: #DAA520;
+  --cor-dourado-claro: #F4E5C2;
+
+  /* Cores Neutras */
+  --cor-branco: #FFFFFF;
+  --cor-cinza-claro: #F5F5F5;
+  --cor-cinza-medio: #CCCCCC;
+  --cor-cinza-escuro: #333333;
+  --cor-preto: #000000;
+
+  /* Cores de Status */
+  --cor-sucesso: #28a745;
+  --cor-alerta: #ffc107;
+  --cor-perigo: #dc3545;
+  --cor-info: #17a2b8;
+
+  /* Tipografia */
+  --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fonte-titulos: 'Roboto', 'Arial', sans-serif;
+  --tamanho-base: 16px;
+
+  /* Espaçamentos */
+  --espacamento-xs: 0.25rem;
+  --espacamento-sm: 0.5rem;
+  --espacamento-md: 1rem;
+  --espacamento-lg: 1.5rem;
+  --espacamento-xl: 2rem;
+  --espacamento-xxl: 3rem;
+
+  /* Bordas */
+  --borda-radius: 8px;
+  --borda-radius-sm: 4px;
+  --borda-radius-lg: 12px;
+
+  /* Sombras */
+  --sombra-leve: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --sombra-media: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --sombra-forte: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  /* Transições */
+  --transicao-rapida: 0.2s ease;
+  --transicao-normal: 0.3s ease;
+  --transicao-lenta: 0.5s ease;
+}
+
+/* Reset e Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--tamanho-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-cinza-escuro);
+  background-color: var(--cor-cinza-claro);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulos);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--espacamento-md);
+  color: var(--cor-primaria);
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--cor-dourado);
+  padding-bottom: var(--espacamento-sm);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--cor-secundaria);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: var(--espacamento-md);
+  text-align: justify;
+}
+
+a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  transition: color var(--transicao-rapida);
+}
+
+a:hover {
+  color: var(--cor-dourado);
+  text-decoration: underline;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--espacamento-lg);
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 var(--espacamento-lg);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  color: var(--cor-branco);
+  padding: var(--espacamento-lg) 0;
+  box-shadow: var(--sombra-media);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--espacamento-md);
+}
+
+.logo {
+  max-height: 60px;
+  width: auto;
+}
+
+.curso-titulo {
+  color: var(--cor-branco);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.instrutor-info {
+  text-align: right;
+}
+
+.instrutor-nome {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cor-dourado-claro);
+}
+
+.instrutor-titulo {
+  font-size: 0.9rem;
+  color: var(--cor-branco);
+  opacity: 0.9;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: var(--espacamento-sm) var(--espacamento-lg);
+  border: none;
+  border-radius: var(--borda-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-secundaria);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-media);
+}
+
+.btn-secondary {
+  background-color: var(--cor-dourado);
+  color: var(--cor-cinza-escuro);
+}
+
+.btn-secondary:hover {
+  background-color: #B8860B;
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background-color: var(--cor-sucesso);
+  color: var(--cor-branco);
+}
+
+.btn-danger {
+  background-color: var(--cor-perigo);
+  color: var(--cor-branco);
+}
+
+/* Cards */
+.card {
+  background: var(--cor-branco);
+  border-radius: var(--borda-radius);
+  padding: var(--espacamento-lg);
+  box-shadow: var(--sombra-leve);
+  transition: all var(--transicao-normal);
+  margin-bottom: var(--espacamento-lg);
+}
+
+.card:hover {
+  box-shadow: var(--sombra-forte);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  border-bottom: 2px solid var(--cor-dourado);
+  padding-bottom: var(--espacamento-sm);
+  margin-bottom: var(--espacamento-md);
+}
+
+.card-title {
+  margin: 0;
+  color: var(--cor-primaria);
+}
+
+.card-body {
+  color: var(--cor-cinza-escuro);
+}
+
+/* Alertas e Destaques */
+.alerta {
+  padding: var(--espacamento-md);
+  border-radius: var(--borda-radius);
+  margin-bottom: var(--espacamento-lg);
+  border-left: 4px solid;
+  display: flex;
+  align-items: start;
+  gap: var(--espacamento-md);
+}
+
+.alerta-icone {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.alerta-critico {
+  background-color: #fee;
+  border-color: var(--cor-perigo);
+  color: #721c24;
+}
+
+.alerta-importante {
+  background-color: #fff3cd;
+  border-color: var(--cor-alerta);
+  color: #856404;
+}
+
+.alerta-info {
+  background-color: #d1ecf1;
+  border-color: var(--cor-info);
+  color: #0c5460;
+}
+
+.alerta-sucesso {
+  background-color: #d4edda;
+  border-color: var(--cor-sucesso);
+  color: #155724;
+}
+
+/* Listas */
+.lista-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-checklist li {
+  padding: var(--espacamento-sm) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--espacamento-sm);
+}
+
+.lista-checklist li::before {
+  content: "☑";
+  color: var(--cor-sucesso);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+.badge-dourado {
+  background-color: var(--cor-dourado);
+  color: var(--cor-cinza-escuro);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  :root {
+    --tamanho-base: 14px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--espacamento-md);
+  }
+
+  .instrutor-info {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --tamanho-base: 12px;
+  }
+
+  .container {
+    padding: 0 var(--espacamento-sm);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Utilitários */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 { margin-top: var(--espacamento-sm); }
+.mt-2 { margin-top: var(--espacamento-md); }
+.mt-3 { margin-top: var(--espacamento-lg); }
+
+.mb-1 { margin-bottom: var(--espacamento-sm); }
+.mb-2 { margin-bottom: var(--espacamento-md); }
+.mb-3 { margin-bottom: var(--espacamento-lg); }
+
+.p-1 { padding: var(--espacamento-sm); }
+.p-2 { padding: var(--espacamento-md); }
+.p-3 { padding: var(--espacamento-lg); }
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Impressão */
+@media print {
+  .header,
+  .menu-lateral,
+  .controles-acessibilidade,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

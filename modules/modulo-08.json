@@ -1,0 +1,755 @@
+{
+  "id": 8,
+  "titulo": "Publicação e Transparência",
+  "descricao": "Publicação obrigatória e prazos",
+  "duracao": "25min",
+  "icone": "📢",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender as obrigações de publicação de leilões judiciais",
+    "Aplicar corretamente os prazos de publicação (5 + 35 dias)",
+    "Utilizar adequadamente os meios de publicação",
+    "Garantir transparência total do processo",
+    "Documentar e comprovar toda publicação realizada"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "PUBLICAÇÃO NULA ANULA O LEILÃO",
+      "conteudo": "Se edital não foi publicado corretamente, TODO o leilão é nulo. Não se aproveita sequer o resultado. Documentação de publicação é fundamental para defesa processual.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "PRAZOS IMPRORROGÁVEIS",
+      "conteudo": "5 dias entre 1ª e 2ª publicação, mínimo 35 dias entre última publicação e data do leilão. Não há prorrogação. Se não cumprido, leilão é nulo.",
+      "icone": "⏰"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "MEIOS OBRIGATÓRIOS",
+      "conteudo": "Edital deve ser publicado em: Diário de Justiça, Jornal de Circulação Regional, Cartório de Distribuição, Portal TJPE. Ausência de qualquer um é vício insanável.",
+      "icone": "📰"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "PROVA DE PUBLICAÇÃO",
+      "conteudo": "Guardar cópias de TUDO: comprovante de publicação no DJ, recorte de jornal, prints de sites. Sem prova, leilão pode ser anulado em impugnação.",
+      "icone": "📋"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Meios de Publicação Obrigatórios",
+      "descricao": "Canais através dos quais edital deve ser divulgado",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Diário da Justiça (DJ)",
+          "tipo": "conteudo",
+          "conteudo": "Publicação oficial do tribunal. É o meio MAIS IMPORTANTE para validade do leilão. Edital publicado no DJ tem presunção de veracidade. Deve conter todos os dados do bem, edital completo e data do leilão.",
+          "detalhes": {
+            "funcionamento": [
+              "Tribunal publica no DJ oficialmente",
+              "Tem circulação diária (ou conforme programação)",
+              "Todos os cartórios e escritórios recebem"
+            ],
+            "conteudo_obrigatorio": [
+              "Número do processo judicial",
+              "Descrição completa do bem",
+              "Valor base (lance inicial)",
+              "Data, hora e local do leilão",
+              "Edital completo",
+              "Dados do leiloeiro"
+            ],
+            "prazo_Publicacao": "Primeira publicação: no mínimo 40 dias antes do leilão",
+            "comprovacao": [
+              "Receber comprovante do tribunal",
+              "Guardar cópia da edição do DJ",
+              "Arquivar no processo"
+            ],
+            "validade": "Publicação no DJ não pode ser questionada se feita pelo tribunal"
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Recife - Leilão marcado para 30/12/2025",
+            "primeira_Publicacao": "20/10/2025 no Diário da Justiça",
+            "segunda_Publicacao": "25/10/2025 no Diário da Justiça",
+            "contagem": [
+              "20/10 - 1ª publicação",
+              "25/10 - 2ª publicação (5 dias depois)",
+              "30/12 - Leilão (66 dias depois da última publicação) - OK"
+            ]
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Jornal de Circulação Regional",
+          "tipo": "conteudo",
+          "conteudo": "Jornal com circulação na comarca do bem. Confere maior divulgação pública e interesse. Deve ser jornal reconhecido, não mimeógrafo ou publicação pequena. Publica edital resumido ou completo conforme decisão judicial.",
+          "detalhes": {
+            "criterio": "Jornal com circulação comprovada na região",
+            "exemplosValidos": [
+              "Em Recife: Jornal do Commércio, Diário de Pernambuco, Folha de Pernambuco",
+              "Cidades interiores: jornais regionais estabelecidos",
+              "Nunca: blogs, rádios, publicações efêmeras"
+            ],
+            "conteudo": [
+              "Edital resumido ou completo",
+              "Descrição do bem (mínimo 5 linhas)",
+              "Valor base",
+              "Data e hora do leilão",
+              "Logradouro do bem",
+              "Telefone do leiloeiro"
+            ],
+            "frequencia_Publicacao": "Pelo menos 2 publicações (1ª e 2ª)",
+            "prazoMínimo": "5 dias entre primeira e segunda publicação",
+            "comprovacao": [
+              "Guardar cópia impressa do jornal",
+              "Ou PDF da edição online",
+              "Indicar página e data",
+              "Arquivar no processo"
+            ],
+            "consideracoes": [
+              "Jornal deve ter circulação COMPROVADA (circulação certificada)",
+              "Leiloeiro pode ser responsabilizado se jornal não tiver circulação real",
+              "Preferir jornais de maior circulação"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Caruaru - Leilão 28/01/2026",
+            "jornal_Escolhido": "Folha de Pernambuco (circulação regional)",
+            "primeira_Publicacao": "15/11/2025",
+            "segunda_Publicacao": "20/11/2025",
+            "duracao": "Publicação em página fixa (economia/leilões)",
+            "comprovacao": "Fotocópia da página do jornal anexada ao processo"
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Portal TJPE e Cartório de Distribuição",
+          "tipo": "conteudo",
+          "conteudo": "Meios modernos de publicação que garantem transparência e acesso público. Portal TJPE permite busca online. Cartório mantém edital disponível para consulta. Ambos são obrigatórios por lei.",
+          "detalhes": {
+            "portalTJPE": {
+              "funcao": "Disponibilizar editais em portal público do tribunal",
+              "acesso": "Qualquer pessoa pode acessar gratuitamente",
+              "conteudo": "Edital completo com fotos do bem",
+              "atualizacao": "Em tempo real",
+              "vantagem": "Máxima transparência",
+              "responsabilidade": "Tribunal (não leiloeiro)"
+            },
+            "cartorioDistribuicao": {
+              "funcao": "Manter edital à disposição para consulta",
+              "acesso": "Público, sem custo",
+              "permanencia": "Desde publicação até 3 dias após leilão",
+              "forma": "Cartório tem cópias impressas ou digitais",
+              "comprovacao": "Comprovante de depósito de edital no cartório"
+            },
+            "responsabilidades": [
+              "Tribunal: publica no DJ e portal",
+              "Leiloeiro: fornece edital ao tribunal",
+              "Cartório: mantém cópias",
+              "Todos: responsáveis pela transparência"
+            ],
+            "documentacao": [
+              "Comprovante de publicação no DJ",
+              "Comprovante de publicação no jornal",
+              "Print do portal TJPE",
+              "Comprovante do cartório de distribuição"
+            ]
+          },
+          "exemploPratico": {
+            "fluxo": "Edital de leilão em Recife",
+            "dia1": "Leiloeiro envia edital ao tribunal",
+            "dia2": "Tribunal publica no DJ e portal TJPE",
+            "dia3": "Leiloeiro verifica publicação no portal",
+            "dia4": "Cartório de Distribuição recebe cópias do edital",
+            "resultado": "Edital está acessível em 4 canais públicos"
+          }
+        },
+        {
+          "id": 1.4,
+          "titulo": "Publicação em Redes Sociais e Site do Leiloeiro",
+          "tipo": "conteudo",
+          "conteudo": "Embora NÃO obrigatórias, redes sociais e site do leiloeiro servem como publicação complementar. Aumentam o alcance. Devem ser datadas e guardadas como comprovação. Jamais podem substituir os meios oficiais.",
+          "detalhes": {
+            "naoObrigatorio": [
+              "Facebook, Instagram, LinkedIn não são obrigatórios",
+              "Site do leiloeiro é complementar",
+              "Servem apenas para maior divulgação"
+            ],
+            "beneficios": [
+              "Alcance maior no público",
+              "Mais interessados em leilão",
+              "Demonstra profissionalismo",
+              "Facilita contato com potenciais compradores"
+            ],
+            "conteudo_Publicar": [
+              "Foto do bem (mínimo 3 fotos)",
+              "Descrição atrativa e clara",
+              "Valor base do lance",
+              "Data, hora e local",
+              "Contato do leiloeiro",
+              "Link para mais informações"
+            ],
+            "datas_Publicacao": [
+              "Primeira publicação: 40-45 dias antes",
+              "Segunda publicação: 5-10 dias depois",
+              "Publicações adicionais: dias antes do leilão"
+            ],
+            "comprovacao": [
+              "Print de tela com data",
+              "Arquivo salvo com timestamp",
+              "Screenshots do histórico"
+            ]
+          },
+          "exemploPratico": {
+            "facebook": "Página 'Leilões Gracie Recife' com 15 mil seguidores",
+            "publicacao": "Post com fotos do imóvel, descrição, preço e data",
+            "alcance": "2.500 visualizações em 48 horas",
+            "resultado": "Maior interesse de compradores, mais participantes no leilão"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Prazos Obrigatórios de Publicação",
+      "descricao": "Contagem correta de dias entre publicações",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Primeiro Intervalo: 5 Dias Entre Publicações",
+          "tipo": "conteudo",
+          "conteudo": "Deve haver no mínimo 5 dias entre a primeira e segunda publicação do edital. Este intervalo garante que edital tenha tempo para circular e ser conhecido. Contam-se dias corridos (incluindo fins de semana e feriados).",
+          "detalhes": {
+            "regraGeral": "Mínimo 5 dias entre 1ª e 2ª publicação",
+            "contagem": [
+              "Exemplo: Publicação 1 = segunda 10/10",
+              "Mínimo para publicação 2 = sábado 15/10",
+              "São 5 dias: 11, 12, 13, 14, 15"
+            ],
+            "contador": "Contar a partir do dia SEGUINTE à primeira publicação",
+            "diasCorridos": "Incluem sábados, domingos e feriados",
+            "erroComum": "Muitos contam só dias úteis - ERRADO",
+            "normaLegal": "Art. 887 CPC exige intervalo mínimo"
+          },
+          "tabelaExemplos": [
+            {
+              "primeira": "01/10 (segunda)",
+              "minimo": "06/10 (domingo)",
+              "diasDiferenca": 5,
+              "observacao": "Válido - passa no 6º dia"
+            },
+            {
+              "primeira": "05/10 (sexta)",
+              "minimo": "10/10 (quarta)",
+              "diasDiferenca": 5,
+              "observacao": "Válido - passa no 6º dia"
+            },
+            {
+              "primeira": "08/10 (segunda)",
+              "minimo": "12/10 (sexta)",
+              "diasDiferenca": 4,
+              "observacao": "INVÁLIDO - precisa 5 dias"
+            }
+          ],
+          "exemploPratico": {
+            "leilao": "Imóvel em Olinda",
+            "primeira_Publicacao": "DJ de 15/10/2025 (terça-feira)",
+            "segunda_Publicacao": "DJ de 20/10/2025 (domingo)",
+            "intervalo": "5 dias (16, 17, 18, 19, 20)",
+            "resultado": "Válido - cumpre requisito"
+          }
+        },
+        {
+          "id": 2.2,
+          "titulo": "Segundo Intervalo: 35 Dias Entre Última Publicação e Leilão",
+          "tipo": "conteudo",
+          "conteudo": "ESTE é o prazo mais importante. Depois da ÚLTIMA publicação, deve haver NO MÍNIMO 35 dias até o leilão. Este prazo permite que edital tenha circulação ampla. Não é prorrogável. Se não cumprido, leilão é nulo.",
+          "detalhes": {
+            "regraGeral": "Mínimo 35 dias entre última publicação e data do leilão",
+            "exemplo": "2ª publicação = 20/10. Mínimo para leilão = 24/11 (35º dia)",
+            "contagem": [
+              "Primeiro dia contável: dia SEGUINTE à última publicação",
+              "Contam-se todos os dias (corridos)",
+              "Exemplo prático a seguir"
+            ],
+            "imprescindibilidade": [
+              "JAMAIS pode ser prorrogado",
+              "É prazo imprescindível",
+              "Violação = nulidade insanável"
+            ],
+            "calculo": "Data do leilão = Data 2ª publicação + 35 dias",
+            "normaLegal": "Art. 887 CPC"
+          },
+          "calculadora_Dias": [
+            {
+              "ultima_Publicacao": "01/09",
+              "dia35": "06/10",
+              "leilao_Minimo": "07/10"
+            },
+            {
+              "ultima_Publicacao": "15/11",
+              "dia35": "20/12",
+              "leilao_Minimo": "21/12"
+            },
+            {
+              "ultima_Publicacao": "30/12",
+              "dia35": "03/02/2026",
+              "leilao_Minimo": "04/02/2026"
+            }
+          ],
+          "exemploPratico": {
+            "calendario": "Leilão em Recife",
+            "primeira_Publicacao": "20/09/2025 (sábado) no DJ",
+            "segunda_Publicacao": "25/09/2025 (quinta) no DJ",
+            "intervalo_1": "5 dias (21, 22, 23, 24, 25) - OK",
+            "contagem_Para_Leilao": [
+              "26/09 = dia 1",
+              "27/09 = dia 2",
+              "...",
+              "30/10 = dia 35"
+            ],
+            "leilao_Minimo": "31/10/2025 (sexta)",
+            "leilao_Marcado": "31/10/2025 - VÁLIDO",
+            "resultado": "Cumpre todos os prazos. Leilão é válido."
+          }
+        },
+        {
+          "id": 2.3,
+          "titulo": "Cálculo Integrado: Exemplos Práticos Completos",
+          "tipo": "conteudo",
+          "conteudo": "Exercícios resolvidos de contagem de prazos. Demonstra como contar corretamente os 5 dias entre publicações e 35 dias até leilão. Casos reais.",
+          "detalhes": {
+            "cenario1": {
+              "titulo": "Leilão em Recife - 3 Meses de Antecedência",
+              "primeira_Publicacao": "01/09/2025 (segunda) DJ",
+              "segunda_Publicacao": "06/09/2025 (sábado) DJ",
+              "intervaloPublicacao": "5 dias (02, 03, 04, 05, 06) - VÁLIDO",
+              "contagem_Ate_Leilao": "35 dias de 07/09 até 11/10",
+              "leilao": "12/10/2025 (domingo) - VÁLIDO"
+            },
+            "cenario2": {
+              "titulo": "Leilão em Caruaru - Publicação em Dia Útil",
+              "primeira_Publicacao": "15/10/2025 (quarta) DJ + Jornal",
+              "segunda_Publicacao": "20/10/2025 (segunda) DJ + Jornal",
+              "intervaloPublicacao": "5 dias (16, 17, 18, 19, 20) - VÁLIDO",
+              "contagem_Ate_Leilao": [
+                "21/10 = dia 1",
+                "22/10 = dia 2",
+                "23/10 = dia 3",
+                "...",
+                "24/11 = dia 35"
+              ],
+              "leilao": "25/11/2025 (terça) - VÁLIDO"
+            },
+            "cenario3": {
+              "titulo": "Erro Comum - Publicação Tardia",
+              "primeira_Publicacao": "01/12/2025",
+              "segunda_Publicacao": "06/12/2025",
+              "leilao_Desejado": "20/12/2025",
+              "contagem": "14 dias entre 2ª publ. e leilão",
+              "resultado": "INVÁLIDO - Precisa 35 dias. Leilão deveria ser em 10/01/2026"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Comprovação e Documentação de Publicação",
+      "descricao": "Como guardar evidência de que publicou corretamente",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Documentos Essenciais a Arquivar",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro DEVE guardar comprovação de TODA publicação realizada. Caso edital seja questionado em juízo, leiloeiro precisa provar que cumpriu todos os requisitos de publicação. Falta de documentação pode resultar em nulidade do leilão.",
+          "detalhes": {
+            "documentosObrigatorios": [
+              "1. Comprovante de publicação no DJ (recebo do tribunal)",
+              "2. Cópia completa da edição do DJ com edital",
+              "3. Recorte de jornal (original ou cópia autenticada)",
+              "4. Comprovante de publicação no cartório de distribuição",
+              "5. Screenshot/print do portal TJPE",
+              "6. Screenshots de publicações em redes sociais (datadas)",
+              "7. Edital completo que foi publicado"
+            ],
+            "organizacao": [
+              "Criar pasta específica por leilão",
+              "Nomear: 'PUBLICAÇÕES - Leilão Processo [número]'",
+              "Organizar cronologicamente",
+              "Adicionar datas e assinaturas"
+            ],
+            "guarda": [
+              "Guardará por no mínimo 5 anos",
+              "Em arquivo digital e cópia impressa",
+              "Local seguro e acessível",
+              "Cópia entregue ao tribunal"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Recife - Processo 0000001-15.2023",
+            "pasta": "C:\\Leilões\\2025\\Recife_Proc_0000001",
+            "arquivos": [
+              "Edital-Completo.pdf",
+              "Comprovante-DJ-20-10-2025.pdf",
+              "DJ-Primeira-Publicacao-20-10-2025.pdf",
+              "DJ-Segunda-Publicacao-25-10-2025.pdf",
+              "Jornal-Folha-Pernambuco-20-10-2025.jpg",
+              "Jornal-Folha-Pernambuco-25-10-2025.jpg",
+              "Cartorio-Comprovante-Deposito-26-10-2025.pdf",
+              "Print-Portal-TJPE-26-10-2025.png",
+              "Publicacao-Facebook-20-10-2025.png",
+              "Publicacao-Instagram-21-10-2025.png"
+            ]
+          }
+        },
+        {
+          "id": 3.2,
+          "titulo": "Procedimento de Arquivo Digital",
+          "tipo": "conteudo",
+          "conteudo": "Como organizar digitalmente os comprovantes de publicação. Sistemas modernos permitem busca e recuperação rápida. Importante ter backup em nuvem e local.",
+          "detalhes": {
+            "estruturaFolders": [
+              "Leilões\\[Ano]\\[Cidade]\\[Número do Processo]\\",
+              "├── 01_Edital_Completo\\",
+              "├── 02_Publicacao_DJ\\",
+              "├── 03_Publicacao_Jornal\\",
+              "├── 04_Cartorio\\",
+              "├── 05_Portal_TJPE\\",
+              "├── 06_Redes_Sociais\\",
+              "└── 07_Relatório_Final"
+            ],
+            "nomeArquivos": [
+              "Data em formato: YYYYMMDD",
+              "Descrição clara",
+              "Exemplo: '20251020_DJ_PrimeiraPublicacao.pdf'"
+            ],
+            "backup": [
+              "Cópia em HD local",
+              "Cópia em nuvem (Google Drive, OneDrive)",
+              "Cópia impressa em arquivo físico"
+            ],
+            "rastreabilidade": [
+              "Cada arquivo com data/hora de criação",
+              "Hash de integridade (opcional, mas recomendado)",
+              "Versão do arquivo e identificação de responsável"
+            ]
+          },
+          "exemploPratico": {
+            "projeto": "Leilão em Recife - 31/10/2025",
+            "estrutura_Criada": [
+              "2025/Recife/0000001-15.2023/",
+              "├── 01_Edital/20251015_Edital_Completo.pdf",
+              "├── 02_DJ/20251020_DJ_Comprovante.pdf",
+              "├── 02_DJ/20251020_DJ_Publicacao_Page1.pdf",
+              "├── 02_DJ/20251025_DJ_Publicacao_Page1.pdf",
+              "├── 03_Jornal/20251020_FolhaPE_Recorte.jpg",
+              "├── 03_Jornal/20251025_FolhaPE_Recorte.jpg",
+              "└── Relatório_Publicacao.xlsx"
+            ]
+          }
+        },
+        {
+          "id": 3.3,
+          "titulo": "Teste de Publicação - Verificação Pós Publicação",
+          "tipo": "conteudo",
+          "conteudo": "Depois de publicar, leiloeiro deve VERIFICAR se edital está acessível em todos os meios. Não basta enviar para publicar - tem que confirmar que foi publicado mesmo.",
+          "detalhes": {
+            "checklist": [
+              "1. DJ publicado? Solicitar comprovante ao tribunal",
+              "2. Jornal publicou? Comprar exemplar e verificar",
+              "3. Portal TJPE? Acessar e buscar edital",
+              "4. Cartório tem cópia? Ligar e confirmar",
+              "5. Redes sociais? Posts aparecem quando buscam?"
+            ],
+            "frequencia_Verificacao": [
+              "Dia 1: Logo após publicação no DJ",
+              "Dia 3-5: Verificar jornal saiu",
+              "Dia 7: Verificar portal TJPE",
+              "Dia 14: Última verificação antes do leilão"
+            ],
+            "acoes_Se_Falha": [
+              "Se DJ não publicou: Contato tribunal imediatamente",
+              "Se jornal não saiu: Tentar outro jornal",
+              "Se portal não atualizou: Contato tribunal",
+              "Se cartório não tem: Levar cópias pessoalmente"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Edital publicado 20/10/2025",
+            "dia1": "21/10 - Verifica DJ: PUBLICADO OK",
+            "dia3": "23/10 - Verifica Jornal: PUBLICADO OK",
+            "dia7": "27/10 - Verifica Portal TJPE: PUBLICADO OK",
+            "dia14": "03/11 - Verifica Cartório: CONFIRMADO OK",
+            "resultado": "Todas as publicações em ordem. Leilão seguro."
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Problemas e Soluções em Publicação",
+      "descricao": "Situações comuns de erro",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "DJ Não Publica no Prazo",
+          "tipo": "conteudo",
+          "conteudo": "Muitas vezes o tribunal demora para publicar no DJ. Isto pode prejudicar cronograma. Solução: Contato proativo com tribunal para acelerar.",
+          "detalhes": {
+            "problema": "Tribunal não publica edital no DJ na data prevista",
+            "causas": [
+              "DJ está atrasado (comum em períodos de férias)",
+              "Edital chegou incompleto ao tribunal",
+              "Tribunal está com volume grande de leilões"
+            ],
+            "solucao": [
+              "1. Contatar tribunal 2-3 dias antes",
+              "2. Oferecer auxílio (levar pessoalmente)",
+              "3. Se continuar atrasado, pedir para publicar em jornal",
+              "4. Documentar todo contato realizado"
+            ],
+            "preventivo": [
+              "Enviar edital com 15 dias de antecedência",
+              "Confirmar recebimento",
+              "Fazer acompanhamento periódico"
+            ]
+          },
+          "exemploPratico": {
+            "situacao": "Leilão previsto para 31/10/2025. Edital enviado ao tribunal em 01/09",
+            "problema": "Em 18/09, edital ainda não publicado no DJ",
+            "acao": "Leiloeiro liga para tribunal",
+            "resposta": "DJ só publica em 22/09 (4 dias depois)",
+            "impacto": "Primeira publicação 22/09, segunda 27/09, mínimo leilão 01/11",
+            "resultado": "Leilão é adiado para 01/11 (1 dia depois). Comunica a todos."
+          }
+        },
+        {
+          "id": 4.2,
+          "titulo": "Jornal Recusa Publicação",
+          "tipo": "conteudo",
+          "conteudo": "Raramente, mas pode acontecer jornal recusar publicar edital (falta de espaço, edital muito grande, etc). Solução: Buscar outro jornal imediatamente.",
+          "detalhes": {
+            "situacao": "Jornal de circulação regional recusa publicar edital",
+            "causas": [
+              "Falta de espaço na página",
+              "Edital muito grande",
+              "Já tem muitos leilões na semana",
+              "Questões editoriais"
+            ],
+            "solucao": [
+              "1. Oferecer resumo ao invés de edital completo",
+              "2. Pedir para dividir em 2 edições",
+              "3. Contatar outro jornal de circulação similar",
+              "4. Documentar recusa por escrito"
+            ],
+            "alternativa": [
+              "Se jornal 1 recusa, procurar jornal 2",
+              "Pode publicar em jornais diferentes",
+              "O importante é ter circulação regional"
+            ]
+          },
+          "exemploPratico": {
+            "jornal1": "Jornal do Commércio (primeira opção)",
+            "resposta": "Recusa - 'Edital muito grande, sem espaço'",
+            "acao": "Leiloeiro reduz edital para resumo",
+            "resultado": "Jornal aceita publicar resumo em duas edições",
+            "backup": "Garante publicação com sucesso"
+          }
+        },
+        {
+          "id": 4.3,
+          "titulo": "Erro em Cálculo de Prazos",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro conta dias errado e marca leilão com menos de 35 dias da última publicação. Isto torna leilão nulo.",
+          "detalhes": {
+            "erroComum": [
+              "Contar apenas dias úteis (ERRADO)",
+              "Não contar o dia da publicação",
+              "Calcular de trás para frente incorretamente"
+            ],
+            "impacto": "Leilão é nulo. Toda a realização se perde.",
+            "prevencao": [
+              "Usar calculadora de dias",
+              "Verificar 2 vezes o cálculo",
+              "Consultar tribunal sobre datas"
+            ]
+          },
+          "exemploPratico": {
+            "erroLeiloeiro": "2ª publicação 20/10/2025. Marca leilão para 20/11/2025",
+            "contagem_Feita": "Contou 30 dias (segunda para segunda, apenas dias úteis)",
+            "correto": "Precisa 35 dias, mínimo 24/11/2025",
+            "resultado": "Leilão é nulo. Precisa refazer tudo.",
+            "licao": "Sempre contar dias corridos (inclusive finais de semana)"
+          }
+        }
+      ]
+    }
+  ],
+  "questoesRevisao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o prazo MÍNIMO entre a primeira e segunda publicação do edital?",
+      "opcoes": [
+        "2 dias",
+        "5 dias",
+        "10 dias",
+        "15 dias"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Conforme Art. 887 CPC, o intervalo mínimo entre primeira e segunda publicação é de 5 dias (corridos, incluindo fins de semana)."
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é o prazo MÍNIMO entre a última publicação e a data do leilão?",
+      "opcoes": [
+        "10 dias",
+        "20 dias",
+        "35 dias",
+        "60 dias"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "Art. 887 CPC estabelece prazo mínimo de 35 dias entre a última publicação e a data do leilão. Este prazo é improrrogável."
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é o meio de publicação MAIS IMPORTANTE para validade do leilão?",
+      "opcoes": [
+        "Redes sociais do leiloeiro",
+        "Site do tribunal",
+        "Diário da Justiça",
+        "Jornal regional"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "A publicação no Diário da Justiça é o meio oficial e mais importante. Falta dessa publicação torna o leilão nulo."
+    },
+    {
+      "id": 4,
+      "pergunta": "Se o edital for publicado no DJ e em jornal regional, é obrigatório também publicar no portal TJPE?",
+      "opcoes": [
+        "Não, DJ é suficiente",
+        "Sim, portal TJPE é obrigatório",
+        "Depende da decisão judicial",
+        "Apenas se o bem for superior a R$ 500 mil"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "O portal TJPE é meio obrigatório de publicação. Tribunal deve manter edital acessível no portal para transparência."
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual documento NÃO é essencial arquivar para comprovação de publicação?",
+      "opcoes": [
+        "Comprovante do DJ",
+        "Recorte de jornal",
+        "E-mail de confirmação do tribunal",
+        "Extrato bancário do leiloeiro"
+      ],
+      "respostaCorreta": 3,
+      "explicacao": "Extrato bancário não tem relação com publicação. Documentos essenciais são: comprovante DJ, recorte de jornal, comprovante de publicação em cartório, prints de portal e redes sociais."
+    },
+    {
+      "id": 6,
+      "pergunta": "Como se contam os prazos de publicação?",
+      "opcoes": [
+        "Apenas dias úteis (segunda a sexta)",
+        "Dias corridos (incluindo sábado e domingo)",
+        "Conforme decisão judicial específica",
+        "Dias corridos mais 50%"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Contam-se DIAS CORRIDOS, incluindo sábados, domingos e feriados. Este é o padrão processual estabelecido no CPC."
+    }
+  ],
+  "casosExemplo": [
+    {
+      "id": 1,
+      "titulo": "Leilão com Publicação Impecável",
+      "descricao": "Exemplo de leilão onde publicação foi realizada corretamente em todos os prazos",
+      "leilao": "Imóvel em Recife",
+      "processo": "0000001-15.2023.8.17.1234",
+      "lance": "R$ 200.000,00",
+      "cronograma": [
+        {
+          "evento": "Edital enviado ao tribunal",
+          "data": "01/09/2025",
+          "responsavel": "Leiloeiro"
+        },
+        {
+          "evento": "1ª Publicação - Diário da Justiça",
+          "data": "10/09/2025",
+          "meios": ["Diário de Justiça", "Jornal do Commércio", "Portal TJPE", "Facebook Leilões Gracie"]
+        },
+        {
+          "evento": "2ª Publicação - Diário da Justiça",
+          "data": "15/09/2025",
+          "intervalo": "5 dias após primeira (10, 11, 12, 13, 14, 15)",
+          "meios": ["Diário de Justiça", "Jornal do Commércio", "Instagram"]
+        },
+        {
+          "evento": "Cálculo de prazos",
+          "data": "15/09/2025",
+          "contagem": "35 dias de 16/09 até 20/10",
+          "minimo_Leilao": "21/10/2025"
+        },
+        {
+          "evento": "Leilão realizado",
+          "data": "31/10/2025",
+          "resultado": "Dentro do prazo. Publicação VÁLIDA."
+        }
+      ],
+      "documentacao": "Todos os comprovantes arquivados corretamente"
+    },
+    {
+      "id": 2,
+      "titulo": "Leilão com Erro de Prazo - Nulidade",
+      "descricao": "Exemplo de como um erro em cálculo de prazo resultou em nulidade",
+      "leilao": "Imóvel em Caruaru",
+      "processo": "0000002-15.2023.8.17.5678",
+      "problema": "2ª publicação em 05/10/2025. Leiloeiro marca para 20/10/2025",
+      "contagem_Incorreta": "Apenas 15 dias (segundo contagem errada do leiloeiro)",
+      "contagem_Correta": "Precisa 35 dias, mínimo 09/11/2025",
+      "data_Leilao": "20/10/2025",
+      "resultado": "Leilão é realizado com sucesso, mas comprador impugna",
+      "decisao_Juiz": "Leilão é NULO por falta de prazo mínimo",
+      "consequencia": [
+        "Lance inteiro perdido",
+        "Caução é devolvida ao comprador",
+        "Bem precisa ir para novo leilão",
+        "Leiloeiro pode ser responsabilizado"
+      ],
+      "licao": "Sempre contar 35 DIAS CORRIDOS após última publicação"
+    }
+  ],
+  "recursos": {
+    "legislacao": [
+      {
+        "titulo": "Art. 887 do CPC",
+        "descricao": "Prazos de publicação de edital de leilão"
+      },
+      {
+        "titulo": "Art. 888 do CPC",
+        "descricao": "Conteúdo do edital"
+      },
+      {
+        "titulo": "Lei 9.492/97",
+        "descricao": "Lei que regula leiloeiro oficial"
+      }
+    ],
+    "links": [
+      "https://www.tjpe.jus.br - Portal TJPE",
+      "https://www.cnj.jus.br - CNJ",
+      "https://www.planalto.gov.br - Legislação Federal"
+    ],
+    "ferramentas": [
+      "Calculadora de dias online",
+      "Excel com fórmula de dias",
+      "Calendário perpetual de 35 dias"
+    ]
+  }
+}

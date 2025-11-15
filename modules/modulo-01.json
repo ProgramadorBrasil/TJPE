@@ -1,0 +1,354 @@
+{
+  "id": 1,
+  "titulo": "Fundamentos Legais do Leilão Judicial",
+  "descricao": "Base legal: CPC, Lei 9.514/97 e CTN",
+  "duracao": "45min",
+  "icone": "⚖️",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender a base legal dos leilões judiciais",
+    "Diferenciar tipos de execução judicial",
+    "Aplicar normas do CPC e Lei 9.514/97",
+    "Identificar responsabilidades legais"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "VÍCIO INSANÁVEL",
+      "conteudo": "Omissão de edital ou impugnação não levada ao juiz pode anular todo o leilão. Documentação perfeita é essencial.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "JURISPRUDÊNCIA RECENTE",
+      "conteudo": "STJ tema 1.134/2024: Débitos de condomínio devem ser pagos pelo arrematante mesmo em leilão com não exclusão.",
+      "icone": "⚖️"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "PRAZOS IMPRORROGÁVEIS",
+      "conteudo": "Todos os prazos processuais são improrrogáveis. Perder prazos pode gerar nulidade do procedimento.",
+      "icone": "⏰"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Fundamento Constitucional e Legal",
+      "descricao": "Base legal para execução e leilão de bens",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Constituição Federal - Art. 5º e Art. 170",
+          "tipo": "conteudo",
+          "conteudo": "A Constituição Federal garante o direito de propriedade com função social. O processo de execução judicial segue princípios constitucionais de devido processo legal. Art. 5º assegura acesso à justiça, e Art. 170 estabelece princípios da ordem econômica.",
+          "detalhes": {
+            "principios": [
+              "Direito de propriedade não é absoluto",
+              "Função social da propriedade",
+              "Devido processo legal",
+              "Acesso à justiça"
+            ],
+            "implicacoes": [
+              "Leilão deve seguir procedimento regulado",
+              "Deve preservar direitos do devedor",
+              "Transparência e publicidade obrigatórias",
+              "Recurso a tribunais garantido"
+            ]
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Código de Processo Civil - Livro II (Execução)",
+          "tipo": "conteudo",
+          "conteudo": "O CPC, em vigor desde janeiro de 2016, reformulou completamente o sistema de execução. Os artigos 824 a 897 tratam especificamente do leilão de bens de forma detalhada e estruturada.",
+          "destaques": {
+            "artigos_principais": [
+              "Art. 824: Conceito de leilão",
+              "Art. 825-826: Precondições",
+              "Art. 827-828: Publicidade e edital",
+              "Art. 829: Avaliação de bens",
+              "Art. 835-845: Realização do leilão",
+              "Art. 850: Não arrematação",
+              "Art. 880-897: Procedimentos complementares"
+            ],
+            "inovacoes_cpc2015": [
+              "Edital eletrônico permitido",
+              "Prazos reduzidos em alguns casos",
+              "Maior flexibilidade no pagamento",
+              "Sistema de intimação mais moderno"
+            ]
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Lei 9.514/97 - Alienação Fiduciária",
+          "tipo": "conteudo",
+          "conteudo": "Especialmente importante para leilões de imóveis financiados. Define procedimentos acelerados para leilão de bem constituído em garantia por alienação fiduciária. Procedimento mais célere que execução comum.",
+          "aspectos": {
+            "caracteristicas": [
+              "Aplicável a bens imóveis financiados",
+              "Procedimento mais rápido",
+              "Intimação simplificada",
+              "Prazos menores"
+            ],
+            "procedimento": [
+              "Notificação do devedor (10 dias)",
+              "Se inadimplência, edital de 20 dias",
+              "Realização em até 30 dias após edital",
+              "Registro de arrematação em 2 dias"
+            ],
+            "diferencas": "Mais ágil que execução comum no CPC"
+          }
+        },
+        {
+          "id": 1.4,
+          "titulo": "Código Tributário Nacional - Art. 130",
+          "tipo": "conteudo",
+          "conteudo": "CTN estabelece regime de responsabilidade tributária do arrematante. É Lei Complementar federal com hierarquia máxima. Art. 130 define responsabilidade solidária do arrematante por débitos tributários anteriores.",
+          "topicos_essenciais": {
+            "responsabilidade_tributaria": "Arrematante responde solidariamente por débitos inscritos em dívida ativa",
+            "avisos_legais": [
+              "Deve constar no edital menção a possível responsabilidade",
+              "Arrematante pode requerer certidão negativa antes",
+              "Responsabilidade apenas por débitos inscritos",
+              "Estende-se a ICMS, IPTU, ITBI e outros"
+            ],
+            "jurisprudencia": "STJ consolidou que não há exclusão automática de débitos em leilões judiciais"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Tipos de Execução e Competência",
+      "descricao": "Diferentes modalidades de processo executório",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Execução Comum (Arts. 824-902 CPC)",
+          "tipo": "conteudo",
+          "conteudo": "Procedimento padrão para execução de sentença condenatória, título extrajudicial e outras modalidades de execução. Segue procedimento mais longo mas com maior segurança jurídica.",
+          "procedimento": [
+            "Petição inicial de execução",
+            "Intimação do devedor (12 dias para pagar)",
+            "Se não pagar, penhora de bens",
+            "Avaliação dos bens penhorados",
+            "Edital de leilão (mínimo 30 dias)",
+            "Realização do leilão",
+            "Registro da arrematação"
+          ],
+          "prazo_total": "Mínimo 3 a 4 meses"
+        },
+        {
+          "id": 2.2,
+          "titulo": "Execução de Título Extrajudicial",
+          "tipo": "conteudo",
+          "conteudo": "Para títulos como letras de câmbio, notas promissórias, duplicatas, cheques, contratos registrados. Documentos que têm força executiva própria sem necessidade de sentença prévia.",
+          "documentos_executivos": [
+            "Letras de câmbio e notas promissórias",
+            "Duplicatas (comercial e de serviços)",
+            "Cheques",
+            "Títulos de crédito em geral",
+            "Contratos registrados em cartório",
+            "Cédula de crédito bancário"
+          ],
+          "vantagens": "Mais rápido que execução de sentença; menor formalismo",
+          "precaucoes": "Deve-se verificar validade formal do título"
+        },
+        {
+          "id": 2.3,
+          "titulo": "Execução de Débito Fiscal",
+          "tipo": "conteudo",
+          "conteudo": "Procedimento especial para débitos de tributos inscritos em dívida ativa. Feita pela Fazenda Pública (Federal, Estadual ou Municipal). Procedimento mais célere que execução comum.",
+          "caracteristicas": [
+            "Presunção de liquidez e certeza",
+            "Não admite embargos à execução (na maioria dos casos)",
+            "Prazos reduzidos",
+            "Pode resultar em leilão rápido"
+          ],
+          "importante": "Frequentemente gera leilões de imóvel com débito fiscal remanescente"
+        },
+        {
+          "id": 2.4,
+          "titulo": "Execução Hipotecária e Fiduciária",
+          "tipo": "conteudo",
+          "conteudo": "Procedimento especial (Lei 9.514/97) para alienação fiduciária ou hipoteca. Mais rápido que execução comum. Permite venda extrajudicial em caso de alienação fiduciária.",
+          "procedimentos": [
+            "Notificação do devedor",
+            "Período de espera",
+            "Edital reduzido",
+            "Leilão acelerado"
+          ],
+          "prazos": "Total de aproximadamente 60-90 dias",
+          "nota": "Lei 9.514 permite até venda extrajudicial em certos casos"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Princípios Fundamentais e Responsabilidades",
+      "descricao": "Princípios que norteiam o leilão judicial",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Princípios do Processo Civil Executório",
+          "tipo": "conteudo",
+          "conteudo": "Os princípios fundamentais do CPC aplicam-se a toda execução: due process, contraditório, amplitude de defesa, publicidade, motivação, e outros.",
+          "principios": {
+            "efetividade": "Execução deve alcançar resultado prático máximo",
+            "proporcionalidade": "Medidas adequadas para alcançar objetivo",
+            "contraditório": "Devedor tem direito de defesa em todas as fases",
+            "publicidade": "Todos os atos devem ser públicos",
+            "cooperacao": "Partes devem colaborar para eficiência",
+            "economia": "Redução de custos e tempo sempre que possível"
+          }
+        },
+        {
+          "id": 3.2,
+          "titulo": "Responsabilidade do Leiloeiro Oficial",
+          "tipo": "conteudo",
+          "conteudo": "O leiloeiro oficial é oficial de justiça autorizado. Tem responsabilidades civis, criminais e administrativas. Deve agir com neutralidade, imparcialidade e rigor técnico.",
+          "responsabilidades": {
+            "civil": "Responde por danos causados por negligência, imperícia ou imprudência",
+            "penal": "Pode responder por crime se agir com dolo ou culpa grave",
+            "administrativa": "JUCEPE pode abrir processo administrativo e cassar matrícula",
+            "disciplinar": "Órgão de classe (OAB para advogados associados) pode sancionar"
+          },
+          "precaucoes": [
+            "Documentar tudo detalhadamente",
+            "Seguir rigorosamente procedimentos legais",
+            "Manter sigilo de informações",
+            "Agir com imparcialidade total",
+            "Obter seguros profissionais adequados"
+          ]
+        },
+        {
+          "id": 3.3,
+          "titulo": "Responsabilidade do Arrematante",
+          "tipo": "conteudo",
+          "conteudo": "Após arrematação, o arrematante tem direitos (transmissão de propriedade) e deveres (pagar valor, assumir certos débitos). Responsabilidades bem definidas na lei.",
+          "direitos": [
+            "Propriedade plena do bem após registro",
+            "Direito de recurso contra decisão",
+            "Poder de venda posterior"
+          ],
+          "deveres": [
+            "Pagar integralmente valor arrematado",
+            "Assumir débito de condomínio (STJ tema 1.134)",
+            "Pode assumir responsabilidade tributária",
+            "Cumprir prazos de pagamento"
+          ],
+          "alerta": "Deve conhecer bem o edital antes de participar. Arrematação é contrato perfeito e acabado."
+        },
+        {
+          "id": 3.4,
+          "titulo": "Responsabilidade do Juiz Executor",
+          "tipo": "conteudo",
+          "conteudo": "O magistrado tem papel crucial na supervisão de toda execução. Deve garantir legalidade, imparcialidade e eficácia. Responde por violações graves de dever funcional.",
+          "atribuicoes": [
+            "Autorizar e supervisionar leilão",
+            "Julgar embargos à execução",
+            "Validar resultado do leilão",
+            "Expedir carta de arrematação"
+          ],
+          "responsabilidades": "Por erro manifesto que cause dano irreparável",
+          "importante": "Juiz pode anular todo leilão se houver vício insanável"
+        }
+      ]
+    }
+  ],
+  "linksOficiais": [
+    {
+      "titulo": "Código de Processo Civil",
+      "url": "http://www.planalto.gov.br/ccivil_03/codigo/cpcs.htm",
+      "tipo": "legislacao",
+      "descricao": "Lei 13.105/2015 - Código de Processo Civil completo"
+    },
+    {
+      "titulo": "Lei 9.514/97 - Alienação Fiduciária",
+      "url": "http://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+      "tipo": "legislacao",
+      "descricao": "Lei que regulamenta alienação fiduciária de imóvel"
+    },
+    {
+      "titulo": "Código Tributário Nacional",
+      "url": "http://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm",
+      "tipo": "legislacao",
+      "descricao": "Lei Complementar 5.172/66 - Código Tributário Nacional"
+    },
+    {
+      "titulo": "TJPE - Tribunal de Justiça PE",
+      "url": "https://www.tjpe.jus.br",
+      "tipo": "instituicao",
+      "descricao": "Portal oficial do Tribunal de Justiça de Pernambuco"
+    },
+    {
+      "titulo": "STJ - Jurisprudência",
+      "url": "https://www.stj.jus.br",
+      "tipo": "instituicao",
+      "descricao": "Superior Tribunal de Justiça - Jurisprudência do tema 1.134"
+    },
+    {
+      "titulo": "CNJ - Conselho Nacional de Justiça",
+      "url": "https://www.cnj.jus.br",
+      "tipo": "instituicao",
+      "descricao": "Resoluções e normas sobre execução"
+    }
+  ],
+  "casosJurisprudenciais": [
+    {
+      "titulo": "STJ tema 1.134/2024 - Débitos Condominiais",
+      "descricao": "Arrematante em leilão judicial é responsável por débitos de condomínio mesmo com exclusão de passivos",
+      "jurisprudencia": "Súmula vinculante do STJ",
+      "implicacao": "Deve constar no edital; afeta valor do bem"
+    },
+    {
+      "titulo": "Nulidade por Vício de Edital",
+      "descricao": "Omissão de informação essencial no edital pode ensejar nulidade de toda arrematação",
+      "jurisprudencia": "Pacífico na jurisprudência",
+      "implicacao": "Documentação perfeita é fundamental"
+    }
+  ],
+  "resumoCapitulo": "Este módulo apresenta a base legal inviolável para leilões judiciais. O leiloeiro oficial deve conhecer perfeitamente o CPC, especialmente livro II, a Lei 9.514/97 para leilões de imóveis financiados, e o CTN para responsabilidades tributárias. A responsabilidade legal é pessoal e grave - erros podem gerar nulidade de todo o processo, indenizações e problemas administrativos. O conhecimento jurídico profundo é diferencial de um leiloeiro excelente.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o fundamento constitucional para leilões judiciais?",
+      "opcoes": [
+        "Art. 5º e Art. 170 CF",
+        "Art. 20 CF",
+        "Art. 150 CF",
+        "Art. 200 CF"
+      ],
+      "resposta": 0,
+      "explicacao": "Art. 5º garante acesso à justiça e due process; Art. 170 estabelece princípios da ordem econômica"
+    },
+    {
+      "id": 2,
+      "pergunta": "Em leilão sob Lei 9.514/97, qual é o prazo total máximo para alienação fiduciária?",
+      "opcoes": [
+        "30 dias",
+        "60-90 dias",
+        "6 meses",
+        "1 ano"
+      ],
+      "resposta": 1,
+      "explicacao": "Lei 9.514/97 permite procedimento acelerado com total de 60-90 dias aproximadamente"
+    },
+    {
+      "id": 3,
+      "pergunta": "Segundo STJ tema 1.134/2024, quem paga débito de condomínio em leilão judicial?",
+      "opcoes": [
+        "Sempre o devedor original",
+        "O arrematante, mesmo com exclusão de passivos",
+        "Nunca o arrematante",
+        "O juiz em decisão caso a caso"
+      ],
+      "resposta": 1,
+      "explicacao": "Súmula vinculante: arrematante responde por débito condominial independente de edital"
+    }
+  ]
+}

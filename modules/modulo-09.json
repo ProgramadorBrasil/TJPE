@@ -1,0 +1,770 @@
+{
+  "id": 9,
+  "titulo": "Procedimentos Pós-Leilão",
+  "descricao": "Auto, carta de arrematação e imissão na posse",
+  "duracao": "40min",
+  "icone": "✅",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender os procedimentos imediatamente após leilão",
+    "Redigir corretamente o Auto de Arrematação (ACT)",
+    "Emitir Carta de Arrematação com requisitos legais",
+    "Processar imissão na posse do bem",
+    "Transferir documentos e responsabilidades ao arrematante",
+    "Cumprir com relatórios e documentação final"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "ACT DEVE SER ASSINADO NO MESMO DIA DO LEILÃO",
+      "conteudo": "Auto de Arrematação é documento fundamental. Deve ser assinado pelo leiloeiro, juiz (se possível) e arrematante NO MESMO DIA do leilão. Não pode ser adiado.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "CARTA DE ARREMATAÇÃO NÃO TRANSFERE DOMÍNIO",
+      "conteudo": "Carta de Arrematação comprova o direito do arrematante, mas apenas a sentença de imissão na posse pode transferir a posse. Document são diferentes com funções distintas.",
+      "icone": "📜"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "PRAZOS PARA IMISSÃO NA POSSE",
+      "conteudo": "Arrematante deve requerer imissão na posse dentro de 30 dias após assinatura do ACT. Prazo prorrogável. Se perder prazo, pode levar anos para conseguir posse.",
+      "icone": "⏰"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "DOCUMENTAÇÃO AO CARTÓRIO",
+      "conteudo": "Leiloeiro deve enviar cópia do ACT e Carta de Arrematação ao cartório de registro imobiliário IMEDIATAMENTE para que arrematante possa registrar o bem. Demora prejudica comprador.",
+      "icone": "📋"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Auto de Arrematação (ACT) - Documento Fundamental",
+      "descricao": "Documento que prova a arrematação",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "O que é Auto de Arrematação",
+          "tipo": "conteudo",
+          "conteudo": "Documento oficial que prova que bem foi leiloado e arrematado. Assinado pelo leiloeiro logo após encerramento do leilão. É o primeiro comprovante de direito do arrematante sobre o bem. Sem ACT, não há prova da arrematação.",
+          "detalhes": {
+            "significado": "AUTO = documento oficial que prova um ato realizado",
+            "data": "MESMA DATA DO LEILÃO",
+            "assinantes": [
+              "Leiloeiro (obrigatório)",
+              "Juiz (quando possível)",
+              "Arrematante (obrigatório)",
+              "Terceiros (testemunhas, se houver)"
+            ],
+            "natureza": [
+              "Documento cartorial",
+              "Prova do direito de propriedade",
+              "Base para obtenção de posse",
+              "Comprovante para registro imobiliário"
+            ],
+            "importancia": [
+              "Único documento que prova arrematação",
+              "Perdido o ACT, arrematante fica sem prova",
+              "Deve ser arquivado com segurança"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "31/10/2025 - Imóvel em Recife",
+            "lanceVencedor": "João da Silva - R$ 250.000,00",
+            "act_Assinado": "Mesmo dia 31/10/2025",
+            "assinaturas": [
+              "Renato Gracie (Leiloeiro)",
+              "Juiz da Execução",
+              "João da Silva (Arrematante)"
+            ],
+            "resultado": "ACT é prova oficial da arrematação"
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Elementos Obrigatórios do ACT",
+          "tipo": "conteudo",
+          "conteudo": "Auto de Arrematação deve conter todos os dados do leilão, bem e comprador. Qualquer omissão pode resultar em nulidade. Lista completa de elementos exigidos.",
+          "detalhes": {
+            "dataeHora": [
+              "Data exata do leilão",
+              "Hora de início e término",
+              "Dia da semana"
+            ],
+            "localLeilao": [
+              "Endereço completo do local",
+              "Sala/número da sala",
+              "Cidade e estado"
+            ],
+            "descricaoBem": [
+              "Tipo de bem (imóvel, veículo, etc)",
+              "Localização completa",
+              "Matrícula/registro (se houver)",
+              "Dimensões e características",
+              "Benfeitorias relevantes"
+            ],
+            "dadosLeilao": [
+              "Número do processo judicial",
+              "Número da execução",
+              "Tipo de execução (hipotecária, por dívida, etc)",
+              "Nome do exequente (credor)"
+            ],
+            "lanceVencedor": [
+              "Valor do lance",
+              "Identificação do vencedor",
+              "CPF/CNPJ do vencedor",
+              "Endereço do vencedor"
+            ],
+            "condicoes": [
+              "Forma e prazo de pagamento",
+              "Encargos incidentes",
+              "Condições especiais (se houver)",
+              "Documentos entregues"
+            ],
+            "assinaturas": [
+              "Leiloeiro",
+              "Juiz (quando presente)",
+              "Arrematante",
+              "Testemunhas (se houver)"
+            ],
+            "observacoes": [
+              "Notas sobre bens no imóvel",
+              "Problemas encontrados",
+              "Condições de acesso"
+            ]
+          },
+          "modeloResumido": {
+            "titulo": "AUTO DE ARREMATAÇÃO",
+            "corpo": "Aos [DIA] dias do mês de [MÊS] de [ANO], no horário de [HORA] a [HORA], compareci no [LOCAL DO LEILÃO], na qualidade de Leiloeiro Oficial JUCEPE nº [número], a fim de proceder o leilão do bem a seguir descrito, relativo ao processo nº [número], sendo as partes: exequente [nome], e executado [nome], com renda no Cartório de [cartório]. Realizei a hasta pública, onde compareceram [descrição de participantes], tendo sido [descrição bem] arrematado por [nome arrematante], CPF [número], residente à [endereço], pelo valor de R$ [valor], que passou a ser proprietário do bem acima descrito, de acordo com as disposições do Código de Processo Civil. Para prova do que foi supra dito, assinei o presente [data]. [Assinaturas]"
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Recife - 31/10/2025",
+            "bem": "Casa térrea, rua das Flores nº 123, Recife/PE",
+            "processo": "0000001-15.2023.8.17.1234",
+            "exequente": "Banco do Brasil S.A.",
+            "executado": "José dos Santos",
+            "arrematante": "João da Silva, CPF 123.456.789-00",
+            "lance": "R$ 250.000,00",
+            "assinaturas": "Leiloeiro, Juiz, Arrematante"
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Assinatura do ACT - Procedimento Correto",
+          "tipo": "conteudo",
+          "conteudo": "Procedimento de assinatura do ACT deve ser rigoroso. Todos os assinantes devem estar presentes. Documento deve ser assinado em tinta e guardado adequadamente.",
+          "detalhes": {
+            "quandoAssinar": [
+              "IMEDIATAMENTE após encerramento do leilão",
+              "Ainda no local, na presença de todos",
+              "Antes de qualquer outra ação"
+            ],
+            "quemAssina": [
+              "1. Leiloeiro (obrigatório)",
+              "2. Juiz ou representante do tribunal (ideal)",
+              "3. Arrematante (obrigatório)",
+              "4. Testemunhas (quando necessário)"
+            ],
+            "procedimento": [
+              "1. Leiloeiro redige ACT no local ou previamente",
+              "2. Apresenta a cada assinante para conferência",
+              "3. Cada pessoa lê e assina",
+              "4. Todas as assinaturas em tinta azul (não preta)",
+              "5. Identifica-se cada assinante (nome por extenso)",
+              "6. Guarda em local seguro"
+            ],
+            "cuidados": [
+              "Não deixar em branco nenhuma linha",
+              "Não permitir rasuras sem iniciais",
+              "Verificar que todos entenderam",
+              "Guardar cópia para cada parte interessada"
+            ]
+          },
+          "exemploPratico": {
+            "local": "Sala de leilões do tribunal - 31/10/2025",
+            "hora": "14:30 (término do leilão)",
+            "processo": [
+              "14:30 - Leiloeiro redige ACT",
+              "14:45 - Apresenta a juiz para conferência",
+              "15:00 - Juiz assina",
+              "15:05 - Arrematante confere e assina",
+              "15:10 - Leiloeiro assina",
+              "15:15 - Cópias tiradas para todas as partes"
+            ],
+            "resultado": "ACT assinado e documentado no mesmo dia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Carta de Arrematação - Prova de Direitos",
+      "descricao": "Documento que comprova direitos do arrematante",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "O que é Carta de Arrematação",
+          "tipo": "conteudo",
+          "conteudo": "Documento emitido pelo leiloeiro que certifica que pessoa foi arrematante do bem em leilão judicial. Serve como comprovante oficial do direito de propriedade. Diferente do ACT - ACT prova o ato do leilão, Carta prova o direito de propriedade.",
+          "detalhes": {
+            "natureza": [
+              "Documento de fé pública",
+              "Emitido pelo leiloeiro oficial",
+              "Prova de propriedade do bem",
+              "Necessário para registro imobiliário"
+            ],
+            "diferenca_ACT": {
+              "ACT": "Prova que leilão aconteceu e bem foi arrematado",
+              "Carta": "Prova que arrematante é proprietário do bem"
+            },
+            "utilidade": [
+              "Registro de imóvel no cartório",
+              "Prova de propriedade",
+              "Comprovante para banco (financiamento)",
+              "Documento oficial e intransferível"
+            ],
+            "validade": "Permanente - não vence nunca"
+          },
+          "exemploPratico": {
+            "cenario": "João arrematou imóvel por R$ 250 mil",
+            "ato": "ACT prova que leilão aconteceu",
+            "direito": "Carta de Arrematação prova que João é dono"
+          }
+        },
+        {
+          "id": 2.2,
+          "titulo": "Redação da Carta de Arrematação",
+          "tipo": "conteudo",
+          "conteudo": "Documento formal que deve ser redigido conforme normas de cartório. Contém dados do bem, processo, arrematante e lance. Assinado e selado pelo leiloeiro.",
+          "detalhes": {
+            "formatacao": [
+              "Papel timbrado do leiloeiro",
+              "Número sequencial (cada leilão tem número)",
+              "Data de emissão",
+              "Assinatura do leiloeiro",
+              "Selo de autenticidade"
+            ],
+            "conteudoPrincipal": [
+              "Certifico que [nome do arrematante], [CPF], residente à [endereço], foi o arrematante do bem...",
+              "No leilão realizado em [data] pela execução nº [número], relativo ao processo nº [número]",
+              "O bem arrematado é: [descrição completa]",
+              "Lance vencedor: R$ [valor]",
+              "Valor pago: R$ [valor]",
+              "Data do pagamento: [data]",
+              "Forma de pagamento: [à vista / parcelado]"
+            ],
+            "assinatura": [
+              "Leiloeiro oficial",
+              "Data",
+              "Número de registro no CNJ"
+            ]
+          },
+          "modeloCompleto": {
+            "titulo": "CARTA DE ARREMATAÇÃO",
+            "texto": "CERTIFICO, em conformidade com a Lei 9.492/97, que [Nome Completo do Arrematante], portador(a) de CPF nº [número], residente e domiciliado(a) à [Endereço Completo], foi o arrematante do bem adiante descrito, no leilão realizado em [data], na presente comarca de [comarca], relativo à ação de execução/processo nº [número], através deste Cartório de Leilões. O bem arrematado foi: [Descrição Completa do Bem] Matrícula/Registro: [número], localizado à [endereço]. Lance vencedor: R$ [valor]. Valor pago: R$ [valor], em [forma de pagamento], na data de [data]. O(a) arrematante é agora proprietário(a) do acima descrito bem, conforme disposições do Código de Processo Civil. Para constar, lavrei a presente Carta. [Local e data]. [Assinatura do Leiloeiro]. [Carimbo do Cartório]."
+          },
+          "exemploPratico": {
+            "leilao": "Recife, 31/10/2025",
+            "arrematante": "João da Silva, CPF 123.456.789-00",
+            "bem": "Casa térrea, rua das Flores nº 123, Recife/PE",
+            "lance": "R$ 250.000,00",
+            "pagamento": "À vista em cheque administrativo"
+          }
+        },
+        {
+          "id": 2.3,
+          "titulo": "Entrega da Carta ao Arrematante",
+          "tipo": "conteudo",
+          "conteudo": "Carta deve ser entregue ao arrematante IMEDIATAMENTE após pagamento ou assinatura do ACT. Arrematante precisa da Carta para fazer registro no cartório.",
+          "detalhes": {
+            "timing": [
+              "Preferencialmente no mesmo dia do leilão",
+              "No máximo em 24 horas",
+              "Não pode demorar para não prejudicar comprador"
+            ],
+            "procedimento": [
+              "1. Leiloeiro redige Carta",
+              "2. Assina e sela",
+              "3. Entrega pessoalmente ao arrematante",
+              "4. Obtém recibo de entrega",
+              "5. Cópia guardada no arquivo"
+            ],
+            "comprovacao": [
+              "Recibo assinado pelo arrematante",
+              "Data de entrega registrada",
+              "Cópia no processo"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "31/10/2025",
+            "pagamento": "Mesmo dia - 16:00 (cheque)",
+            "carta_Emitida": "31/10/2025 - 16:30",
+            "entrega": "31/10/2025 - 17:00 (pessoal ao arrematante)",
+            "recibo": "Arrematante assina recibo de entrega"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Imissão na Posse - Procedimento Judicial",
+      "descricao": "Como arrematante obtém posse do bem",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "O que é Imissão na Posse",
+          "tipo": "conteudo",
+          "conteudo": "Ato judicial através do qual juiz ordena que bem seja entregue ao arrematante. Não é automático - arrematante deve requerer ao juiz. Sem imissão na posse, arrematante é proprietário mas não tem posse (situação incômoda).",
+          "detalhes": {
+            "conceito": [
+              "Propriedade: direito de possuir e dispor do bem",
+              "Posse: ocupação efetiva do bem",
+              "Imissão: transferência judicial da posse"
+            ],
+            "necessidade": [
+              "Se bem está vazio ou desocupado: normalmente sem problema",
+              "Se bem tem pessoa morando: precisa imissão para desocupar",
+              "Se bem tem benfeitoria de terceiro: precisa procedimento especial"
+            ],
+            "competencia": [
+              "Juiz que presidiu a execução",
+              "Juízo da execução mantém competência"
+            ],
+            "resultado": [
+              "Ordem judicial para entregar bem",
+              "Oficial de justiça executa a ordem",
+              "Bem é entregue ao arrematante"
+            ]
+          },
+          "exemploPratico": {
+            "situacao": "João arrematou casa onde família mora",
+            "propriedade": "João é agora proprietário da casa",
+            "problema": "Família ainda mora na casa",
+            "solucao": "João requer imissão na posse",
+            "resultado": "Juiz ordena desocupação e entrega ao João"
+          }
+        },
+        {
+          "id": 3.2,
+          "titulo": "Procedimento para Obter Imissão na Posse",
+          "tipo": "conteudo",
+          "conteudo": "Arrematante deve requerer ao juiz. Processo é relativamente simples mas exige documentação correta. Apresentam-se ACT e Carta de Arrematação como prova.",
+          "detalhes": {
+            "prazo": [
+              "Arrematante tem 30 dias após ACT",
+              "Prazo é prorrogável por decisão judicial",
+              "Se perder prazo, pode requerer mesmo assim (mais lento)"
+            ],
+            "documentosNecessarios": [
+              "1. Auto de Arrematação (ACT) original",
+              "2. Carta de Arrematação",
+              "3. Comprovante de pagamento do lance",
+              "4. Identificação do arrematante (RG/CPF)",
+              "5. Comprovante de residência (se necessário)"
+            ],
+            "requerimento": [
+              "Pode ser simples, sem advogado (em alguns casos)",
+              "Melhor com advogado ou com ajuda do tribunal",
+              "Dirigido ao juiz da execução",
+              "Solicitação clara de imissão"
+            ],
+            "processamento": [
+              "1. Arrematante protocola requerimento",
+              "2. Juiz analisa documentação",
+              "3. Se tudo OK, expede mandado",
+              "4. Oficial de justiça executa mandado",
+              "5. Bem é entregue ao arrematante"
+            ],
+            "prazoExecucao": [
+              "Mandado tem validade de 6 meses",
+              "Oficial executa no prazo marcado",
+              "Se houver recusa: pode usar força policial"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "31/10/2025 - João arrematou casa",
+            "act_Assinado": "31/10/2025",
+            "prazo_Imissao": "Até 30/11/2025 (30 dias)",
+            "acao": "05/11/2025 - João protocola requerimento de imissão",
+            "decisao": "08/11/2025 - Juiz aprova e expede mandado",
+            "execucao": "15/11/2025 - Oficial executa mandado",
+            "resultado": "Casa é entregue a João - hoje é proprietário E possuidor"
+          }
+        },
+        {
+          "id": 3.3,
+          "titulo": "Desocupação Compulsória - Quando há Recusa",
+          "tipo": "conteudo",
+          "conteudo": "Se pessoa no imóvel recusa desocupar, oficial pode usar força com apoio de polícia. Procedimento deve ser documentado. Evitar confrontos - sempre tentar negociação primeiro.",
+          "detalhes": {
+            "situacao": "Pessoa recusa sair do imóvel após arrematação",
+            "procedimento": [
+              "1. Oficial apresenta mandado",
+              "2. Ler mandado e exigir saída voluntária",
+              "3. Dar prazo (geralmente 24h)",
+              "4. Se recusa: chamar polícia",
+              "5. Polícia auxilia na desocupação"
+            ],
+            "responsabilidade": [
+              "Custos da desocupação: geralmente do arrematante",
+              "Segurança: responsabilidade de polícia",
+              "Documentação: oficial faz relatório"
+            ],
+            "cuidados": [
+              "Evitar violência",
+              "Respeitar dignidade da pessoa",
+              "Se há bens do ocupante: prazo para remover",
+              "Documentar tudo"
+            ]
+          },
+          "exemploPratico": {
+            "situacao": "Casa arrematada, família recusa sair",
+            "mandado": "Expedido em 08/11/2025",
+            "data_Execucao": "15/11/2025",
+            "oficial": "Apresenta mandado à família",
+            "resposta": "Família diz 'não vamos sair'",
+            "acao": "Oficial chama polícia",
+            "resultado": "Polícia auxilia na desocupação - Família é retirada da casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Documentação Final e Registro Imobiliário",
+      "descricao": "Procedimentos para transferência de propriedade",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Envio de Documentação ao Cartório de Registro Imobiliário",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro deve enviar cópia do ACT e Carta de Arrematação ao cartório de registros imobiliários IMEDIATAMENTE para que arrematante possa registrar bem em seu nome.",
+          "detalhes": {
+            "documentosAEnviar": [
+              "1. Cópia autenticada do ACT",
+              "2. Carta de Arrematação",
+              "3. Cópia da sentença de execução",
+              "4. Documentação do bem (matrícula, descrição)"
+            ],
+            "para": [
+              "Cartório de Registro de Imóveis da comarca",
+              "Mesmo cartório onde bem está registrado"
+            ],
+            "timing": [
+              "DENTRO DE 24 HORAS após leilão",
+              "Não pode demorar",
+              "Arrematante precisa para começar registro"
+            ],
+            "procedimento": [
+              "1. Leiloeiro faz cópias autenticadas",
+              "2. Envia ao cartório por malote",
+              "3. Ou leva pessoalmente",
+              "4. Cartório confirma recebimento"
+            ],
+            "comprovacao": [
+              "Protocolo do cartório",
+              "E-mail de confirmação",
+              "Recibo assinado"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "31/10/2025 - Imóvel em Recife",
+            "acao": "01/11/2025 - Leiloeiro faz cópias autenticadas",
+            "envio": "01/11/2025 - Entrega ao Cartório de Registro de Imóveis",
+            "cartorio_Recebe": "02/11/2025 - Cartório confirma",
+            "resultado": "Documentação está no cartório pronta para registro"
+          }
+        },
+        {
+          "id": 4.2,
+          "titulo": "Registro de Propriedade em Nome do Arrematante",
+          "tipo": "conteudo",
+          "conteudo": "Arrematante deve fazer registro no cartório para transferir propriedade oficialmente em seu nome. Leiloeiro fornece documentação, cartório executa registro. Depois disso, bem é totalmente do arrematante.",
+          "detalhes": {
+            "quemFaz": "Arrematante (ou seu advogado)",
+            "onde": "Cartório de Registro de Imóveis",
+            "documentoBase": "Carta de Arrematação + ACT",
+            "processo": [
+              "1. Arrematante leva documentação ao cartório",
+              "2. Solicita registro de propriedade",
+              "3. Cartório verifica documentação",
+              "4. Se tudo OK: faz novo registro em nome do arrematante",
+              "5. Emite matrícula atualizada"
+            ],
+            "custo": [
+              "Taxa do cartório (proporcional ao valor do bem)",
+              "ITBI (Imposto de Transmissão)",
+              "Custas cartoriais"
+            ],
+            "prazo": [
+              "Geralmente 10-15 dias",
+              "Cartório avisa quando está pronto",
+              "Arrematante recebe matrícula atualizada"
+            ],
+            "resultado": [
+              "Matrícula atualizada em nome do arrematante",
+              "Propriedade transferida oficialmente",
+              "Bem está totalmente do novo proprietário"
+            ]
+          },
+          "exemploPratico": {
+            "arrematante": "João da Silva",
+            "bemarrematado": "Casa em Recife",
+            "cartorio": "Cartório de Registro de Imóveis de Recife",
+            "processoRegistro": [
+              "05/11/2025 - João leva documentação ao cartório",
+              "05/11/2025 - Cartório inicia procedimento",
+              "10/11/2025 - Cartório faz novo registro",
+              "15/11/2025 - Matrícula atualizada pronta"
+            ],
+            "resultado": "Matrícula nº 123.456 agora está em nome de João da Silva"
+          }
+        },
+        {
+          "id": 4.3,
+          "titulo": "Relatório Final do Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro deve elaborar relatório final consolidando tudo: valor arrecadado, custas pagas, repassos a credores, documentação. Enviado ao tribunal e ao exequente.",
+          "detalhes": {
+            "conteudoRelatorio": [
+              "1. Identificação do leilão (data, local, bem)",
+              "2. Número de participantes e lances",
+              "3. Lance vencedor e arrematante",
+              "4. Cálculo de valores:",
+              "   - Valor bruto do lance",
+              "   - Menos custas do leilão (2%)",
+              "   - Menos ITBI (se aplicável)",
+              "   - Valor líquido para credor",
+              "5. Documentação anexada (ACT, Carta, fotos)",
+              "6. Situação de imissão na posse",
+              "7. Parecer do leiloeiro (se houver questões)"
+            ],
+            "calculos": [
+              "Lance: R$ 250.000,00",
+              "Custas Leilão (2%): R$ 5.000,00",
+              "ITBI/Impostos: [conforme lei]",
+              "Créditos do exequente: [deduzir]",
+              "Valor Líquido para Credor: [resultado]"
+            ],
+            "anexos": [
+              "Auto de Arrematação",
+              "Carta de Arrematação",
+              "Fotos do bem (antes e depois)",
+              "Comprovante de pagamento",
+              "Documento de imissão na posse",
+              "Recibos de taxas"
+            ],
+            "destinatarios": [
+              "Tribunal (cópia para autos)",
+              "Exequente/Credor",
+              "Arquivo do leiloeiro"
+            ],
+            "prazo": "Máximo 30 dias após leilão"
+          },
+          "modeloResumido": {
+            "titulo": "RELATÓRIO FINAL DO LEILÃO",
+            "corpo": [
+              "Bem Leiloado: [Descrição]",
+              "Data do Leilão: [Data]",
+              "Arrematante: [Nome]",
+              "Lance Vencedor: R$ [Valor]",
+              "Custas Leilão (2%): R$ [Valor]",
+              "Valor Líquido: R$ [Valor]",
+              "Situação: [Bem entregue / Pendente imissão]",
+              "Documentação: [Anexar lista]"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Processo 0000001-15.2023",
+            "bem": "Casa em Recife",
+            "lance": "R$ 250.000,00",
+            "custas": "R$ 5.000,00 (2%)",
+            "liquido": "R$ 245.000,00",
+            "relatorio": "Enviado ao tribunal em 15/11/2025",
+            "resultado": "Leilão concluído com sucesso"
+          }
+        }
+      ]
+    }
+  ],
+  "questoesRevisao": [
+    {
+      "id": 1,
+      "pergunta": "Quando deve ser assinado o Auto de Arrematação?",
+      "opcoes": [
+        "No máximo 48 horas após o leilão",
+        "No mesmo dia do leilão, ainda no local",
+        "Dentro de 5 dias úteis",
+        "Conforme agendamento do juiz"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Auto de Arrematação deve ser assinado NO MESMO DIA do leilão, idealmente ainda no local da realização, enquanto todas as partes estão presentes."
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é a diferença fundamental entre ACT e Carta de Arrematação?",
+      "opcoes": [
+        "São o mesmo documento, nomes diferentes",
+        "ACT prova o leilão, Carta prova o direito de propriedade",
+        "Carta é obrigatória, ACT é opcional",
+        "ACT é entregue ao juiz, Carta ao arrematante"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "ACT (Auto de Arrematação) prova que o leilão aconteceu. Carta de Arrematação prova que o arrematante é proprietário do bem. São documentos diferentes com funções distintas."
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é o prazo para requerer imissão na posse após ACT?",
+      "opcoes": [
+        "5 dias",
+        "15 dias",
+        "30 dias",
+        "60 dias"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "Arrematante tem 30 dias após assinatura do ACT para requerer imissão na posse. Prazo é prorrogável judicialmente."
+    },
+    {
+      "id": 4,
+      "pergunta": "O arrematante precisa de imissão na posse se o bem está vazio?",
+      "opcoes": [
+        "Sim, sempre é obrigatório",
+        "Não, imissão só é necessária se há ocupante",
+        "Apenas se for imóvel de luxo",
+        "Conforme decisão do juiz a cada caso"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Se bem está vazio e desocupado, normalmente não é necessário imissão na posse. É necessário quando há pessoas ocupando o imóvel que precisam ser desocupadas."
+    },
+    {
+      "id": 5,
+      "pergunta": "Quem é responsável por enviar documentação ao cartório de registro?",
+      "opcoes": [
+        "O tribunal",
+        "O juiz da execução",
+        "O leiloeiro",
+        "O arrematante"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "Leiloeiro deve enviar cópia do ACT e Carta de Arrematação ao cartório de registro imobiliário IMEDIATAMENTE para que arrematante possa fazer o registro oficial."
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual documento o arrematante deve levar ao cartório para registrar propriedade em seu nome?",
+      "opcoes": [
+        "Apenas o ACT",
+        "Apenas a Carta de Arrematação",
+        "Carta de Arrematação e ACT como comprovante",
+        "Sentença judicial de execução"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "Arrematante leva Carta de Arrematação (documento principal) e ACT como comprovante ao cartório de registro imobiliário para fazer registro em seu nome."
+    }
+  ],
+  "casosExemplo": [
+    {
+      "id": 1,
+      "titulo": "Leilão Completo - Do Encerramento ao Registro",
+      "descricao": "Caso exemplo de leilão que percorreu todos os procedimentos corretamente",
+      "cronograma": [
+        {
+          "evento": "Leilão Realizado",
+          "data": "31/10/2025",
+          "hora": "14:00-15:30",
+          "local": "Sala de Leilões do Tribunal de Recife"
+        },
+        {
+          "evento": "ACT Assinado",
+          "data": "31/10/2025",
+          "hora": "15:35",
+          "arrematante": "João da Silva",
+          "lance": "R$ 250.000,00",
+          "assinaturas": "Leiloeiro, Juiz, Arrematante"
+        },
+        {
+          "evento": "Pagamento Realizado",
+          "data": "31/10/2025",
+          "forma": "Cheque administrativo"
+        },
+        {
+          "evento": "Carta de Arrematação Emitida",
+          "data": "31/10/2025",
+          "hora": "16:30"
+        },
+        {
+          "evento": "Documentação Enviada ao Cartório",
+          "data": "01/11/2025",
+          "documentos": "ACT, Carta, fotos, matrícula"
+        },
+        {
+          "evento": "Requerimento de Imissão na Posse",
+          "data": "05/11/2025",
+          "solicitante": "João da Silva"
+        },
+        {
+          "evento": "Mandado de Imissão Expedido",
+          "data": "08/11/2025",
+          "juiz": "Juiz da Execução"
+        },
+        {
+          "evento": "Execução do Mandado",
+          "data": "15/11/2025",
+          "resultado": "Bem entregue ao arrematante"
+        },
+        {
+          "evento": "Registro em Cartório",
+          "data": "20/11/2025",
+          "acao": "Matrícula atualizada em nome de João"
+        },
+        {
+          "evento": "Leilão Finalizado",
+          "data": "20/11/2025",
+          "status": "Completado com sucesso"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Problema: ACT com Falta de Assinatura do Juiz",
+      "descricao": "Situação onde ACT não foi assinado pelo juiz",
+      "problema": "Juiz não estava presente e não assinou ACT",
+      "solucao": "ACT ainda é válido se assinado por leiloeiro e arrematante",
+      "preventivo": "Sempre tentar ter juiz presente. Se não estiver: documentar e prosseguir"
+    },
+    {
+      "id": 3,
+      "titulo": "Problema: Atraso na Documentação ao Cartório",
+      "descricao": "Leiloeiro demorou 15 dias para enviar documentação",
+      "prejuizo": "Arrematante não pôde fazer registro imediato",
+      "licao": "SEMPRE enviar documentação em 24 horas ao cartório"
+    }
+  ],
+  "recursos": {
+    "legislacao": [
+      {
+        "titulo": "Art. 890 a 900 do CPC",
+        "descricao": "Procedimentos de leilão e arrematação"
+      },
+      {
+        "titulo": "Lei 9.492/97",
+        "descricao": "Lei do Leiloeiro Oficial"
+      },
+      {
+        "titulo": "Lei de Registros Públicos",
+        "descricao": "Lei 6.015/73 - Registros cartorários"
+      }
+    ],
+    "documentosNecessarios": [
+      "Auto de Arrematação (ACT)",
+      "Carta de Arrematação",
+      "Comprovante de pagamento",
+      "Matrícula do imóvel",
+      "Sentença de execução"
+    ]
+  }
+}

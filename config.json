@@ -1,0 +1,163 @@
+{
+  "curso": {
+    "titulo": "Leilão Judicial para Servidores Públicos do TJPE",
+    "versao": "1.0.0",
+    "instrutor": {
+      "nome": "Renato Gracie",
+      "titulo": "Leiloeiro Oficial JUCEPE 366",
+      "foto": "assets/images/renato-gracie.jpg",
+      "descricao": "Leiloeiro oficial com vasta experiência em leilões judiciais"
+    },
+    "instituicao": {
+      "nome": "Tribunal de Justiça de Pernambuco - TJPE",
+      "logo": "assets/logos/tjpe-logo.png"
+    },
+    "empresa": {
+      "nome": "Gracie Leilões",
+      "logo": "assets/logos/gracie-logo.png",
+      "site": "https://gracieleiloes.com.br"
+    }
+  },
+  "acessibilidade": {
+    "vlibras": {
+      "ativo": true,
+      "url": "https://vlibras.gov.br/app"
+    },
+    "narrador": {
+      "ativo": true,
+      "voz": "feminina",
+      "velocidade": 1.0,
+      "idioma": "pt-BR"
+    },
+    "legendas": {
+      "ativo": true,
+      "tamanho": "medio"
+    },
+    "altoContraste": {
+      "ativo": false,
+      "temas": ["padrao", "preto-amarelo", "branco-preto"]
+    },
+    "fonteAmpliada": {
+      "ativo": false,
+      "tamanhoBase": 16,
+      "tamanhoMinimo": 12,
+      "tamanhoMaximo": 24
+    }
+  },
+  "design": {
+    "cores": {
+      "primaria": "#003366",
+      "secundaria": "#0066cc",
+      "destaque": "#DAA520",
+      "branco": "#FFFFFF",
+      "cinza": "#F5F5F5",
+      "cinzaEscuro": "#333333",
+      "sucesso": "#28a745",
+      "alerta": "#ffc107",
+      "perigo": "#dc3545"
+    },
+    "fontes": {
+      "principal": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+      "titulos": "'Roboto', 'Arial', sans-serif"
+    }
+  },
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Fundamentos Legais do Leilão Judicial",
+      "descricao": "Base legal: CPC, Lei 9.514/97 e CTN",
+      "icone": "⚖️",
+      "duracao": "45min",
+      "topicos": 3
+    },
+    {
+      "id": 2,
+      "titulo": "Elaboração do Edital de Leilão",
+      "descricao": "Elementos obrigatórios e procedimentos",
+      "icone": "📋",
+      "duracao": "60min",
+      "topicos": 3
+    },
+    {
+      "id": 3,
+      "titulo": "Notificações e Intimações",
+      "descricao": "Quem notificar e como fazer corretamente",
+      "icone": "📧",
+      "duracao": "40min",
+      "topicos": 4
+    },
+    {
+      "id": 4,
+      "titulo": "Avaliação de Bens e Atualização de Valores",
+      "descricao": "Validade e procedimentos de atualização",
+      "icone": "💰",
+      "duracao": "35min",
+      "topicos": 3
+    },
+    {
+      "id": 5,
+      "titulo": "Averbação na Matrícula do Imóvel",
+      "descricao": "Procedimentos registrais obrigatórios",
+      "icone": "📝",
+      "duracao": "30min",
+      "topicos": 3
+    },
+    {
+      "id": 6,
+      "titulo": "Débitos Fiscais e Condominiais",
+      "descricao": "Art. 130 CTN e Tema 1.134/2024 do STJ",
+      "icone": "💳",
+      "duracao": "50min",
+      "topicos": 4
+    },
+    {
+      "id": 7,
+      "titulo": "Formas de Pagamento e Parcelamento",
+      "descricao": "À vista e parcelado - Art. 895 CPC",
+      "icone": "💵",
+      "duracao": "35min",
+      "topicos": 4
+    },
+    {
+      "id": 8,
+      "titulo": "Publicação e Transparência",
+      "descricao": "Publicação obrigatória e prazos",
+      "icone": "📢",
+      "duracao": "25min",
+      "topicos": 3
+    },
+    {
+      "id": 9,
+      "titulo": "Procedimentos Pós-Leilão",
+      "descricao": "Auto, carta de arrematação e imissão na posse",
+      "icone": "✅",
+      "duracao": "40min",
+      "topicos": 3
+    },
+    {
+      "id": 10,
+      "titulo": "Casos Práticos e Erros Comuns",
+      "descricao": "Situações reais e como evitar problemas",
+      "icone": "⚠️",
+      "duracao": "45min",
+      "topicos": 3
+    }
+  ],
+  "links": {
+    "planalto": "http://www.planalto.gov.br",
+    "cnj": "https://www.cnj.jus.br",
+    "stj": "https://www.stj.jus.br",
+    "tjpe": "https://www.tjpe.jus.br"
+  },
+  "admin": {
+    "painelAtivo": true,
+    "uploadPDF": true,
+    "iaAtiva": true,
+    "historicoAlteracoes": true
+  },
+  "pontosRestauracao": {
+    "ativo": true,
+    "arquivo": "restore-points.json",
+    "maxPontos": 50
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": 5,
+  "titulo": "Averbação na Matrícula do Imóvel",
+  "descricao": "Procedimentos registrais obrigatórios",
+  "duracao": "30min",
+  "icone": "📝",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender sistema de registro imobiliário",
+    "Dominar procedimento de averbação de leilão",
+    "Evitar problemas de registros incompletos",
+    "Garantir transmissão clara de propriedade"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "SEM REGISTRO, PROPRIEDADE NÃO SE TRANSFERE",
+      "conteudo": "Leilão realizado não transmite propriedade sem registro no cartório. Arrematante não será dono até que se registre.",
+      "icone": "⚖️"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "PRAZOS PARA REGISTRO SÃO IMPRORROGÁVEIS",
+      "conteudo": "Lei de Registros obriga registro em 2 dias úteis após arrematação. Atrasar gera responsabilidade.",
+      "icone": "⏰"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "ÔNUS DEVEM SER CANCELADOS",
+      "conteudo": "Antes de registrar arrematação, deve-se cancelar penhoras, ônus anteriores. Do contrário, arrematante herda débitos.",
+      "icone": "🚨"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Sistema Registral Imobiliário",
+      "descricao": "Conceitos e princípios",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Matrícula e Registro",
+          "tipo": "conteudo",
+          "conteudo": "Sistema registral brasileiro segue Lei de Registros Públicos (Lei 6.015/73). Matrícula é documento que registra propriedade e ônus sobre imóvel.",
+          "conceitos": {
+            "matricula": "Número único que identifica imóvel no registro; contém histórico completo",
+            "folha_rosto": "Identificação do imóvel (endereço, dimensões, proprietário)",
+            "registro": "Anotação de transação ou ônus (venda, hipoteca, penhora, etc)",
+            "averbacao": "Anotação de fato relevante que não cria ônus"
+          ],
+          "importancia": "Matrícula é prova de propriedade; sem ela, não se prova domínio"
+        },
+        {
+          "id": 1.2,
+          "titulo": "Princípios do Sistema Registral",
+          "tipo": "conteudo",
+          "conteudo": "Lei 6.015/73 estabelece princípios fundamentais que guiam averbação de leilão.",
+          "principios": {
+            "continuidade": "Cada registro encadeia-se ao anterior; não há lacunas",
+            "especialidade": "Imóvel é identificado com precisão",
+            "prioridade": "Primeiro registro tem prioridade; ordem cronológica é essencial",
+            "mutabilidade": "Registro pode ser alterado conforme mudanças de direito",
+            "tracabilidade": "Histórico completo fica registrado"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Procedimento de Averbação do Leilão",
+      "descricao": "Passos técnicos do registro",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Documentos Necessários",
+          "tipo": "conteudo",
+          "conteudo": "Para registrar arrematação no cartório, leiloeiro deve preparar documentação completa.",
+          "documentos": [
+            "Sentença ou decisão judicial autorizando leilão",
+            "Auto de arrematação assinado por leiloeiro",
+            "Comprovante de pagamento (depósito em conta judicial)",
+            "Comprovante de publicação de edital",
+            "Cartório de registro pode solicitar: RGI, documentos de identificação de partes"
+          ],
+          "observacao": "Alguns cartórios pedem documentação adicional conforme procedimento local"
+        },
+        {
+          "id": 2.2,
+          "titulo": "Prazos para Registro",
+          "tipo": "conteudo",
+          "conteudo": "Lei de Registros e CPC estabelecem prazos rigorosos para averbação.",
+          "prazos": [
+            "Registro deve ser feito em até 2 dias úteis APÓS arrematação",
+            "Sentença de arrematação deve ser entregue ao cartório imediatamente",
+            "Se atrasar, responsável por danos (arrematante pode pedir indenização)",
+            "Em leilão com múltiplos bens, cada um com seu prazo"
+          ],
+          "importante": "Estes prazos são IMPRORROGÁVEIS conforme jurisprudência"
+        },
+        {
+          "id": 2.3,
+          "titulo": "Cancelamento de Ônus Anteriores",
+          "tipo": "conteudo",
+          "conteudo": "Antes de registrar arrematação, ônus anteriores (penhora, hipoteca) devem ser cancelados.",
+          "procedimento": [
+            "Verificar quais ônus constam da matrícula",
+            "Solicitar ao juízo ordem de cancelamento",
+            "Se há credor garantido (hipoteca), precisa consentir ou sentença autoriza",
+            "Arrecadação de valores vai conforme prioridade de ônus",
+            "Após cancelamento, registra-se a arrematação em bem limpo"
+          ],
+          "exceção": "Se há crédito insuficiente, ônus pode subsistir conforme Lei"
+        },
+        {
+          "id": 2.4,
+          "titulo": "Averbação Específica",
+          "tipo": "conteudo",
+          "conteudo": "Registro da arrematação segue padrão específico no cartório.",
+          "conteudo_averbacao": [
+            "Identificação completa do processo (número, vara, juiz)",
+            "Nome completo do arrematante",
+            "Número de CPF ou CNPJ do arrematante",
+            "Valor da arrematação",
+            "Data e hora exatas do leilão",
+            "Identificação do leiloeiro",
+            "Número do auto de arrematação",
+            "Assinatura do leiloeiro no original ou cópia autenticada"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Emissão de Carta de Arrematação",
+      "descricao": "Documento que prova propriedade",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "O que é Carta de Arrematação",
+          "tipo": "conteudo",
+          "conteudo": "Documento expedido pelo juízo que comprova arrematação e autoriza registro. É passaporte da propriedade.",
+          "caracteristicas": [
+            "Expedido pelo juiz após arrematação confirmada",
+            "Dirigido ao cartório de registro imobiliário",
+            "Ordena registro em nome do arrematante",
+            "Autoriza cancelamento de ônus anteriores",
+            "Validade indefinida até ser registrada"
+          ]
+        },
+        {
+          "id": 3.2,
+          "titulo": "Processo de Obtenção",
+          "tipo": "conteudo",
+          "conteudo": "Como obter a Carta de Arrematação.",
+          "procedimento": [
+            "Leiloeiro deposita valor da arrematação em conta do juízo",
+            "Arrematante confirma pagamento e recebe protocolo",
+            "Leiloeiro requer ao juiz expedição da Carta",
+            "Juiz assina Carta e envia ao cartório OU ao leiloeiro",
+            "Leiloeiro entrega Carta ao arrematante",
+            "Arrematante ou seu advogado leva Carta ao cartório para registro"
+          ],
+          "timing": "Geralmente dentro de 5-10 dias após arrematação confirmada"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Erros Comuns em Averbação",
+      "descricao": "Vícios que comprometem registro",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Atraso na Solicitação de Registro",
+          "tipo": "conteudo",
+          "conteudo": "Esperar além de 2 dias gera responsabilidade civil.",
+          "consequencias": [
+            "Arrematante pode pedir rescisão",
+            "Pode exigir indenização por danos",
+            "Pode comprometer financiamento/revendas posteriores"
+          ],
+          "prevencao": "Providenciar imediatamente após arrematação confirmada"
+        },
+        {
+          "id": 4.2,
+          "titulo": "Identificação Incorreta do Arrematante",
+          "tipo": "conteudo",
+          "conteudo": "Se CPF/nome errado for registrado, gera complicações posteriores.",
+          "cuidados": [
+            "Pedir documento de identidade ao arrematante",
+            "Conferir CPF/CNPJ exatamente como aparece em sistema",
+            "Se pessoa jurídica, conferir inscricao estadual/municipal"
+          ]
+        },
+        {
+          "id": 4.3,
+          "titulo": "Não Cancelar Ônus Anterior",
+          "tipo": "conteudo",
+          "conteudo": "Se hipoteca anterior fica registrada, compromete direito do arrematante.",
+          "risco": "Credor original pode cobrar ainda após arrematação"
+        }
+      ]
+    }
+  ],
+  "formularios": [
+    {
+      "nome": "Requerimento de Registro de Arrematação",
+      "campo": [
+        "Identificação da Vara de Execução",
+        "Número do processo",
+        "Identificação do imóvel (matrícula/endereço)",
+        "Nome do arrematante",
+        "CPF/CNPJ do arrematante",
+        "Valor arrematado",
+        "Data do leilão",
+        "Assinatura do leiloeiro"
+      ]
+    }
+  ],
+  "linksOficiais": [
+    {
+      "titulo": "Lei 6.015/73 - Lei de Registros Públicos",
+      "url": "http://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm",
+      "tipo": "legislacao"
+    },
+    {
+      "titulo": "TJPE - Cartórios de Registro de Imóvel",
+      "url": "https://www.tjpe.jus.br",
+      "tipo": "instituicao"
+    },
+    {
+      "titulo": "Conselho Nacional de Justiça - Registros",
+      "url": "https://www.cnj.jus.br",
+      "tipo": "instituicao"
+    }
+  ],
+  "resumoCapitulo": "Averbação na matrícula é ato final que transfere propriedade. Sem registro, leilão não se completa. Leiloeiro deve providenciar imediatamente, respeitando prazos rigorosos, cancelando ônus anteriores e obtendo Carta de Arrematação do juízo. Qualquer erro compromete a operação.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o prazo máximo para registrar arrematação no cartório?",
+      "opcoes": [
+        "1 dia útil",
+        "2 dias úteis",
+        "5 dias úteis",
+        "10 dias úteis"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": 2,
+      "pergunta": "O que deve ser cancelado antes de registrar arrematação?",
+      "opcoes": [
+        "Nada, registra direto",
+        "Apenas hipotecas",
+        "Todos os ônus anteriores (penhoras, hipotecas, etc)",
+        "Apenas débitos tributários"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual documento autoriza o registro no cartório?",
+      "opcoes": [
+        "Auto de arrematação",
+        "Edital do leilão",
+        "Carta de Arrematação expedida pelo juiz",
+        "Comprovante de pagamento"
+      ],
+      "resposta": 2
+    }
+  ]
+}

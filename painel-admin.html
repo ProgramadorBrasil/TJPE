@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Leilão Judicial TJPE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #0066cc;
+            --destaque: #DAA520;
+            --sucesso: #28a745;
+            --alerta: #ffc107;
+            --perigo: #dc3545;
+            --cinza-bg: #f5f5f5;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: var(--cinza-bg);
+        }
+
+        .navbar-custom {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-custom .navbar-brand {
+            font-weight: 700;
+            font-size: 22px;
+            color: white !important;
+        }
+
+        .sidebar-admin {
+            background: white;
+            border-right: 2px solid #ddd;
+            min-height: calc(100vh - 80px);
+            padding: 20px 0;
+            position: sticky;
+            top: 80px;
+        }
+
+        .sidebar-admin .nav-link {
+            color: #333;
+            padding: 12px 20px;
+            border-left: 4px solid transparent;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-admin .nav-link:hover {
+            background-color: var(--cinza-bg);
+            border-left-color: var(--secondary);
+            color: var(--primary);
+        }
+
+        .sidebar-admin .nav-link.active {
+            background-color: var(--cinza-bg);
+            border-left-color: var(--destaque);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .admin-content {
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        .dashboard-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card-stat {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card-stat:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-stat .number {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card-stat .label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--cinza-bg);
+            border-radius: 8px;
+        }
+
+        .form-section h4 {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .upload-area {
+            border: 3px dashed var(--secondary);
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .upload-area:hover {
+            background-color: var(--cinza-bg);
+            border-color: var(--primary);
+        }
+
+        .upload-area.dragover {
+            background-color: #e8f4f8;
+            border-color: var(--primary);
+        }
+
+        .upload-area i {
+            font-size: 48px;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .table-custom {
+            margin-top: 20px;
+        }
+
+        .table-custom thead {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .table-custom tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-custom tbody tr:hover {
+            background-color: var(--cinza-bg);
+        }
+
+        .badge-custom {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .btn-action {
+            padding: 5px 10px;
+            font-size: 12px;
+            margin: 0 2px;
+            border-radius: 4px;
+        }
+
+        .status-active {
+            background-color: var(--sucesso);
+            color: white;
+        }
+
+        .status-inactive {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .status-pending {
+            background-color: var(--alerta);
+            color: #333;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid var(--secondary);
+            background: white;
+            border-radius: 4px;
+        }
+
+        .timeline-date {
+            color: var(--primary);
+            font-weight: 700;
+            min-width: 100px;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .progress-custom {
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+
+        .modal-header .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar-admin {
+                display: none;
+                position: absolute;
+                width: 100%;
+                top: 80px;
+                left: 0;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+                z-index: 999;
+            }
+
+            .sidebar-admin.active {
+                display: block;
+            }
+
+            .admin-content {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .dashboard-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cog"></i> Painel Administrativo TJPE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white;">
+                            <i class="fas fa-home"></i> Voltar ao Curso
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">
+                            <i class="fas fa-user"></i> Admin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="display: flex;">
+        <!-- Sidebar -->
+        <div class="sidebar-admin" id="sidebarAdmin" style="width: 250px;">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="#dashboard" data-bs-toggle="tab">
+                    <i class="fas fa-chart-line"></i> Dashboard
+                </a>
+                <a class="nav-link" href="#modulos" data-bs-toggle="tab">
+                    <i class="fas fa-book"></i> Módulos
+                </a>
+                <a class="nav-link" href="#upload" data-bs-toggle="tab">
+                    <i class="fas fa-cloud-upload-alt"></i> Upload PDF
+                </a>
+                <a class="nav-link" href="#ia" data-bs-toggle="tab">
+                    <i class="fas fa-brain"></i> IA & Análise
+                </a>
+                <a class="nav-link" href="#historico" data-bs-toggle="tab">
+                    <i class="fas fa-history"></i> Histórico
+                </a>
+                <a class="nav-link" href="#restauracao" data-bs-toggle="tab">
+                    <i class="fas fa-undo"></i> Restauração
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-content flex-grow-1">
+            <div class="tab-content">
+                <!-- Dashboard Tab -->
+                <div class="tab-pane active" id="dashboard">
+                    <h2><i class="fas fa-chart-line"></i> Dashboard</h2>
+                    <hr>
+
+                    <div class="dashboard-cards">
+                        <div class="card-stat">
+                            <div class="number" id="totalModulos">10</div>
+                            <div class="label">Módulos Ativos</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="number" id="totalUsuarios">0</div>
+                            <div class="label">Usuários Registrados</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="number" id="taxaConclusao">0%</div>
+                            <div class="label">Taxa de Conclusão</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="number" id="ultimaatualizacao">Hoje</div>
+                            <div class="label">Última Atualização</div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Configurações Gerais</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Título do Curso</label>
+                                <input type="text" class="form-control" id="cursoTitulo" value="Leilão Judicial para Servidores Públicos do TJPE">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Versão</label>
+                                <input type="text" class="form-control" id="cursoVersao" value="1.0.0">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Instrutor</label>
+                                <input type="text" class="form-control" id="instrutor" value="Renato Gracie - Leiloeiro Oficial JUCEPE 366">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Instituição</label>
+                                <input type="text" class="form-control" id="instituicao" value="Tribunal de Justiça de Pernambuco - TJPE">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-3" onclick="salvarConfiguracoes()">
+                            <i class="fas fa-save"></i> Salvar Configurações
+                        </button>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Acesso e Segurança</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="painelAtivo" checked>
+                            <label class="form-check-label" for="painelAtivo">
+                                Painel Administrativo Ativo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="uploadAtivo" checked>
+                            <label class="form-check-label" for="uploadAtivo">
+                                Upload de PDF Ativo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="iaAtiva" checked>
+                            <label class="form-check-label" for="iaAtiva">
+                                Análise por IA Ativa
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="historicoAtivo" checked>
+                            <label class="form-check-label" for="historicoAtivo">
+                                Histórico de Alterações Ativo
+                            </label>
+                        </div>
+                        <button class="btn btn-primary mt-3" onclick="salvarSeguranca()">
+                            <i class="fas fa-lock"></i> Atualizar Segurança
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Módulos Tab -->
+                <div class="tab-pane" id="modulos">
+                    <h2><i class="fas fa-book"></i> Gerenciar Módulos</h2>
+                    <hr>
+
+                    <div class="form-section">
+                        <h4>Módulos Disponíveis</h4>
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Título</th>
+                                    <th>Duração</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modulosTable">
+                                <!-- Filled by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Adicionar Novo Módulo</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Número do Módulo</label>
+                                <input type="number" class="form-control" id="novoModuloNum">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Título</label>
+                                <input type="text" class="form-control" id="novoModuloTitulo">
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label class="form-label">Descrição</label>
+                            <textarea class="form-control" rows="3" id="novoModuloDesc"></textarea>
+                        </div>
+                        <button class="btn btn-success mt-3" onclick="adicionarModulo()">
+                            <i class="fas fa-plus"></i> Adicionar Módulo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Upload PDF Tab -->
+                <div class="tab-pane" id="upload">
+                    <h2><i class="fas fa-cloud-upload-alt"></i> Upload de Materiais</h2>
+                    <hr>
+
+                    <div class="form-section">
+                        <h4>Enviar PDF ou Documento</h4>
+                        <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-file-pdf"></i>
+                            <h5>Clique para selecionar ou arraste arquivos</h5>
+                            <p style="color: #999; margin: 0;">Formatos aceitos: PDF, DOCX, PPTX (máximo 50MB)</p>
+                        </div>
+                        <input type="file" id="fileInput" style="display: none;" accept=".pdf,.docx,.pptx" onchange="handleFileUpload(event)">
+
+                        <div class="mt-3">
+                            <label class="form-label">Associar a Módulo (Opcional)</label>
+                            <select class="form-control" id="moduloAssociado">
+                                <option value="">-- Selecione um módulo --</option>
+                                <option value="1">Módulo 1</option>
+                                <option value="2">Módulo 2</option>
+                                <option value="3">Módulo 3</option>
+                                <option value="4">Módulo 4</option>
+                                <option value="5">Módulo 5</option>
+                                <option value="6">Módulo 6</option>
+                                <option value="7">Módulo 7</option>
+                                <option value="8">Módulo 8</option>
+                                <option value="9">Módulo 9</option>
+                                <option value="10">Módulo 10</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary mt-3" onclick="enviarDocumento()">
+                            <i class="fas fa-upload"></i> Enviar Documento
+                        </button>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Documentos Enviados</h4>
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th>Arquivo</th>
+                                    <th>Data</th>
+                                    <th>Tamanho</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-file-pdf"></i> manual-leilao.pdf</td>
+                                    <td>15/11/2025</td>
+                                    <td>2.5 MB</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info btn-action"><i class="fas fa-download"></i></button>
+                                        <button class="btn btn-sm btn-danger btn-action"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- IA Tab -->
+                <div class="tab-pane" id="ia">
+                    <h2><i class="fas fa-brain"></i> Análise por Inteligência Artificial</h2>
+                    <hr>
+
+                    <div class="form-section">
+                        <h4>Analisar Módulo com IA</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Selecione o Módulo</label>
+                                <select class="form-control" id="moduloIA">
+                                    <option value="">-- Selecione --</option>
+                                    <option value="1">Módulo 1: Fundamentos Legais</option>
+                                    <option value="2">Módulo 2: Elaboração do Edital</option>
+                                    <option value="3">Módulo 3: Notificações</option>
+                                    <option value="4">Módulo 4: Avaliação de Bens</option>
+                                    <option value="5">Módulo 5: Averbação</option>
+                                    <option value="6">Módulo 6: Débitos Fiscais</option>
+                                    <option value="7">Módulo 7: Formas de Pagamento</option>
+                                    <option value="8">Módulo 8: Publicação</option>
+                                    <option value="9">Módulo 9: Pós-Leilão</option>
+                                    <option value="10">Módulo 10: Casos Práticos</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Tipo de Análise</label>
+                                <select class="form-control" id="tipoAnalise">
+                                    <option value="qualidade">Análise de Qualidade</option>
+                                    <option value="completude">Análise de Completude</option>
+                                    <option value="pnl">Análise de PNL (Processamento de Linguagem)</option>
+                                    <option value="keywords">Extração de Keywords</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-3" onclick="analisarIA()">
+                            <i class="fas fa-magic"></i> Iniciar Análise
+                        </button>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Resultados de Análises Anteriores</h4>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025</div>
+                            <div class="timeline-content">
+                                <strong>Análise de Qualidade - Módulo 5</strong>
+                                <p style="color: #666; margin-bottom: 5px;">Score: 92/100 - Excelente</p>
+                                <small style="color: #999;">Análise concluída em 2 minutos</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">14/11/2025</div>
+                            <div class="timeline-content">
+                                <strong>Extração de Keywords - Módulo 3</strong>
+                                <p style="color: #666; margin-bottom: 5px;">26 palavras-chave identificadas</p>
+                                <small style="color: #999;">Análise concluída em 45 segundos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Histórico Tab -->
+                <div class="tab-pane" id="historico">
+                    <h2><i class="fas fa-history"></i> Histórico de Alterações</h2>
+                    <hr>
+
+                    <div class="form-section">
+                        <h4>Log de Atividades</h4>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025 14:30</div>
+                            <div class="timeline-content">
+                                <strong>Módulo 10 Criado</strong>
+                                <p style="color: #666;">Casos Práticos e Erros Comuns - Autor: Admin</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025 14:20</div>
+                            <div class="timeline-content">
+                                <strong>Módulo 9 Criado</strong>
+                                <p style="color: #666;">Procedimentos Pós-Leilão - Autor: Admin</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025 14:10</div>
+                            <div class="timeline-content">
+                                <strong>Módulo 8 Criado</strong>
+                                <p style="color: #666;">Publicação e Transparência - Autor: Admin</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025 14:00</div>
+                            <div class="timeline-content">
+                                <strong>Módulo 7 Criado</strong>
+                                <p style="color: #666;">Formas de Pagamento e Parcelamento - Autor: Admin</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15/11/2025 01:42</div>
+                            <div class="timeline-content">
+                                <strong>Projeto TJPE Iniciado</strong>
+                                <p style="color: #666;">Repositório criado e estrutura base estabelecida</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Filtrar Histórico</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Tipo de Atividade</label>
+                                <select class="form-control">
+                                    <option value="">Todos</option>
+                                    <option value="criacao">Criação</option>
+                                    <option value="edicao">Edição</option>
+                                    <option value="delecao">Deleção</option>
+                                    <option value="publicacao">Publicação</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Data</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restauração Tab -->
+                <div class="tab-pane" id="restauracao">
+                    <h2><i class="fas fa-undo"></i> Pontos de Restauração</h2>
+                    <hr>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> Criar e gerenciar pontos de restauração do sistema. Use para reverter alterações em caso de erro.
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Criar Novo Ponto de Restauração</h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label class="form-label">Descrição</label>
+                                <input type="text" class="form-control" id="descricaoRestauracao" placeholder="Ex: Antes de atualizar Módulo 5">
+                            </div>
+                            <div class="col-md-4" style="display: flex; align-items: flex-end;">
+                                <button class="btn btn-success w-100" onclick="criarRestauracao()">
+                                    <i class="fas fa-plus"></i> Criar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Pontos de Restauração Disponíveis</h4>
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th>Data/Hora</th>
+                                    <th>Descrição</th>
+                                    <th>Tamanho</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="restauracaoTable">
+                                <tr>
+                                    <td>15/11/2025 14:35</td>
+                                    <td>Após criação de Módulo 10</td>
+                                    <td>8.5 MB</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning btn-action" onclick="restaurarPonto(1)">
+                                            <i class="fas fa-undo"></i> Restaurar
+                                        </button>
+                                        <button class="btn btn-sm btn-danger btn-action">
+                                            <i class="fas fa-trash"></i> Deletar
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/11/2025 14:00</td>
+                                    <td>Após criação de Módulo 7</td>
+                                    <td>7.8 MB</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning btn-action" onclick="restaurarPonto(2)">
+                                            <i class="fas fa-undo"></i> Restaurar
+                                        </button>
+                                        <button class="btn btn-sm btn-danger btn-action">
+                                            <i class="fas fa-trash"></i> Deletar
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/11/2025 01:42</td>
+                                    <td>Inicial - Projeto Criado</td>
+                                    <td>5.2 MB</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning btn-action" onclick="restaurarPonto(3)">
+                                            <i class="fas fa-undo"></i> Restaurar
+                                        </button>
+                                        <button class="btn btn-sm btn-danger btn-action">
+                                            <i class="fas fa-trash"></i> Deletar
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Informações do Sistema</h4>
+                        <p><strong>Espaço em Uso:</strong> 21.5 MB / 1 GB</p>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" style="width: 21.5%; background-color: var(--destaque);"></div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px; color: #666;">Espaço restante: 978.5 MB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load modules data
+        function carregarModulos() {
+            fetch('config.json')
+                .then(response => response.json())
+                .then(data => {
+                    const modulosTable = document.getElementById('modulosTable');
+                    const modulos = data.modulos || [];
+
+                    modulosTable.innerHTML = modulos.map(mod => `
+                        <tr>
+                            <td>${mod.id}</td>
+                            <td>${mod.titulo}</td>
+                            <td>${mod.duracao}</td>
+                            <td><span class="badge-custom status-active">Ativo</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info btn-action"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    `).join('');
+                });
+        }
+
+        function salvarConfiguracoes() {
+            alert('Configurações salvas com sucesso!');
+        }
+
+        function salvarSeguranca() {
+            alert('Configurações de segurança atualizadas!');
+        }
+
+        function adicionarModulo() {
+            const titulo = document.getElementById('novoModuloTitulo').value;
+            if (!titulo) {
+                alert('Por favor, preencha o título do módulo');
+                return;
+            }
+            alert('Módulo "' + titulo + '" adicionado com sucesso!');
+            document.getElementById('novoModuloTitulo').value = '';
+            document.getElementById('novoModuloNum').value = '';
+            document.getElementById('novoModuloDesc').value = '';
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                console.log('Arquivo selecionado:', file.name);
+            }
+        }
+
+        function enviarDocumento() {
+            alert('Documento enviado com sucesso!');
+        }
+
+        function analisarIA() {
+            const modulo = document.getElementById('moduloIA').value;
+            const tipo = document.getElementById('tipoAnalise').value;
+            if (!modulo) {
+                alert('Por favor, selecione um módulo');
+                return;
+            }
+            alert('Iniciando análise de ' + tipo + ' no módulo ' + modulo + '...');
+        }
+
+        function criarRestauracao() {
+            const desc = document.getElementById('descricaoRestauracao').value;
+            if (!desc) {
+                alert('Por favor, descreva o ponto de restauração');
+                return;
+            }
+            alert('Ponto de restauração criado: ' + desc);
+            document.getElementById('descricaoRestauracao').value = '';
+        }
+
+        function restaurarPonto(id) {
+            if (confirm('Deseja restaurar para este ponto? Todas as alterações posteriores serão perdidas.')) {
+                alert('Sistema restaurado com sucesso!');
+            }
+        }
+
+        // Drag and drop for upload
+        const uploadArea = document.getElementById('uploadArea');
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                document.getElementById('fileInput').files = files;
+                handleFileUpload({ target: { files } });
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', carregarModulos);
+    </script>
+</body>
+</html>

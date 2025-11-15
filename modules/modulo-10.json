@@ -1,0 +1,726 @@
+{
+  "id": 10,
+  "titulo": "Casos Práticos e Erros Comuns",
+  "descricao": "Situações reais e como evitar problemas",
+  "duracao": "45min",
+  "icone": "⚠️",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Identificar erros frequentes em procedimentos de leilão judicial",
+    "Aprender com casos reais de sucesso e fracasso",
+    "Aplicar boas práticas de prevenção",
+    "Reconhecer situações de risco antes que virem problemas",
+    "Tomar decisões assertivas em cenários complexos"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "85% DOS PROBLEMAS SÃO PREVENÍVEIS",
+      "conteudo": "Maioria dos problemas em leilões judiciais não são inevitáveis. São erros de procedimento que podem ser evitados com atenção à documentação e cumprimento rigoroso de prazos.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "CHECKLIST É SEU MELHOR AMIGO",
+      "conteudo": "Usar checklist completo para cada etapa reduz drasticamente erros. Não confie só em memória. Documento escrito é prova e proteção.",
+      "icone": "✅"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "DOCUMENTAÇÃO COMPLETA É ESCUDO JURÍDICO",
+      "conteudo": "Qualquer erro pode ser alegado em juízo. Documentação perfeita é sua melhor defesa. Se não está documentado, não foi feito.",
+      "icone": "📋"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "COMUNICAÇÃO COM TRIBUNAL É VITAL",
+      "conteudo": "Dúvidas e questões? Sempre consulte o tribunal. Melhor perguntar do que errar. Tribunal é seu parceiro, não adversário.",
+      "icone": "💬"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Casos de Sucesso - O Que Fazer Certo",
+      "descricao": "Exemplos de leilões bem executados",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Caso 1: Leilão Rápido e Eficiente",
+          "tipo": "conteudo",
+          "conteudo": "Leilão que correu perfeitamente dentro dos prazos. Documentação impecável. Sem atrasos nem questionamentos. Exemplo de profissionalismo.",
+          "detalhes": {
+            "processo": "0000150-15.2024.8.17.1001",
+            "tipo": "Execução de dívida bancária",
+            "bem": "Apartamento em Recife - Valor base: R$ 150.000,00",
+            "executor": "Banco Santander",
+            "timeline": [
+              "01/08/2024 - Leiloeiro recebe processo do tribunal",
+              "10/08/2024 - Edital redacionado e enviado ao tribunal",
+              "15/08/2024 - 1ª publicação no DJ",
+              "20/08/2024 - 2ª publicação no DJ e jornal",
+              "25/10/2024 - Leilão realizado (35 dias após última publicação)",
+              "25/10/2024 - ACT assinado mesmo dia",
+              "26/10/2024 - Documentação enviada ao cartório",
+              "31/10/2024 - Registro finalizado, bem em nome do novo proprietário"
+            ],
+            "detalhes_Leilao": {
+              "dataHora": "25/10/2024 - 14:00",
+              "participantes": 8,
+              "lanceVencedor": "R$ 185.000,00",
+              "arrematante": "Investidor imobiliário de Caruaru",
+              "pagamento": "Cheque administrativo - recebido no ato"
+            },
+            "documentacao": [
+              "✓ ACT com todas as assinaturas",
+              "✓ Carta de Arrematação emitida",
+              "✓ Comprovante de publicação (DJ + jornal)",
+              "✓ Fotos do imóvel em 3 ângulos",
+              "✓ Relatório final completo",
+              "✓ Arquivo digital organizado"
+            ],
+            "resultado": [
+              "Leilão realizado sem impugnações",
+              "Credor recebeu valores em 10 dias",
+              "Novo proprietário em posse em 15 dias",
+              "Sem nenhuma reclamação ou questionamento"
+            ],
+            "licoes": [
+              "Comunicação clara com tribunal desde início",
+              "Documentação rigorosa de TUDO",
+              "Respeito absoluto aos prazos",
+              "Publicidade ampla (DJ + jornal + redes sociais)",
+              "Profissionalismo em cada detalhe"
+            ]
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Caso 2: Resolução de Impugnação com Documentação",
+          "tipo": "conteudo",
+          "conteudo": "Leilão foi questionado em juízo. Porque documentação estava impecável, impugnação foi rejeitada. Documentação é escudo.",
+          "detalhes": {
+            "situacao": "Comprador perdedor tentou anular leilão alegando 'vício no edital'",
+            "alegacao": "Edital não teria descrito corretamente o bem",
+            "dados": {
+              "processo": "0000200-15.2024.8.17.1002",
+              "leilao": "10/09/2024",
+              "impugnacao": "15/09/2024",
+              "lance_Vencedor": "R$ 200.000,00"
+            },
+            "defesa_Leiloeiro": [
+              "Apresentou edital completo com descrição detalhada",
+              "Fotos do bem em 5 ângulos diferentes",
+              "Cópias de todas as publicações (DJ + jornal)",
+              "Comprovante de publicação no portal TJPE",
+              "ACT com assinatura de juiz",
+              "Documentação de visita técnica prévia"
+            ],
+            "resultado": [
+              "Juiz analisou toda documentação",
+              "Constatou que edital era MUITO bom (não deficiente)",
+              "Impugnação foi REJEITADA",
+              "Leilão mantido válido",
+              "Novo proprietário finalizou registro"
+            ],
+            "moral": "Documentação perfeita = proteção contra impugnações"
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Caso 3: Leilão com Parcelamento Bem-Sucedido",
+          "tipo": "conteudo",
+          "conteudo": "Leilão onde parcelamento foi autorizado e funcionou perfeitamente. Todas as parcelas pagas no prazo. Sem inadimplemento.",
+          "detalhes": {
+            "processo": "0000300-15.2024.8.17.1003",
+            "bem": "Propriedade rural em Vitória de Santo Antão",
+            "lance": "R$ 500.000,00",
+            "parcelamento": "10 parcelas mensais",
+            "arrematante": "Empresa agrícola local",
+            "cronograma_Real": [
+              "Parcela 1 (nov/24): R$ 50.000,00 - PAGA em 10/11",
+              "Parcela 2 (dez/24): R$ 50.762,50 - PAGA em 10/12",
+              "Parcela 3 (jan/25): R$ 51.436,80 - PAGA em 10/01",
+              "Parcela 4 (fev/25): R$ 51.978,45 - PAGA em 10/02",
+              "Parcela 5 (mar/25): R$ 52.612,30 - PAGA em 10/03",
+              "Parcela 6 (abr/25): R$ 53.087,60 - PAGA em 10/04",
+              "Parcela 7 (mai/25): R$ 53.754,20 - PAGA em 10/05",
+              "Parcela 8 (jun/25): R$ 54.328,90 - PAGA em 10/06",
+              "Parcela 9 (jul/25): R$ 54.986,45 - PAGA em 10/07",
+              "Parcela 10 (ago/25): R$ 55.651,80 - PAGA em 10/08"
+            ],
+            "sucesso": [
+              "Todas as 10 parcelas pagas",
+              "Nenhuma delas atrasou",
+              "Todas com valores corrigidos por IPCA",
+              "Arrematante recebeu bem sem problemas",
+              "Credor foi pago integralmente"
+            ],
+            "fatores_Sucesso": [
+              "Arrematante com solidez financeira comprovada",
+              "Documentação clara do acordo de parcelamento",
+              "Comunicação regular com pagador",
+              "Aceitação de PIX para facilitar pagamento",
+              "Profissionalismo do leiloeiro em acompanhamento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Casos de Fracasso - O Que Evitar",
+      "descricao": "Exemplos de leilões que deram problema",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Erro 1: Falta de Publicação em Jornal",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro publicou apenas no DJ, esqueceu de publicar em jornal. Comprador impugnou, leilão foi anulado.",
+          "detalhes": {
+            "oQueFoi": "Leilão realizado sem publicação em jornal de circulação regional",
+            "processo": "0000500-15.2024.8.17.1005",
+            "bem": "Casa em Caruaru - Lance: R$ 120.000,00",
+            "ocorrencia": [
+              "10/09/2024 - Publicação apenas no DJ",
+              "20/09/2024 - Leilão realizado",
+              "22/09/2024 - Comprador perdedor impugna",
+              "Alegacao: 'Edital não foi publicado em jornal, leilão é nulo'"
+            ],
+            "defesa_Leiloeiro": "Tentou argumentar que DJ era suficiente",
+            "decisao_Juiz": "LEILÃO ANULADO - Falta de publicação em jornal regional é vício insanável",
+            "consequencia": [
+              "Leilão inteiro perdido",
+              "Lance de R$ 120.000 não tem validade",
+              "Bem precisa ir para novo leilão",
+              "Tempo perdido (2 meses)",
+              "Custas processuais para leiloeiro"
+            ],
+            "licao_Aprendida": "SEMPRE publicar em DJ + Jornal. Não é opcional, é obrigatório."
+          }
+        },
+        {
+          "id": 2.2,
+          "titulo": "Erro 2: Cálculo Incorreto de Prazo",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro calculou mal os 35 dias entre publicação e leilão. Marcou muito cedo. Leilão foi anulado por falta de prazo mínimo.",
+          "detalhes": {
+            "oQueFoi": "Contagem incorreta de dias",
+            "processo": "0000600-15.2024.8.17.1006",
+            "bem": "Imóvel em Olinda - Lance previsto: R$ 180.000,00",
+            "cronograma_Errado": [
+              "10/10/2024 - 2ª publicação no DJ",
+              "Leiloeiro contou: 20 dias úteis = 24/10/2024",
+              "Leilao marcado para: 28/10/2024",
+              "Correto seria: 35 dias corridos = 09/11/2024"
+            ],
+            "impugnacao": [
+              "31/10/2024 - Leilão realizado",
+              "02/11/2024 - Impugnação alegando prazo insuficiente",
+              "Comprador provou que só haviam passado 21 dias"
+            ],
+            "decisao": "LEILÃO ANULADO - Prazo mínimo de 35 dias não foi respeitado",
+            "consequencia": [
+              "Novo leilão necessário",
+              "Atraso de mais de 1 mês",
+              "Prejuízo financeiro para credor",
+              "Reputação abalada do leiloeiro"
+            ],
+            "licao": "Usar SEMPRE calculadora de dias. Contar DIAS CORRIDOS, não úteis."
+          }
+        },
+        {
+          "id": 2.3,
+          "titulo": "Erro 3: ACT Assinado Dias Depois do Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro não assinou ACT no dia do leilão. Assinou dias depois. Deixou abertura para questionamento.",
+          "detalhes": {
+            "oQueFoi": "ACT não assinado no mesmo dia do leilão",
+            "processo": "0000700-15.2024.8.17.1007",
+            "bem": "Imóvel em Jaboatão - Lance: R$ 95.000,00",
+            "cronograma_Errado": [
+              "05/11/2024 - Leilão realizado",
+              "05/11/2024 - ACT não é assinado (leiloeiro esqueceu)",
+              "10/11/2024 - ACT é assinado (5 dias depois)",
+              "12/11/2024 - Impugnação: 'ACT assinado fora da data, leilão nulo'"
+            ],
+            "problema": [
+              "Arrematante desapareceu",
+              "Não conseguiram trazer novamente para assinar",
+              "ACT foi assinado apenas por leiloeiro e juiz",
+              "Sem assinatura de arrematante na data certa"
+            ],
+            "decisao": "Leilão mantido válido (juiz foi leniente), mas abriu precedente perigoso",
+            "licao": "NUNCA adiar assinatura do ACT. Fazer MESMO DIA do leilão, enquanto todos estão presentes."
+          }
+        },
+        {
+          "id": 2.4,
+          "titulo": "Erro 4: Descrição Insuficiente do Bem no Edital",
+          "tipo": "conteudo",
+          "conteudo": "Edital descreveu bem de forma vaga. Comprador alegou que produto anunciado era diferente. Problemas em juízo.",
+          "detalhes": {
+            "oQueFoi": "Edital com descrição genérica",
+            "processo": "0000800-15.2024.8.17.1008",
+            "bem": "Casa - Edital dizia apenas 'Casa de alvenaria em Recife'",
+            "problemas": [
+              "Sem especificar rua ou localização exata",
+              "Sem mencionar número de cômodos",
+              "Sem descrever condição (ruim, regular, bom)",
+              "Sem mencionar benfeitorias (churrasqueira, piscina)"
+            ],
+            "resultado": [
+              "Arrematante comprou 'gato por lebre'",
+              "Achava que era casa de 4 quartos, era de 2",
+              "Achava que tinha piscina, não tinha",
+              "Tentou devolver o bem"
+            ],
+            "processo_Judicial": [
+              "Arrematante entrou com ação de rescisão",
+              "Alegava vício não descrito no edital",
+              "Leiloeiro teria de ser responsabilizado"
+            ],
+            "licao": [
+              "Edital deve ser DETALHADO",
+              "Descrever: localização exata, tamanho, condição, benfeitorias",
+              "Incluir fotos (mínimo 5 ângulos diferentes)",
+              "Se bem tem defeitos conhecidos: INFORMAR no edital"
+            ]
+          }
+        },
+        {
+          "id": 2.5,
+          "titulo": "Erro 5: Parcelamento sem Documentação Clara",
+          "tipo": "conteudo",
+          "conteudo": "Leiloeiro permitiu parcelamento mas não documentou bem. Depois discutiram sobre valores, prazos, encargos.",
+          "detalhes": {
+            "oQueFoi": "Parcelamento verbal, sem contrato",
+            "processo": "0000900-15.2024.8.17.1009",
+            "bem": "Propriedade - Lance: R$ 300.000,00",
+            "problema": [
+              "Leiloeiro permitiu parcelamento em 12 vezes",
+              "Mas não documentou os termos",
+              "Arrematante entendeu uma coisa",
+              "Leiloeiro entendeu outra"
+            ],
+            "conflito": [
+              "Questão: Qual é o valor de cada parcela?",
+              "Arrematante: R$ 25.000,00 fixo",
+              "Leiloeiro: R$ 25.000,00 + juros + atualização",
+              "Ninguém sabia certo"
+            ],
+            "resultado": [
+              "Primeira parcela: discordância de valores",
+              "Arrematante recusou pagar o valor maior",
+              "Tribunal teve que intervir para esclarecer",
+              "Processo lento e desnecessário"
+            ],
+            "licao": [
+              "SEMPRE documentar parcelamento",
+              "Termo de parcelamento assinado por ambas as partes",
+              "Especificar: valor de cada parcela, datas, juros, multa, atualização",
+              "Uma cópia para cada parte"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Checklist Completo Para Evitar Erros",
+      "descricao": "Listas de verificação para cada etapa",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Checklist Pré-Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Tudo que deve ser verificado ANTES do leilão acontecer. Previne 80% dos problemas.",
+          "detalhes": {
+            "documentacao": [
+              "☐ Processo judicial completo recebido do tribunal",
+              "☐ Sentença de autorização de leilão analisada",
+              "☐ Bem está claramente identificado (matrícula, localização)",
+              "☐ Valor base (lance inicial) foi calculado",
+              "☐ Edital foi redigido conforme normas",
+              "☐ Edital foi revisado por tribunal (se exigido)",
+              "☐ Cópias do edital estão prontas"
+            ],
+            "publicacao": [
+              "☐ Contato estabelecido com Diário de Justiça",
+              "☐ Jornal regional escolhido",
+              "☐ Datas de publicação calculadas (5 dias + 35 dias)",
+              "☐ Edital foi enviado para publicação",
+              "☐ Comprovante de envio ao DJ obtido",
+              "☐ Confirmação de publicação em jornal"
+            ],
+            "bem": [
+              "☐ Inspeção física do bem realizada",
+              "☐ Fotos do bem tiradas (mínimo 5 ângulos)",
+              "☐ Vistoria técnica feita (se exigido)",
+              "☐ Problemas/defeitos conhecidos documentados",
+              "☐ Descrição do bem é clara e detalhada",
+              "☐ Benfeitorias foram identificadas"
+            ],
+            "local_Leilao": [
+              "☐ Local do leilão confirmado com tribunal",
+              "☐ Sala reservada e disponível",
+              "☐ Equipamentos funcionando (sistema de som, etc)",
+              "☐ Acessibilidade verificada",
+              "☐ Estacionamento disponível",
+              "☐ Endereço publicado corretamente"
+            ],
+            "pessoal": [
+              "☐ Leiloeiro confirmou presença",
+              "☐ Escrivão/auxiliar designado",
+              "☐ Juiz será presente ou não (documentar)",
+              "☐ Testudo disponíveis (se necessário)"
+            ]
+          }
+        },
+        {
+          "id": 3.2,
+          "titulo": "Checklist Dia do Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Procedimentos que devem ser seguidos durante o leilão. Sequência rigorosa.",
+          "detalhes": {
+            "manha": [
+              "☐ Leiloeiro chega com 30 minutos de antecedência",
+              "☐ Verifica equipamentos (som, microfone)",
+              "☐ Testa sistema se houver",
+              "☐ Prepara papel e caneta para ACT",
+              "☐ Revisa edital completo",
+              "☐ Verifica lista de compromissários"
+            ],
+            "abertura": [
+              "☐ Leiloeiro abre portões/sala exatamente na hora",
+              "☐ Anuncia início do leilão em voz alta",
+              "☐ Lê edital completo em voz alta",
+              "☐ Responde perguntas dos participantes",
+              "☐ Verifica caução de cada participante"
+            ],
+            "leilao": [
+              "☐ Primeiro lance chamado com clareza",
+              "☐ Cada lance é registrado (anotação)",
+              "☐ Gavel bate após último lance válido",
+              "☐ Arrematante é identificado completamente",
+              "☐ Valor final é declarado",
+              "☐ Todos confirmam arrematação"
+            ],
+            "pos_Leilao_Imediato": [
+              "☐ ACT é preparado imediatamente",
+              "☐ Todos os dados do leilão são inclusos",
+              "☐ Apresenta ACT para conferência",
+              "☐ Assinaturas são obtidas (leiloeiro, juiz, arrematante)",
+              "☐ Cópias são tiradas",
+              "☐ Cada parte recebe sua cópia"
+            ]
+          }
+        },
+        {
+          "id": 3.3,
+          "titulo": "Checklist Pós-Leilão (24 Horas)",
+          "tipo": "conteudo",
+          "conteudo": "Ações que devem ser completadas em até 24 horas após o leilão.",
+          "detalhes": {
+            "documentacao": [
+              "☐ ACT está completamente redigido e assinado",
+              "☐ Cópias foram tiradas para todas as partes",
+              "☐ Carta de Arrematação foi emitida",
+              "☐ Fotos do leilão foram salvas (se houver)",
+              "☐ Anotações de lance estão digitalizadas"
+            ],
+            "comunicacao": [
+              "☐ Tribunal foi informado do resultado",
+              "☐ Arrematante recebeu cópia de tudo",
+              "☐ Exequente (credor) foi informado",
+              "☐ Cartório de distribuição foi notificado"
+            ],
+            "cartorio": [
+              "☐ Documentação foi preparada para envio",
+              "☐ ACT foi autenticado/cópia certificada",
+              "☐ Documentação foi enviada ao cartório de registro",
+              "☐ Cartório confirmou recebimento"
+            ],
+            "pagamento": [
+              "☐ Forma de pagamento foi confirmada",
+              "☐ Se cheque: guardado seguro",
+              "☐ Se transferência: confirmada no banco",
+              "☐ Se parcelado: contrato foi preparado"
+            ],
+            "arquivo": [
+              "☐ Todos documentos foram arquivados",
+              "☐ Cópias digital e física foram feitas",
+              "☐ Pasta foi criada no sistema",
+              "☐ Backup foi realizado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Decisões Assertivas em Cenários Complexos",
+      "descricao": "Situações difíceis e como decidir",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Cenário: Bem tem Defeito Grave Descoberto Antes do Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Durante vistoria, leiloeiro descobre que bem tem problema sério (infiltração, fundação fraca, etc). O que fazer?",
+          "detalhes": {
+            "acao_Recomendada": [
+              "1. INFORMAR TRIBUNAL IMEDIATAMENTE",
+              "2. Comunicar ao processo judicial",
+              "3. Incluir defeito no edital (obrigatório)",
+              "4. Ajustar valor base se for o caso",
+              "5. Permitir vistoria pública para interessados verem"
+            ],
+            "naoFazer": [
+              "NÃO ocultar defeito",
+              "NÃO esperar leilão para revelar",
+              "NÃO assumir responsabilidade do defeito",
+              "NÃO diminuir drasticamente valor sem autorização"
+            ],
+            "resultado": [
+              "Transparência protege todos",
+              "Edital com defeito documentado = leilão fica válido",
+              "Se ocultar: leilão pode ser anulado depois"
+            ]
+          }
+        },
+        {
+          "id": 4.2,
+          "titulo": "Cenário: Nenhum Lance Foi Feito (Leilão Deserto)",
+          "tipo": "conteudo",
+          "conteudo": "Leilão realizado, mas ninguém ofereceu lance. Bem não foi vendido. Tribunal quer saber o que fazer.",
+          "detalhes": {
+            "causas_Possiveis": [
+              "Valor base muito alto",
+              "Bem tem defeitos graves",
+              "Publicidade insuficiente",
+              "Conjuntura econômica ruim",
+              "Local pouco atraente"
+            ],
+            "acao_Do_Leiloeiro": [
+              "1. Documentar que leilão foi realizado",
+              "2. Informar tribunal imediatamente",
+              "3. Propor novo leilão com ajustes",
+              "4. Sugerir redução de valor base (até 30%)",
+              "5. Oferecer melhor publicidade para segunda tentativa"
+            ],
+            "decisao_Tribunal": [
+              "Geralmente autoriza segundo leilão",
+              "Pode diminuir valor base",
+              "Pode permitir parcelamento"
+            ]
+          }
+        },
+        {
+          "id": 4.3,
+          "titulo": "Cenário: Arrematante Não Compara para Pagar",
+          "tipo": "conteudo",
+          "conteudo": "Leilão foi realizado, pessoa arrematou, mas sumiu e não vem pagar. Desaparece.",
+          "detalhes": {
+            "acao_Imediata": [
+              "1. Tentar contato por telefone (números registrados)",
+              "2. Enviar notificação para endereço",
+              "3. Se não responde: documentar tudo",
+              "4. Perda da caução é automática",
+              "5. Tribunal é informado"
+            ],
+            "consequencia": [
+              "Arrematante perde caução depositada",
+              "Bem volta para novo leilão",
+              "Problema é do tribunal + executado, não do leiloeiro",
+              "Leiloeiro não é responsável por arrematante sumido"
+            ],
+            "protecao": [
+              "Ter contatos precisos de arrematante",
+              "Notificação por AR (aviso de recebimento)",
+              "Documentar cada tentativa de contato"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "questoesRevisao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o erro mais frequente em procedimentos de leilão judicial?",
+      "opcoes": [
+        "Falta de publicação em jornal",
+        "Cálculo incorreto de prazos",
+        "ACT assinado fora da data",
+        "Descrição insuficiente do bem"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Publicação em meio de divulgação é obrigatória. Muitos leiloeiros publicam apenas no DJ e esquecem de jornal regional, resultando em nulidade."
+    },
+    {
+      "id": 2,
+      "pergunta": "Como contar os 35 dias entre última publicação e leilão?",
+      "opcoes": [
+        "Apenas dias úteis",
+        "Dias corridos (incluindo fins de semana)",
+        "Dias úteis + 50%",
+        "Conforme tribunal decidir"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Contam-se DIAS CORRIDOS, incluindo sábados, domingos e feriados. Erro comum é contar apenas dias úteis."
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é a melhor proteção contra problemas em leilão judicial?",
+      "opcoes": [
+        "Confiar na memória",
+        "Seguir rigorosamente as normas",
+        "Documentação completa e arquivamento rigoroso",
+        "Fazer o que juiz pedir verbalmente"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "Documentação completa é escudo jurídico. Se não está documentado, é como se não tivesse sido feito. Arquivo rigoroso protege contra impugnações."
+    },
+    {
+      "id": 4,
+      "pergunta": "O que fazer se bem tem defeito grave descoberto antes do leilão?",
+      "opcoes": [
+        "Ocultar do edital para não afastar compradores",
+        "Informar tribunal e incluir no edital",
+        "Diminuir drasticamente o valor base",
+        "Cancelar o leilão"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Transparência é obrigatória. Defeitos devem ser informados no edital. Ocultar pode resultar em anulação do leilão posteriormente."
+    },
+    {
+      "id": 5,
+      "pergunta": "Em quanto tempo após o leilão deve ser assinado o ACT?",
+      "opcoes": [
+        "No máximo em 5 dias",
+        "Conforme agendamento posterior",
+        "No mesmo dia, ainda no local",
+        "Após confirmação de pagamento"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "ACT deve ser assinado NO MESMO DIA do leilão, idealmente ainda no local, enquanto todas as partes estão presentes. Atrasar deixa abertura para questionamentos."
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual documento é MAIS importante para proteção legal do leiloeiro?",
+      "opcoes": [
+        "Contrato com tribunal",
+        "Documentação completa e arquivada",
+        "Apólice de seguro",
+        "Certificado de leiloeiro"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Documentação completa e arquivo rigoroso é melhor proteção. Prova que tudo foi feito corretamente e protege contra impugnações futuras."
+    }
+  ],
+  "casosExemplo": [
+    {
+      "id": 1,
+      "titulo": "Lição 1: Um Detalhe Pode Salvar ou Destruir um Leilão",
+      "descricao": "Caso real onde documentação completa salvou leiloeiro",
+      "situacao": "Leilão de imóvel em Recife - Lance: R$ 200 mil",
+      "problema": "Comprador perdedor impugnou alegando 'edital vago'",
+      "defesa": "Leiloeiro apresentou:",
+      "documentacao_Apresentada": [
+        "Edital completo com descrição detalhada",
+        "5 fotos em alta qualidade",
+        "Visita técnica realizada",
+        "Relatório de vistoria",
+        "Confirmação de publicação no DJ",
+        "Recorte de jornal",
+        "Screenshot do portal TJPE",
+        "ACT assinado por todos"
+      ],
+      "resultado": "Juiz indeferiu impugnação. Documentação era irrefutável.",
+      "moral": "Um detalhe: leiloeiro havia fotografado até a placa da rua. Isto provou localização exata e silenciou críticas sobre 'localização vaga'."
+    },
+    {
+      "id": 2,
+      "titulo": "Lição 2: Checklist Salva Tempo e Dinheiro",
+      "descricao": "Comparação entre leiloeiro com checklist e sem",
+      "sem_Checklist": [
+        "Publicação apenas no DJ (ERRO)",
+        "Cálculo de prazo impreciso",
+        "ACT assinado 3 dias depois",
+        "Documentação desorganizada",
+        "Resultado: Impugnação, atraso de 2 meses, custos extras"
+      ],
+      "com_Checklist": [
+        "✓ Publicação no DJ + Jornal",
+        "✓ Prazos calculados 2x (verificação dupla)",
+        "✓ ACT assinado mesmo dia do leilão",
+        "✓ Documentação organizada digitalmente",
+        "✓ Resultado: Leilão válido, sem questionamentos, conclusão rápida"
+      ],
+      "diferenca": "Tempo economizado: 2 meses. Custos economizados: R$ 5 mil+"
+    }
+  ],
+  "recursos": {
+    "documentos_Essenciais": [
+      "Checklist Pré-Leilão",
+      "Checklist Dia do Leilão",
+      "Checklist Pós-Leilão",
+      "Modelo de Edital",
+      "Modelo de ACT",
+      "Modelo de Carta de Arrematação",
+      "Template de Relatório Final"
+    ],
+    "contatos_Importantes": [
+      "Tribunal de Justiça de Pernambuco",
+      "Cartório de Distribuição",
+      "Cartório de Registro de Imóveis",
+      "Diário da Justiça",
+      "Jornais Regionais"
+    ],
+    "dicas_Finais": [
+      "Use checklist em CADA leilão",
+      "Documente TUDO meticulosamente",
+      "Tire fotos em alta qualidade",
+      "Comunique-se regularmente com tribunal",
+      "Em dúvida: sempre pergunte",
+      "Profissionalismo em cada detalhe"
+    ]
+  },
+  "resumoFinal": {
+    "titulo": "Resumo - Os 5 Erros Mais Caros do Leiloeiro",
+    "erros": [
+      {
+        "posicao": 1,
+        "erro": "Publicação incompleta (falta jornal ou DJ)",
+        "custo": "Leilão inteiro nulo - Retrabalho completo",
+        "solucao": "DJ + Jornal + Portal TJPE = tripla segurança"
+      },
+      {
+        "posicao": 2,
+        "erro": "Cálculo errado de prazos",
+        "custo": "Leilão nulo - Tempo e dinheiro perdidos",
+        "solucao": "Calculadora dupla verificação - Dias CORRIDOS"
+      },
+      {
+        "posicao": 3,
+        "erro": "Descrição genérica do bem no edital",
+        "custo": "Impugnação, rescisão, responsabilidade civil",
+        "solucao": "Descrição detalhada + Fotos em alta qualidade"
+      },
+      {
+        "posicao": 4,
+        "erro": "Falta de documentação de parcelamento",
+        "custo": "Conflitos, custas judiciais, reputação",
+        "solucao": "Sempre contrato escrito de parcelamento"
+      },
+      {
+        "posicao": 5,
+        "erro": "Arquivo desorganizado",
+        "custo": "Impossibilidade de defender em impugnação",
+        "solucao": "Sistema de arquivo organizado digitalmente"
+      }
+    ]
+  }
+}

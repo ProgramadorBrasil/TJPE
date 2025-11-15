@@ -1,0 +1,764 @@
+{
+  "id": 7,
+  "titulo": "Formas de Pagamento e Parcelamento",
+  "descricao": "À vista e parcelado - Art. 895 CPC",
+  "duracao": "35min",
+  "icone": "💵",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Compreender as diferentes formas de pagamento em leilões judiciais",
+    "Aplicar as normas do Art. 895 do CPC",
+    "Implementar sistemas de parcelamento conforme permitido",
+    "Garantir segurança nas transações e recebimentos",
+    "Calcular corretamente valores com juros e multa"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "PAGAMENTO OBRIGATÓRIO NO ACT",
+      "conteudo": "O arrematante DEVE pagar na assinatura do auto de arrematação (ACT). Falta de pagamento pode resultar em perda do depósito caução e perda do bem para novo leilão.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "JUROS DE MORA - Art. 895 CPC",
+      "conteudo": "Se houver parcelamento, incidem juros de mora de 1% ao mês (12% ao ano). Decisão judicial pode estipular taxa diferente. Documentar sempre.",
+      "icone": "💳"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "CAUÇÃO E RISCO",
+      "conteudo": "Se não houver pagamento das parcelas, o bem volta para novo leilão e a caução é perdida. Imprescindível ter documentação clara do acordo.",
+      "icone": "⚠️"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "MULTA POR ATRASO",
+      "conteudo": "Além dos juros, incide multa de 10% sobre a parcela atrasada. Total máximo de encargos deve estar no edital.",
+      "icone": "📌"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Formas de Pagamento Previstas no CPC",
+      "descricao": "Modalidades legalmente permitidas",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Pagamento À Vista",
+          "tipo": "conteudo",
+          "conteudo": "É a forma padrão de pagamento em leilões judiciais. O arrematante paga a totalidade do lance imediatamente na assinatura do auto de arrematação (ACT). Aceita-se: cheque de terceiros, transferência bancária, cartão de crédito (conforme decisão judicial), dinheiro em espécie.",
+          "detalhes": {
+            "vantagens": [
+              "Clareza total no processo",
+              "Rápido cumprimento do leilão",
+              "Sem riscos de inadimplemento",
+              "Liberação imediata do bem"
+            ],
+            "procedimento": [
+              "1. Arrematação é declarada",
+              "2. Assinatura do ACT pelo leiloeiro",
+              "3. Comprador apresenta forma de pagamento",
+              "4. Leiloeiro recebe e registra",
+              "5. Carta de arrematação é emitida"
+            ],
+            "prazos": "Imediato na assinatura do ACT",
+            "normaLegal": "Art. 895 CPC"
+          },
+          "exemploPratico": {
+            "descricao": "Leilão de imóvel em Recife com lance de R$ 150.000,00",
+            "passos": [
+              "Gavel bate no lance vencedor",
+              "Arrematante é chamado ao leiloeiro",
+              "Declara-se a arrematação",
+              "ACT é preenchido e assinado",
+              "Comprador apresenta cheque administrativo de R$ 150.000,00",
+              "Leiloeiro recebe cheque e registra",
+              "Carta de arrematação é emitida imediatamente"
+            ],
+            "valor": "R$ 150.000,00",
+            "resultado": "Transferência imediata de posse"
+          }
+        },
+        {
+          "id": 1.2,
+          "titulo": "Pagamento Parcelado - Quando é Permitido",
+          "tipo": "conteudo",
+          "conteudo": "O CPC permite parcelamento, MAS só quando expressamente permitido pelo EDITAL ou autorizado pela DECISÃO JUDICIAL. Não é direito do comprador, é faculdade do tribunal. O parcelamento é exceção, não regra. Pode ser de 2 a 24 parcelas (máximo recomendado).",
+          "detalhes": {
+            "condicoes": [
+              "Deve estar expresso no edital",
+              "Exige decisão judicial específica",
+              "Arrematante deve ser prévia e intimado",
+              "Documentação completa é obrigatória",
+              "Valores atualizados mensalmente"
+            ],
+            "encargos": [
+              "Juros de mora: 1% ao mês (Art. 895 CPC)",
+              "Multa por atraso: 10% da parcela",
+              "Atualização monetária: IPCA ou TR",
+              "Taxa administrativa: conforme edital (máximo 2%)"
+            ],
+            "formasDeAutorizacao": [
+              "Sentença de autorização específica",
+              "Decisão fundamentada do juiz",
+              "Aceitação prévia do arrematante",
+              "Apresentação de documentos comprobatórios"
+            ],
+            "prazosMaximos": "Até 24 meses (conforme Lei de Execução)"
+          },
+          "exemploPratico": {
+            "descricao": "Leilão em São Lourenço da Mata com parcelamento autorizado",
+            "lance": "R$ 240.000,00",
+            "parcelamento": "12 parcelas iguais de R$ 20.000,00",
+            "juros": "1% ao mês = R$ 200,00 por mês",
+            "multa": "10% da parcela se atraso = R$ 2.000,00",
+            "atualizacao": "IPCA mensal",
+            "cronograma": [
+              "1ª parcela: R$ 20.000,00 + juros (vencimento 15 dias)",
+              "2ª parcela: R$ 20.000,00 + juros (vencimento 45 dias)",
+              "...",
+              "12ª parcela: R$ 20.000,00 + juros (vencimento 360 dias)"
+            ],
+            "totalComJuros": "R$ 240.000,00 + R$ 2.400,00 = R$ 242.400,00"
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Cheque, Transferência e Cartão de Crédito",
+          "tipo": "conteudo",
+          "conteudo": "Diferentes instrumentos de pagamento utilizados em leilões. Cada um tem implicações legais diferentes. O leiloeiro deve estar preparado para receber qualquer forma autorizada pela decisão judicial. Documentação rigorosa é essencial.",
+          "detalhes": {
+            "cheque": {
+              "vantagens": [
+                "Tradicional e confiável",
+                "Permite liquidação futura",
+                "Deixa rastro comprobatório"
+              ],
+              "cuidados": [
+                "Validar assinatura do emitente",
+                "Conferir se tem cobertura",
+                "Registrar dados do cheque no ACT",
+                "Guardar cheque como comprovante"
+              ],
+              "prazo": "Até 30 dias para compensação"
+            },
+            "transferencia": {
+              "vantagens": [
+                "Imediata e segura",
+                "Sem risco de devolução",
+                "Deixa comprovante automático"
+              ],
+              "procedimento": [
+                "1. Arrematante informa IBAN/PIX",
+                "2. Faz transferência via caixa eletrônico",
+                "3. Apresenta comprovante ao leiloeiro",
+                "4. Leiloeiro confirma recebimento"
+              ],
+              "recomendacao": "Preferir transferência à vista (TED/DOC)"
+            },
+            "cartaoCredito": {
+              "aceitacao": "Apenas se autorizado pela decisão judicial",
+              "risco": "Pode ser contestado em até 180 dias",
+              "taxa": "Geralmente paga pelo arrematante",
+              "procedimento": [
+                "1. Máquina de cartão no local do leilão",
+                "2. Comprador apresenta cartão",
+                "3. Transação é processada",
+                "4. Comprovante impresso é assinado"
+              ],
+              "cuidado": "Documentar expressamente no ACT"
+            }
+          },
+          "exemploPratico": {
+            "cenario": "Leilão com múltiplas formas de pagamento aceitas",
+            "opcoes": [
+              "Opção 1: Cheque administrativo de banco",
+              "Opção 2: Transferência TED de qualquer banco",
+              "Opção 3: Cartão de crédito (não recomendado)",
+              "Opção 4: Dinheiro em espécie (máximo permitido por lei)"
+            ],
+            "recomendacao": "Priorizar transferência ou cheque administrativo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Cálculo de Juros, Multa e Atualização Monetária",
+      "descricao": "Fórmulas e aplicação correta",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Juros de Mora - 1% ao Mês",
+          "tipo": "conteudo",
+          "conteudo": "Art. 895 CPC estipula juros de 1% ao mês para pagamentos parcelados. Equivalente a 12% ao ano. Deve ser calculado sobre CADA PARCELA que atrasar. Não acumula juros sobre juros (vedado por lei).",
+          "detalhes": {
+            "formula": "Juros = (Valor da Parcela × 1%) × Dias de Atraso / 30",
+            "exemplo": "Parcela de R$ 10.000,00 com 15 dias de atraso = R$ 10.000,00 × 1% × (15/30) = R$ 50,00",
+            "aplicacao": [
+              "Calcular sobre o valor nominal da parcela",
+              "Contar dias efetivos de atraso",
+              "Aplicar proporcionalmente ao período",
+              "Cobrar do arrematante via notificação"
+            ],
+            "limitacoes": [
+              "Máximo 1% ao mês (Art. 895 CPC)",
+              "Não pode ser capitalizado",
+              "Deve estar previsto no edital",
+              "Pode ser reduzido por decisão judicial"
+            ],
+            "documentacao": "Registrar cálculo em relatório anexado ao processo"
+          },
+          "tabelaReferencia": [
+            {
+              "diasAtraso": 5,
+              "percentual": "0,17%",
+              "exemplo": "R$ 17,00 em R$ 10.000,00"
+            },
+            {
+              "diasAtraso": 10,
+              "percentual": "0,33%",
+              "exemplo": "R$ 33,00 em R$ 10.000,00"
+            },
+            {
+              "diasAtraso": 15,
+              "percentual": "0,50%",
+              "exemplo": "R$ 50,00 em R$ 10.000,00"
+            },
+            {
+              "diasAtraso": 30,
+              "percentual": "1,00%",
+              "exemplo": "R$ 100,00 em R$ 10.000,00"
+            }
+          ],
+          "exemploPratico": {
+            "parcela": "R$ 20.000,00 (2ª de 12)",
+            "vencimento": "15/12/2025",
+            "pagamento": "30/12/2025",
+            "diasAtraso": 15,
+            "juros": "R$ 20.000,00 × 1% × (15/30) = R$ 100,00",
+            "totalDevido": "R$ 20.100,00"
+          }
+        },
+        {
+          "id": 2.2,
+          "titulo": "Multa por Atraso - 10% da Parcela",
+          "tipo": "conteudo",
+          "conteudo": "Incide sobre a parcela em atraso quando não é paga no prazo. É sanção pelo inadimplemento. Cumulativa com juros. Não pode exceder 10% do valor da parcela. Deve estar expressamente prevista no edital e decisão judicial.",
+          "detalhes": {
+            "formula": "Multa = Valor da Parcela × 10%",
+            "aplicacao": [
+              "Incide após primeiro dia de atraso",
+              "Aplica-se uma única vez por parcela atrasada",
+              "Não acumula mês a mês",
+              "Independente da duração do atraso"
+            ],
+            "exemplo": "Parcela de R$ 10.000,00 com 1 dia de atraso = R$ 1.000,00",
+            "combinacao": "Juros (1% ao mês) + Multa (10%) = encargo total",
+            "limiteLegal": "Máximo 10% da parcela atrasada"
+          },
+          "exemploPratico": {
+            "parcela": "3ª parcela de R$ 15.000,00",
+            "vencimento": "15/01/2026",
+            "pagamento": "31/01/2026",
+            "diasAtraso": 16,
+            "multa": "R$ 15.000,00 × 10% = R$ 1.500,00",
+            "juros": "R$ 15.000,00 × 1% × (16/30) = R$ 80,00",
+            "totalDevido": "R$ 15.000,00 + R$ 1.500,00 + R$ 80,00 = R$ 16.580,00"
+          }
+        },
+        {
+          "id": 2.3,
+          "titulo": "Atualização Monetária - IPCA ou TR",
+          "tipo": "conteudo",
+          "conteudo": "As parcelas sofrem atualização monetária para preservar o poder de compra. Pode ser feita por IPCA (Índice de Preços ao Consumidor Amplo), TR (Taxa Referencial) ou índice previsto na decisão judicial. Essencial atualizar corretamente para não prejudicar credor ou devedor.",
+          "detalhes": {
+            "indiceIPCA": {
+              "descricao": "Mais utilizado atualmente",
+              "fonteOficial": "IBGE - Instituto Brasileiro de Geografia e Estatística",
+              "periodico": "Mensal",
+              "aplicacao": "Multiplicar valor da parcela pelo índice acumulado"
+            },
+            "indiceTR": {
+              "descricao": "Tradicional em execuções",
+              "fonteOficial": "Banco Central do Brasil",
+              "periodico": "Diário",
+              "aplicacao": "Usar TR do dia do vencimento"
+            },
+            "formulaAtualizacao": "Valor Atualizado = Valor Original × (Índice Atual / Índice Base)",
+            "procedimento": [
+              "1. Definir índice no edital/decisão",
+              "2. Registrar período-base",
+              "3. Coletar índice atual na data de cálculo",
+              "4. Aplicar fórmula de atualização",
+              "5. Documentar todos os cálculos"
+            ],
+            "exemplo": "Parcela de R$ 10.000,00 de jan/2025. Em jun/2025, IPCA acumulado = 3,5%. Valor atualizado = R$ 10.000,00 × 1,035 = R$ 10.350,00"
+          },
+          "exemploPratico": {
+            "situacao": "Imóvel leiloado em julho/2025, parcelado em 12 meses",
+            "lance": "R$ 200.000,00",
+            "parcelaOriginal": "R$ 16.666,67 cada",
+            "atualizacao": "IPCA mensal",
+            "cronograma": [
+              {
+                "mes": "1ª parcela (jul/2025)",
+                "valor": "R$ 16.666,67",
+                "ipca": "Base"
+              },
+              {
+                "mes": "2ª parcela (ago/2025)",
+                "valor": "R$ 16.666,67 × 1,0032 = R$ 16.719,99",
+                "ipca": "+0,32%"
+              },
+              {
+                "mes": "3ª parcela (set/2025)",
+                "valor": "R$ 16.666,67 × 1,0045 = R$ 16.741,83",
+                "ipca": "+0,13% de ago"
+              },
+              {
+                "mes": "...",
+                "valor": "...",
+                "ipca": "..."
+              }
+            ]
+          }
+        },
+        {
+          "id": 2.4,
+          "titulo": "Cálculo Integrado - Exemplo Completo",
+          "tipo": "conteudo",
+          "conteudo": "Exercício prático integrando: parcela base, juros de mora, multa por atraso e atualização monetária. Este é o cálculo real feito em inadimplementos de leilão.",
+          "detalhes": {
+            "cenario": "Leilão em Recife - 12 parcelas de imóvel",
+            "lanceFinal": "R$ 120.000,00",
+            "parcelaBase": "R$ 10.000,00",
+            "prazoParcelamento": "12 meses",
+            "indiceAtualizacao": "IPCA mensal"
+          },
+          "exemploPasso_a_Passo": {
+            "situacao": "2ª parcela vencida em atraso de 20 dias",
+            "passo1_ValorBase": "R$ 10.000,00",
+            "passo2_AtualizacaoMonetaria": "IPCA acumulado (julho a agosto) = 0,35%. Valor atualizado = R$ 10.000,00 × 1,0035 = R$ 10.035,00",
+            "passo3_Multa": "10% sobre valor atualizado = R$ 10.035,00 × 10% = R$ 1.003,50",
+            "passo4_Juros": "1% ao mês sobre valor atualizado × (20/30) = R$ 10.035,00 × 1% × 0,6667 = R$ 66,90",
+            "passo5_TotalDevido": "R$ 10.035,00 + R$ 1.003,50 + R$ 66,90 = R$ 11.105,40",
+            "notificacao": "Enviar ao arrematante com detalhamento exato"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Segurança nas Transações Financeiras",
+      "descricao": "Proteção de recursos e documentação",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Depósito Caução - Proteção e Devolução",
+          "tipo": "conteudo",
+          "conteudo": "Valor depositado previamente ao leilão (geralmente 10-20% do valor base) como comprovação de capacidade de pagamento. Se arrematante não pagar, caução é perdida. Se pagar, caução é abatido do valor do lance.",
+          "detalhes": {
+            "percentuais": [
+              "Mínimo: 5% do valor base",
+              "Padrão: 10% do valor base",
+              "Máximo: 20% do valor base"
+            ],
+            "finalidade": [
+              "Garantir capacidade de pagamento",
+              "Reduzir aventureiros no leilão",
+              "Proteger credor (agente judicial)"
+            ],
+            "devoluçãoGarantida": [
+              "Se arrematante pagar na assinatura do ACT, caução é devolvida",
+              "Se pagamento é parcelado, caução é descontado da 1ª parcela",
+              "Se não arremata, é devolvida na semana do leilão"
+            ],
+            "perdaDeposito": [
+              "Se não comparece para pagar: caução perdida",
+              "Se não completa pagamento de parcelado: caução perdida",
+              "Bem volta para novo leilão"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Olinda",
+            "valorBase": "R$ 200.000,00",
+            "deposito": "10% = R$ 20.000,00",
+            "cenario1": "Pagamento à vista por R$ 250.000,00. Caução é devolvida + juros de aplicação (conforme edital)",
+            "cenario2": "Parcelamento em 12×. Caução é compensado na 1ª parcela: em vez de R$ 20.833,33, paga apenas R$ 833,33",
+            "cenario3": "Não paga. Caução é retido e bem vai para novo leilão"
+          }
+        },
+        {
+          "id": 3.2,
+          "titulo": "Contas Especiais e Segregação de Recursos",
+          "tipo": "conteudo",
+          "conteudo": "Dinheiro arrecadado em leilão judicial é recurso público que deve ficar segregado. Não pode ser misturado com contas do leiloeiro. Regras de contabilidade rigorosa. Cada leilão tem sua conta separada ou números separados.",
+          "detalhes": {
+            "segregacao": [
+              "Recursos do leilão NUNCA misturar com conta própria do leiloeiro",
+              "Abrir conta específica por leilão ou por mês",
+              "Manter registros separados de cada transação",
+              "Auditoria mensal é recomendada"
+            ],
+            "documentacao": [
+              "Livro de registro de leilões (Lei 9.492/97)",
+              "Demonstrativo de recebimentos e repasses",
+              "Comprovantes de pagamento a credores",
+              "Relatório mensal de atividades"
+            ],
+            "prazosDeRepasse": [
+              "Recursos devem ser repassados rapidamente",
+              "Máximo 10 dias para transferência a credores",
+              "Caução devolvida em 5 dias úteis",
+              "Documentar toda retirada de recursos"
+            ],
+            "conformidade": [
+              "Reportar ao tribunal mensalmente",
+              "Estar preparado para auditorias",
+              "Manter transparência absoluta",
+              "Seguro de responsabilidade civil é recomendado"
+            ]
+          },
+          "exemploPratico": {
+            "situacao": "Leilão em Recife realizado em 20/11/2025",
+            "recursosArrecadados": "R$ 150.000,00 (lance vencedor)",
+            "procedimento": [
+              "1. Depósito imediato em conta do tribunal (ou leiloeiro se autorizado)",
+              "2. Registro em livro de controle",
+              "3. Emissão de recibo ao comprador",
+              "4. Liquidação de custas do leilão: R$ 3.000,00 (2% do lance)",
+              "5. Valor líquido para credor: R$ 147.000,00",
+              "6. Transferência a credor em até 10 dias",
+              "7. Comprovante guardado no processo"
+            ]
+          }
+        },
+        {
+          "id": 3.3,
+          "titulo": "PIX e Meios Eletrônicos de Pagamento",
+          "tipo": "conteudo",
+          "conteudo": "PIX revolucionou pagamentos. Em leilões, pode ser utilizado se autorizado pela decisão judicial. Oferece segurança, rapidez e comprovação automática. Excelente para receber pagamentos de parcelamento.",
+          "detalhes": {
+            "vantagensPIX": [
+              "Disponível 24/7, até em finais de semana",
+              "Transação imediata e irrevogável",
+              "Comprovante automático no aplicativo",
+              "Sem taxas bancárias",
+              "Fácil de rastrear e auditar"
+            ],
+            "comoProceder": [
+              "1. Tribunal ou leiloeiro tem chave PIX registrada",
+              "2. Inclui no edital: 'Aceita-se PIX como forma de pagamento'",
+              "3. QR Code do PIX é exibido no local do leilão",
+              "4. Arrematante faz transferência PIX via celular",
+              "5. Comprovante é impresso e assinado"
+            ],
+            "seguranca": [
+              "PIX instantâneo não pode ser contestado",
+              "Mantém logs automáticos",
+              "Reduz risco de cheques sem fundos",
+              "Elimina contato desnecessário com dinheiro"
+            ],
+            "chavesPIX": [
+              "Chave CPF: vinculada ao juiz/tribunal",
+              "Chave Email: para leiloeiro",
+              "Chave Telefone: alternativa",
+              "Chave Aleatória: altamente segura"
+            ]
+          },
+          "exemploPratico": {
+            "cenario": "Leilão com parcelamento em 10 parcelas",
+            "utilizacaoPIX": [
+              "Edital informa: 'PIX - Chave: tjpe.leilao@gmail.com'",
+              "Arrematante recebe boleto mensal",
+              "Em cada vencimento, faz PIX via aplicativo banco",
+              "Recebe confirmação automática",
+              "Tribunal rastreia todos os pagamentos"
+            ],
+            "vantagem": "100% seguro, sem risco de devolução, documentado automaticamente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Problemas Comuns e Como Resolver",
+      "descricao": "Situações reais de inadimplemento",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Atraso no Pagamento de Parcelado",
+          "tipo": "conteudo",
+          "conteudo": "Arrematante não paga na data contratada. Procedimento claro: notificação com prazos, cálculo de encargos, possível reintegração de posse ou novo leilão.",
+          "detalhes": {
+            "sinais_Alerta": [
+              "Falta de contato do arrematante",
+              "Recusa em receber notificação",
+              "Falta de comprovante de tentativa de pagamento"
+            ],
+            "procedimento": [
+              "1º - Notificação: enviar com 5 dias de prazo para pagar",
+              "2º - Aguardar resposta: se silêncio, proceder com cobrança",
+              "3º - Cálculo atualizado: juros, multa, atualização monetária",
+              "4º - Encaminhar ao tribunal para decisão sobre reintegração",
+              "5º - Se não pagar em 10 dias, solicitar novo leilão do bem"
+            ],
+            "documentosNecessarios": [
+              "Cópia do ACT assinado",
+              "Cópia do edital",
+              "Comprovante de notificação",
+              "Cálculo detalhado dos encargos",
+              "Correspondência trocada"
+            ]
+          },
+          "exemploPratico": {
+            "situacao": "Parcelado de R$ 50.000,00 em 5 parcelas",
+            "problemaParcela": "3ª parcela de R$ 10.000,00 com vencimento 15/12/2025",
+            "situacaoAtual": "Hoje é 05/01/2026 - 21 dias em atraso",
+            "calculo": {
+              "parcelaBase": "R$ 10.000,00",
+              "atualizacao": "IPCA: +0,50% = R$ 10.050,00",
+              "multa": "10% = R$ 1.005,00",
+              "juros": "1% ao mês × (21/30) = R$ 70,35",
+              "totalDevido": "R$ 11.125,35"
+            },
+            "acao": "Enviar notificação exigindo pagamento em 5 dias"
+          }
+        },
+        {
+          "id": 4.2,
+          "titulo": "Recusa em Retirar o Bem",
+          "tipo": "conteudo",
+          "conteudo": "Arrematante pagou mas não retira o bem. Imóvel fica parado, tribunal ocupado. Procedimento para desocupação compulsória e transferência de posse.",
+          "detalhes": {
+            "causas": [
+              "Arrependimento do comprador",
+              "Dificuldade em financiamento",
+              "Mudanças circunstâncias pessoais",
+              "Má interpretação de direitos"
+            ],
+            "acoes": [
+              "1. Notificar por escrito exigindo retirada em 5 dias",
+              "2. Se recusa, requerer judicialmente imissão na posse",
+              "3. Juiz ordena desocupação compulsória",
+              "4. Официальный executor realiza desocupação",
+              "5. Bem é entregue livremente ao arrematante"
+            ],
+            "custosParcela": [
+              "Honorários oficiais: pode cobrar",
+              "Custas processuais: ao comprador",
+              "Despesa de remoção: ao comprador"
+            ]
+          },
+          "exemploPratico": {
+            "bem": "Casa em Recife",
+            "arrematacao": "Pagamento realizado em 15/11/2025",
+            "problema": "Em 25/11, comprador diz 'não quer mais'",
+            "acao": "Notificação exigindo retirada até 30/11",
+            "resultado": "Se não cumprir, juiz ordena desocupação força"
+          }
+        },
+        {
+          "id": 4.3,
+          "titulo": "Cheque Devolvido Após o Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Arrematante pagou com cheque que foi devolvido (insuficiência de fundos, conta fechada, etc). Procedimento para regularização.",
+          "detalhes": {
+            "situacoes": [
+              "Cheque sem cobertura (falta de fundos)",
+              "Cheque com conta encerrada",
+              "Cheque falsificado",
+              "Cheque pré-datado vencido"
+            ],
+            "procedimento": [
+              "1. Banco devolve cheque com motivo",
+              "2. Imediatamente notificar arrematante",
+              "3. Exigir outro cheque ou forma de pagamento",
+              "4. Prazo: 2 dias úteis",
+              "5. Se não pagar: perda de caução e bem volta ao leilão"
+            ],
+            "documentacao": [
+              "Aviso de devolução do banco",
+              "Cópia do cheque devolvido",
+              "Comprovante de notificação",
+              "Registro no ACT de rejeição"
+            ]
+          },
+          "exemploPratico": {
+            "leilao": "Imóvel em Jaboatão",
+            "lance": "R$ 100.000,00",
+            "pagamento": "Cheque de R$ 100.000,00 (datado 20/11/2025)",
+            "problema": "Cheque retorna com motivo 'Insuficiência de Fundos'",
+            "notificacao": "Enviar imediatamente ao comprador",
+            "prazo": "2 dias para apresentar novo cheque",
+            "resultado": "Se não cumprir, perde caução (R$ 10.000,00) e bem vai para novo leilão"
+          }
+        }
+      ]
+    }
+  ],
+  "questoesRevisao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o principal encargo financeiro por atraso em pagamento parcelado de leilão judicial, conforme Art. 895 CPC?",
+      "opcoes": [
+        "1% ao mês de juros de mora",
+        "5% de multa por atraso",
+        "2% ao mês de atualização",
+        "3% ao mês de juros compostos"
+      ],
+      "respostaCorreta": 0,
+      "explicacao": "O Art. 895 CPC estabelece juros de mora de 1% ao mês (12% ao ano) para pagamentos parcelados. Além disto, incide multa de 10% da parcela atrasada. Juros compostos são vedados em lei."
+    },
+    {
+      "id": 2,
+      "pergunta": "O arrematante pode exigir parcelamento do lance em leilão judicial?",
+      "opcoes": [
+        "Sim, é direito do comprador",
+        "Não, é apenas uma faculdade do tribunal",
+        "Só se for pessoa jurídica",
+        "Sempre em até 12 parcelas"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Parcelamento é uma FACULDADE do tribunal, não direito do comprador. Deve estar expressamente autorizado no edital e pela decisão judicial. É exceção, não regra."
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é a multa por atraso de pagamento em leilão judicial?",
+      "opcoes": [
+        "5% da parcela atrasada",
+        "10% da parcela atrasada",
+        "15% da parcela atrasada",
+        "Sem limite, conforme edital"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "A multa por atraso é de 10% sobre a parcela atrasada, conforme jurisprudência e Art. 895 CPC. É aplicada uma única vez por parcela, não acumula."
+    },
+    {
+      "id": 4,
+      "pergunta": "Como é tratado o depósito caução se o arrematante não efetua o pagamento?",
+      "opcoes": [
+        "É devolvido com juros em 30 dias",
+        "É perdido e o bem volta para novo leilão",
+        "É transferido para o tribunal",
+        "É abatido da próxima arrematação"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Se o arrematante não paga, perde totalmente a caução depositada. O bem retorna para novo leilão. A caução é garantia de que o comprador irá cumprir com o pagamento."
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual índice é mais comumente utilizado para atualização monetária em leilões judiciais?",
+      "opcoes": [
+        "IGP-M",
+        "IPCA",
+        "TR",
+        "SELIC"
+      ],
+      "respostaCorreta": 1,
+      "explicacao": "Atualmente IPCA é o índice mais utilizado para atualização monetária em leilões. É o Índice de Preços ao Consumidor Amplo, calculado pelo IBGE mensalmente."
+    },
+    {
+      "id": 6,
+      "pergunta": "O PIX pode ser utilizado como forma de pagamento em leilões judiciais?",
+      "opcoes": [
+        "Nunca, é vedado por lei",
+        "Apenas em parcelamentos",
+        "Sim, se autorizado pela decisão judicial e incluído no edital",
+        "Sim, é obrigatório desde 2024"
+      ],
+      "respostaCorreta": 2,
+      "explicacao": "PIX pode ser utilizado se expressamente autorizado pela decisão judicial e mencionado no edital. Oferece segurança, rapidez e comprovação automática."
+    }
+  ],
+  "casosExemplo": [
+    {
+      "id": 1,
+      "titulo": "Leilão com Parcelamento Bem-Sucedido",
+      "descricao": "Exemplo de leilão onde parcelamento funcionou perfeitamente",
+      "situacao": "Leilão de imóvel em Recife realizado em 15/07/2025",
+      "lance": "R$ 180.000,00",
+      "arrematante": "João da Silva",
+      "processoJudicial": "0000001-15.2023.8.17.1234",
+      "cronogramaParcelamento": [
+        {
+          "parcela": 1,
+          "vencimento": "22/07/2025",
+          "valor": "R$ 15.000,00",
+          "status": "Pago em 22/07/2025 - Via PIX"
+        },
+        {
+          "parcela": 2,
+          "vencimento": "22/08/2025",
+          "valor": "R$ 15.180,00",
+          "status": "Pago em 22/08/2025 - Cheque administrativo"
+        },
+        {
+          "parcela": 3,
+          "vencimento": "22/09/2025",
+          "valor": "R$ 15.273,00",
+          "status": "Pago em 22/09/2025 - Transferência"
+        }
+      ],
+      "resultado": "Sucesso total. Todas as parcelas pagas dentro do prazo. Imóvel registrado em nome do comprador com sucesso."
+    },
+    {
+      "id": 2,
+      "titulo": "Leilão com Problema de Inadimplemento Resolvido",
+      "descricao": "Situação de atraso que foi normalizada",
+      "situacao": "Leilão em Olinda - 4ª parcela com atraso",
+      "problem": "4ª parcela de R$ 12.500,00 com vencimento 15/09/2025, não foi paga até 05/10/2025",
+      "diasAtraso": 20,
+      "calculoEncargos": {
+        "parcelaBase": "R$ 12.500,00",
+        "atualizacaoIPCA": "+0,45% = R$ 12.556,25",
+        "multa": "10% = R$ 1.255,62",
+        "juros": "1% × (20/30) = R$ 83,71",
+        "totalDevido": "R$ 13.895,58"
+      },
+      "acao": "Notificação enviada em 06/10/2025",
+      "resultado": "Arrematante pagou R$ 13.895,58 em 10/10/2025. Continuação normal do parcelamento."
+    },
+    {
+      "id": 3,
+      "titulo": "Erro Comum: Cálculo Incorreto de Juros",
+      "descricao": "Demonstração de erro frequente em cálculo",
+      "erroComum": "Leiloeiro soma juros mês a mês (capitalização proibida)",
+      "exemplo": {
+        "parcela": "R$ 10.000,00",
+        "vencimento": "15/10/2025",
+        "atraso": "45 dias (até 30/11/2025)",
+        "calculoErrado": "Mês 1: R$ 100,00 + Mês 2: R$ 101,00 = R$ 201,00 (errado - juros sobre juros)",
+        "calculoCorrecto": "R$ 10.000,00 × 1% × (45/30) = R$ 150,00"
+      },
+      "consequencia": "Cálculo errado prejudica credor ou devedor",
+      "dica": "Sempre calcular juros sobre o valor original, não capitalizar"
+    }
+  ],
+  "recursos": {
+    "legislacao": [
+      {
+        "titulo": "Artigo 895 do CPC",
+        "descricao": "Juros de mora em execução e leilão"
+      },
+      {
+        "titulo": "Lei 9.514/97",
+        "descricao": "Lei que trata de financiamentos imobiliários"
+      },
+      {
+        "titulo": "Código Tributário Nacional - CTN",
+        "descricao": "Tributos e execuções fiscais"
+      }
+    ],
+    "links": [
+      "https://www.cnj.jus.br - Conselho Nacional de Justiça",
+      "https://www.tjpe.jus.br - Tribunal de Justiça de Pernambuco",
+      "https://www.ibge.gov.br - IPCA e índices econômicos"
+    ]
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "id": 2,
+  "titulo": "Elaboração do Edital de Leilão",
+  "descricao": "Elementos obrigatórios e procedimentos",
+  "duracao": "60min",
+  "icone": "📋",
+  "version": "1.0.0",
+  "ultimaAtualizacao": "2025-11-15",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "objetivos": [
+    "Dominar estrutura legal do edital de leilão",
+    "Incorporar todos os elementos obrigatórios",
+    "Aplicar técnicas de redação clara e precisa",
+    "Evitar vícios que causem nulidade",
+    "Publicar edital adequadamente"
+  ],
+  "alertasCriticos": [
+    {
+      "tipo": "critico",
+      "titulo": "EDITAL COM VÍCIO = LEILÃO NULO",
+      "conteudo": "Omissão de qualquer elemento obrigatório invalida todo o procedimento. A jurisprudência é rigorosa neste ponto. Edital deve ser perfeito tecnicamente.",
+      "icone": "🚨"
+    },
+    {
+      "tipo": "importante",
+      "titulo": "DESCRIÇÃO CLARA DO BEM",
+      "conteudo": "Descrição imprecisa gera inúmeras impugnações. Deve permitir que qualquer pessoa identifique exatamente o bem sem dúvidas.",
+      "icone": "📝"
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "DÉBITOS DEVEM CONSTAR",
+      "conteudo": "Todos os débitos conhecidos (tributários, condominiais, IPTU) devem ser mencionados. Silêncio gera responsabilidade.",
+      "icone": "⚠️"
+    }
+  ],
+  "secoes": [
+    {
+      "id": 1,
+      "titulo": "Elementos Obrigatórios do Edital",
+      "descricao": "Conteúdo essencial que todo edital deve conter",
+      "topicos": [
+        {
+          "id": 1.1,
+          "titulo": "Identificação do Processo e Partes",
+          "tipo": "conteudo",
+          "conteudo": "Todo edital deve iniciar com identificação clara do processo executório. Número do processo, Tribunal, Vara especializada, juiz responsável, leiloeiro oficial designado.",
+          "elementos": [
+            "Número do processo judicial completo",
+            "Vara de execução (jurisdição)",
+            "Juiz responsável (nome e assinatura)",
+            "Leiloeiro oficial (nome, número de registro JUCEPE)",
+            "Credor (nome e qualificação)",
+            "Devedor/executado (nome e CPF/CNPJ)"
+          ],
+          "exemplo": "PROCESSO Nº 0000000-00.0000.0.00.0000 da Vara de Execução do Foro de Recife"
+        },
+        {
+          "id": 1.2,
+          "titulo": "Descrição Completa do Bem",
+          "tipo": "conteudo",
+          "conteudo": "Este é elemento crítico. Deve ser tão precisa que qualquer pessoa identifique o bem sem ambiguidade. Falta de precisão gera impugnações e anulação.",
+          "para_imovel": {
+            "elementos": [
+              "Tipo de imóvel (casa, apartamento, terreno, etc)",
+              "Endereço completo",
+              "Número do registro de imóvel (cartório)",
+              "Matrícula do imóvel",
+              "Área construída e área total",
+              "Dependências (quartos, banheiros, salas)",
+              "Confrontações (quem limita ao redor)",
+              "Localização precisa (qual quadra, via, número)"
+            ],
+            "dica": "Consultar matrícula no cartório de registro de imóveis para copiar descrição exata"
+          },
+          "para_movel": {
+            "elementos": [
+              "Tipo de bem (veículo, maquinário, etc)",
+              "Marca, modelo, ano",
+              "Características distintivas",
+              "Número de série/placa",
+              "Estado de conservação",
+              "Especificações técnicas relevantes"
+            ],
+            "dica": "Fotos claras do bem ajudam na publicidade"
+          }
+        },
+        {
+          "id": 1.3,
+          "titulo": "Avaliação e Preço de Saída",
+          "tipo": "conteudo",
+          "conteudo": "Deve constar valor de avaliação atualizado (CPC art. 829) e preço de saída do leilão. Estes valores determinam se há arrematação ou não.",
+          "elementos": [
+            "Valor da avaliação",
+            "Data da avaliação",
+            "Profissional que avaliou",
+            "Preço de saída (geralmente 50-60% da avaliação)",
+            "Critério de reajuste se houver atraso",
+            "Forma de atualização (INPC, IPCA, etc)"
+          ],
+          "importante": "Preço muito baixo causa desconfiança; muito alto não atrai arrematantes"
+        },
+        {
+          "id": 1.4,
+          "titulo": "Débitos e Responsabilidades do Arrematante",
+          "tipo": "conteudo",
+          "conteudo": "Crucial declarar todos os débitos conhecidos. Art. 130 CTN prevê responsabilidade tributária; STJ tema 1.134 prevê responsabilidade condominial.",
+          "deve_mencionar": [
+            "Débito de IPTU (valor e período)",
+            "Débito de condomínio (se houver)",
+            "Débito de água/esgoto (se houver)",
+            "Débito tributário inscrito em dívida ativa",
+            "Possibilidade de débitos tributários ocultos",
+            "Seguro/taxas de manutenção pendentes",
+            "Ônus registrados na matrícula"
+          ],
+          "modelo": "Edital deve dizer expressamente: 'O arrematante responde por débitos condominiais conforme STJ tema 1.134/2024'"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Prazos e Procedimento de Leilão",
+      "descricao": "Informações sobre cronograma e processo",
+      "topicos": [
+        {
+          "id": 2.1,
+          "titulo": "Data e Horário do Leilão",
+          "tipo": "conteudo",
+          "conteudo": "Deve ser especificado com precisão data, hora e local. CPC determina prazos mínimos entre publicação e realização.",
+          "requisitos": [
+            "Data e hora exatos",
+            "Local preciso (endereço, sala)",
+            "Horário de abertura de acesso",
+            "Horário de encerramento de lances",
+            "Fusos horários se for leilão online",
+            "Observância de feriados (leilão em dia útil)"
+          ],
+          "prazos_minimos": "Mínimo 30 dias entre edital e realização (CPC art. 827)"
+        },
+        {
+          "id": 2.2,
+          "titulo": "Prazo de Impugnação",
+          "tipo": "conteudo",
+          "conteudo": "CPC permite impugnação prévia ao leilão. Edital deve informar prazo exato para apresentar impugnações.",
+          "detalhes": [
+            "Prazo de impugnação (geralmente 15 dias)",
+            "A quem dirigir (juízo executor)",
+            "Motivos cabíveis de impugnação",
+            "Efeito de impugnação (suspensão do leilão até julgamento)",
+            "Número de identificação do processo para impugnação"
+          ],
+          "importante": "Impugnação deve ser analisada pelo juiz antes do leilão"
+        },
+        {
+          "id": 2.3,
+          "titulo": "Formas de Pagamento",
+          "tipo": "conteudo",
+          "conteudo": "Edital deve especificar todas as formas aceitas de pagamento, prazos e condições. CPC art. 895 permite parcelamento.",
+          "opcoes_tipicas": [
+            "À vista (no ato ou até 24 horas)",
+            "Cheque (pós-datado com restrições)",
+            "Transferência bancária",
+            "Parcelado (máximo 4 parcelas conforme jurisprudência)",
+            "Financiamento (com restrições)"
+          ],
+          "obrigatorio": "Deixar claro que demora em pagamento pode gerar perda de arrematação"
+        },
+        {
+          "id": 2.4,
+          "titulo": "Conta para Depósito",
+          "tipo": "conteudo",
+          "conteudo": "Edital deve indicar conta bancária específica para depósito de valores. Deve ser conta oficial/judicial.",
+          "requisitos": [
+            "Nome completo do banco",
+            "Agência e número de conta",
+            "Titular da conta (Vara de Execução)",
+            "Informações para transferência (CPF/CNPJ, código banco)",
+            "Comprovante mínimo necessário"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Procedimento de Publicação do Edital",
+      "descricao": "Como e onde publicar o edital",
+      "topicos": [
+        {
+          "id": 3.1,
+          "titulo": "Publicação Obrigatória",
+          "tipo": "conteudo",
+          "conteudo": "CPC art. 827 determina publicações obrigatórias. Diferentes meios garantem conhecimento das partes interessadas.",
+          "meios_obrigatorios": [
+            "Diário da Justiça Eletrônico (publicação oficial)",
+            "Diário Oficial do Estado (para bens imóveis)",
+            "Portal do TJPE (quando possível)",
+            "Edital afixado no Fórum da Vara",
+            "Aviso dirigido ao executado (via cartório)"
+          ],
+          "prazos": "Primeira publicação com mínimo 30 dias antes do leilão"
+        },
+        {
+          "id": 3.2,
+          "titulo": "Publicações Complementares",
+          "tipo": "conteudo",
+          "conteudo": "Além das obrigatórias, leiloeiro pode fazer publicações adicionais para atrair arrematantes.",
+          "opcoes": [
+            "Jornais de circulação (O Globo, Folha, Jornal do Commércio)",
+            "Portais imobiliários (se imóvel)",
+            "Internet (site do TJPE, portais especializados)",
+            "Radio/TV local (em casos de bens de grande valor)",
+            "Avisos em cartório de registro de imóvel"
+          ],
+          "vantagem": "Mais publicidade = mais arrematantes = melhor resultado"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Erros Comuns e Como Evitar",
+      "descricao": "Vícios que causam nulidade",
+      "topicos": [
+        {
+          "id": 4.1,
+          "titulo": "Vício na Descrição do Bem",
+          "tipo": "conteudo",
+          "conteudo": "Descrição vaga ou incompleta é vício insanável. Alguns exemplos de erros:",
+          "erros": [
+            "Endereço incompleto ou incorreto",
+            "Matrícula imobiliária errada",
+            "Características omitidas (número quartos, tamanho, etc)",
+            "Localização imprecisa que causa confusão",
+            "Sem indicação de qual bem em prédio com múltiplas unidades"
+          ],
+          "solucao": "Consultar matrícula original no cartório, fazer vistoria pessoal, descrever em termos técnicos precisos"
+        },
+        {
+          "id": 4.2,
+          "titulo": "Omissão de Débito Conhecido",
+          "tipo": "conteudo",
+          "conteudo": "Se edital cala sobre débito existente, gera responsabilidade do leiloeiro e pode causar impugnação pós-arrematação.",
+          "riscos": [
+            "Arrematante questiona validade",
+            "Terceiro credor pode impugnar",
+            "Anulação da arrematação",
+            "Responsabilidade civil do leiloeiro"
+          ],
+          "prevencao": "Pesquisa exaustiva de débitos: cartório, prefeitura, condomínio, receita federal"
+        },
+        {
+          "id": 4.3,
+          "titulo": "Prazos Incorretos",
+          "tipo": "conteudo",
+          "conteudo": "Desrespeitar prazos mínimos do CPC causa nulidade automática.",
+          "erros_frequentes": [
+            "Menos de 30 dias entre edital e leilão",
+            "Prazo de impugnação menor que o legal",
+            "Erro no cálculo de prazos",
+            "Não considerar feriados"
+          ],
+          "verificacao": "Usar ferramenta de cálculo de prazos processuais respeitando dias úteis"
+        },
+        {
+          "id": 4.4,
+          "titulo": "Falta de Publicação Adequada",
+          "tipo": "conteudo",
+          "conteudo": "Omissão de publicação ou publicação deficiente viola direito de conhecimento das partes.",
+          "verificar": [
+            "Publicação no DJE? Comprovante?",
+            "Publicação no Diário Oficial? Qual edição?",
+            "Afixação no Fórum? Data de afixação?",
+            "Aviso ao executado? Protocolo de recebimento?",
+            "Portal do TJPE atualizado?"
+          ],
+          "documentacao": "Guardar cópias de todas publicações para comprovar"
+        }
+      ]
+    }
+  ],
+  "linksOficiais": [
+    {
+      "titulo": "CPC - Arts. 824-830 (Edital)",
+      "url": "http://www.planalto.gov.br/ccivil_03/codigo/cpcs.htm#art824",
+      "tipo": "legislacao"
+    },
+    {
+      "titulo": "TJPE - Modelos de Edital",
+      "url": "https://www.tjpe.jus.br",
+      "tipo": "instituicao"
+    }
+  ],
+  "templates": [
+    {
+      "nome": "Edital Padrão de Execução Comum",
+      "tipo": "execucao_comum",
+      "estrutura": [
+        "Cabeçalho (Tribunal, Vara, Juiz, Leiloeiro)",
+        "Identificação do Processo",
+        "Descrição do Bem",
+        "Valor da Avaliação",
+        "Preço de Saída",
+        "Débitos",
+        "Data e Horário do Leilão",
+        "Prazos de Impugnação",
+        "Formas de Pagamento",
+        "Condições Gerais",
+        "Firma e Assinatura do Leiloeiro"
+      ]
+    },
+    {
+      "nome": "Edital Simplificado para Bens Móveis",
+      "tipo": "bens_moveis",
+      "estrutura": [
+        "Identificação completa",
+        "Descrição técnica do bem",
+        "Vistoria prévia (quando possível)",
+        "Valor e preço de saída",
+        "Local e horário",
+        "Pagamento e entrega"
+      ]
+    }
+  ],
+  "resumoCapitulo": "O edital é documento fundamental - é o contrato entre juízo, leiloeiro e público arrematante. Deve ser tecnicamente perfeito. Qualquer vício pode anular tudo. O leiloeiro deve estudar CPC artigos 824-830 profundamente e manter template bem estruturado com verificações de cada item obrigatório.",
+  "questoesRevizao": [
+    {
+      "id": 1,
+      "pergunta": "Qual é o prazo mínimo entre publicação do edital e realização do leilão?",
+      "opcoes": [
+        "15 dias",
+        "20 dias",
+        "30 dias",
+        "60 dias"
+      ],
+      "resposta": 2,
+      "explicacao": "CPC art. 827 determina mínimo de 30 dias"
+    },
+    {
+      "id": 2,
+      "pergunta": "Quais débitos devem SEMPRE constar no edital?",
+      "opcoes": [
+        "Apenas débito de execução",
+        "Todos os débitos conhecidos (IPTU, condomínio, etc)",
+        "Apenas débito tributário",
+        "Nenhum, pois são responsabilidade do arrematante"
+      ],
+      "resposta": 1,
+      "explicacao": "Silêncio do edital sobre débito gera responsabilidade do leiloeiro"
+    },
+    {
+      "id": 3,
+      "pergunta": "O que causa vício insanável mais frequente em editais?",
+      "opcoes": [
+        "Erro no preço de saída",
+        "Descrição imprecisa do bem",
+        "Horário do leilão errado",
+        "Falta de assinatura do juiz"
+      ],
+      "resposta": 1,
+      "explicacao": "Descrição vaga gera inúmeras impugnações e potencial nulidade"
+    }
+  ]
+}
