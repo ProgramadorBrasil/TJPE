@@ -268,9 +268,9 @@ function renderizarModulo(moduleData) {
                     new AudioPlayer(audioContainer, {
                         title: `${moduleData.icone} ${moduleData.titulo}`,
                         url: moduleData.audioUrl,
-                        autoplay: false,  // Desativado até arquivos MP3 serem criados
+                        autoplay: true,  // Ativado - áudios gerados com sucesso
                         volume: 0.7,
-                        playbackRate: 1.0,
+                        playbackRate: 1.3,  // Velocidade padrão 1.3x (mais rápido e agradável)
                         loop: false
                     });
                     console.log('AudioPlayer inicializado para:', moduleData.titulo);

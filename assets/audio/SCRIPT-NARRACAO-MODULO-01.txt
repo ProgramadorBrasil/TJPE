@@ -1,0 +1,161 @@
+# SCRIPT DE NARRAÇÃO - MÓDULO 01
+# Fundamentos Legais do Leilão Judicial
+# Instrutor: Renato Gracie - Leiloeiro Oficial JUCEPE 366
+# Duração estimada: 45 minutos
+
+[INTRODUÇÃO - Tom profissional e acolhedor]
+
+Olá! Bem-vindo ao Módulo 1 do curso de Leilão Judicial para Servidores Públicos do TJPE.
+
+Eu sou Renato Gracie, Leiloeiro Oficial JUCEPE 366, e vou guiá-lo pelos fundamentos legais do leilão judicial.
+
+Neste módulo, você irá:
+- Compreender a base legal dos leilões judiciais
+- Diferenciar tipos de execução judicial
+- Aplicar normas do CPC e Lei 9.514/97
+- Identificar responsabilidades legais
+
+Antes de começarmos, três alertas críticos importantes:
+
+ALERTA 1 - VÍCIO INSANÁVEL:
+Omissão de edital ou impugnação não levada ao juiz pode anular todo o leilão. Documentação perfeita é essencial.
+
+ALERTA 2 - JURISPRUDÊNCIA RECENTE:
+STJ tema 1.134 de 2024: Débitos de condomínio devem ser pagos pelo arrematante, mesmo em leilão com cláusula de não exclusão.
+
+ALERTA 3 - PRAZOS IMPRORROGÁVEIS:
+Todos os prazos processuais são improrrogáveis. Perder prazos pode gerar nulidade do procedimento.
+
+Vamos começar!
+
+[SEÇÃO 1 - FUNDAMENTO CONSTITUCIONAL E LEGAL]
+
+A Constituição Federal, em seu artigo 5º e artigo 170, garante o direito de propriedade com função social.
+
+O processo de execução judicial segue princípios constitucionais de devido processo legal.
+
+O artigo 5º assegura o acesso à justiça, enquanto o artigo 170 estabelece os princípios da ordem econômica.
+
+Quatro princípios fundamentais regem o leilão:
+1. O direito de propriedade não é absoluto
+2. A propriedade tem função social
+3. Devido processo legal deve ser observado
+4. Acesso à justiça é garantido
+
+Isso significa que o leilão deve seguir procedimento regulado, preservar direitos do devedor, garantir transparência e publicidade, e assegurar recurso aos tribunais.
+
+[CÓDIGO DE PROCESSO CIVIL]
+
+O Código de Processo Civil, em vigor desde janeiro de 2016, reformulou completamente o sistema de execução.
+
+Os artigos 824 a 897 tratam especificamente do leilão de bens de forma detalhada e estruturada.
+
+Os principais artigos são:
+- Artigo 824: Define o conceito de leilão
+- Artigos 825 e 826: Estabelecem as precondições
+- Artigos 827 e 828: Tratam de publicidade e edital
+- Artigo 829: Regula a avaliação de bens
+- Artigos 835 a 845: Detalham a realização do leilão
+- Artigo 850: Trata da não arrematação
+- Artigos 880 a 897: Definem procedimentos complementares
+
+O CPC de 2015 trouxe importantes inovações:
+- Edital eletrônico agora é permitido
+- Prazos foram reduzidos em alguns casos
+- Há maior flexibilidade no pagamento
+- O sistema de intimação foi modernizado
+
+[LEI 9.514 DE 1997]
+
+A Lei 9.514 de 1997 é especialmente importante para leilões de imóveis financiados.
+
+Ela define procedimentos acelerados para leilão de bem constituído em garantia por alienação fiduciária.
+
+Este procedimento é mais célere que a execução comum.
+
+Características principais:
+- Aplicável a bens imóveis financiados
+- Procedimento mais rápido
+- Intimação simplificada
+- Prazos menores
+
+O procedimento segue estas etapas:
+1. Notificação do devedor em 10 dias
+2. Se houver inadimplência, edital de 20 dias
+3. Realização em até 30 dias após o edital
+4. Registro de arrematação em 2 dias
+
+Muito mais ágil que a execução comum no CPC!
+
+[CÓDIGO TRIBUTÁRIO NACIONAL]
+
+O Código Tributário Nacional, em seu artigo 130, estabelece o regime de responsabilidade tributária do arrematante.
+
+É Lei Complementar federal com hierarquia máxima.
+
+O artigo 130 define responsabilidade solidária do arrematante por débitos tributários anteriores.
+
+Pontos essenciais:
+- O arrematante responde solidariamente por débitos inscritos em dívida ativa
+- Deve constar no edital menção à possível responsabilidade
+- O arrematante pode requerer certidão negativa antes
+- A responsabilidade é apenas por débitos inscritos
+- Estende-se a ICMS, IPTU, ITBI e outros tributos
+
+A jurisprudência do STJ consolidou que não há exclusão automática de débitos em leilões judiciais.
+
+[SEÇÃO 2 - TIPOS DE EXECUÇÃO]
+
+Existem quatro tipos principais de execução:
+
+1. EXECUÇÃO COMUM (Artigos 824 a 902 do CPC)
+Procedimento padrão para execução de sentença condenatória e títulos extrajudiciais.
+Prazo total: mínimo de 3 a 4 meses.
+
+2. EXECUÇÃO DE TÍTULO EXTRAJUDICIAL
+Para letras de câmbio, notas promissórias, duplicatas, cheques e contratos registrados.
+Vantagem: mais rápido que execução de sentença.
+
+3. EXECUÇÃO DE DÉBITO FISCAL
+Procedimento especial para tributos inscritos em dívida ativa.
+Características: presunção de liquidez, prazos reduzidos, pode resultar em leilão rápido.
+
+4. EXECUÇÃO HIPOTECÁRIA E FIDUCIÁRIA
+Procedimento especial da Lei 9.514/97.
+Prazo total: aproximadamente 60 a 90 dias.
+A Lei 9.514 permite até venda extrajudicial em certos casos.
+
+[SEÇÃO 3 - PRINCÍPIOS E RESPONSABILIDADES]
+
+Os princípios fundamentais do CPC aplicam-se a toda execução:
+- Devido processo legal
+- Contraditório
+- Amplitude de defesa
+- Publicidade
+- Motivação das decisões
+
+Como servidor público, suas responsabilidades incluem:
+- Verificar documentação completa
+- Garantir publicidade adequada
+- Preservar prazos processuais
+- Documentar todos os atos
+- Assegurar transparência
+
+[CONCLUSÃO]
+
+Neste módulo, estudamos os fundamentos legais do leilão judicial.
+
+Vimos a base constitucional, o CPC, a Lei 9.514/97 e o CTN.
+
+Conhecemos os diferentes tipos de execução e os princípios fundamentais.
+
+Lembre-se sempre:
+- Documentação perfeita é essencial
+- Prazos são improrrogáveis
+- Transparência e publicidade são obrigatórias
+
+No próximo módulo, estudaremos a elaboração do edital de leilão.
+
+Até lá!
+
+[FIM]

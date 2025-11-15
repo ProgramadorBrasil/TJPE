@@ -1,0 +1,86 @@
+Bem-vindo ao Módulo 2: Elaboração do Edital de Leilão.
+Eu sou Renato Gracie - Leiloeiro Oficial JUCEPE 366.
+Duração estimada deste módulo: 60min.
+
+Neste módulo, você irá:
+- Dominar estrutura legal do edital de leilão
+- Incorporar todos os elementos obrigatórios
+- Aplicar técnicas de redação clara e precisa
+- Evitar vícios que causem nulidade
+- Publicar edital adequadamente
+
+Antes de começarmos, atenção aos seguintes alertas:
+
+ALERTA 1 - EDITAL COM VÍCIO = LEILÃO NULO:
+Omissão de qualquer elemento obrigatório invalida todo o procedimento. A jurisprudência é rigorosa neste ponto. Edital deve ser perfeito tecnicamente.
+
+ALERTA 2 - DESCRIÇÃO CLARA DO BEM:
+Descrição imprecisa gera inúmeras impugnações. Deve permitir que qualquer pessoa identifique exatamente o bem sem dúvidas.
+
+ALERTA 3 - DÉBITOS DEVEM CONSTAR:
+Todos os débitos conhecidos (tributários, condominiais, IPTU) devem ser mencionados. Silêncio gera responsabilidade.
+
+Vamos começar!
+
+
+SEÇÃO 1: Elementos Obrigatórios do Edital
+Conteúdo essencial que todo edital deve conter
+
+Identificação do Processo e Partes
+Todo edital deve iniciar com identificação clara do processo executório. Número do processo, Tribunal, Vara especializada, juiz responsável, leiloeiro oficial designado.
+
+Descrição Completa do Bem
+Este é elemento crítico. Deve ser tão precisa que qualquer pessoa identifique o bem sem ambiguidade. Falta de precisão gera impugnações e anulação.
+
+Avaliação e Preço de Saída
+Deve constar valor de avaliação atualizado (CPC art. 829) e preço de saída do leilão. Estes valores determinam se há arrematação ou não.
+
+Débitos e Responsabilidades do Arrematante
+Crucial declarar todos os débitos conhecidos. Art. 130 CTN prevê responsabilidade tributária; STJ tema 1.134 prevê responsabilidade condominial.
+
+
+SEÇÃO 2: Prazos e Procedimento de Leilão
+Informações sobre cronograma e processo
+
+Data e Horário do Leilão
+Deve ser especificado com precisão data, hora e local. CPC determina prazos mínimos entre publicação e realização.
+
+Prazo de Impugnação
+CPC permite impugnação prévia ao leilão. Edital deve informar prazo exato para apresentar impugnações.
+
+Formas de Pagamento
+Edital deve especificar todas as formas aceitas de pagamento, prazos e condições. CPC art. 895 permite parcelamento.
+
+Conta para Depósito
+Edital deve indicar conta bancária específica para depósito de valores. Deve ser conta oficial/judicial.
+
+
+SEÇÃO 3: Procedimento de Publicação do Edital
+Como e onde publicar o edital
+
+Publicação Obrigatória
+CPC art. 827 determina publicações obrigatórias. Diferentes meios garantem conhecimento das partes interessadas.
+
+Publicações Complementares
+Além das obrigatórias, leiloeiro pode fazer publicações adicionais para atrair arrematantes.
+
+
+SEÇÃO 4: Erros Comuns e Como Evitar
+Vícios que causam nulidade
+
+Vício na Descrição do Bem
+Descrição vaga ou incompleta é vício insanável. Alguns exemplos de erros:
+
+Omissão de Débito Conhecido
+Se edital cala sobre débito existente, gera responsabilidade do leiloeiro e pode causar impugnação pós-arrematação.
+
+Prazos Incorretos
+Desrespeitar prazos mínimos do CPC causa nulidade automática.
+
+Falta de Publicação Adequada
+Omissão de publicação ou publicação deficiente viola direito de conhecimento das partes.
+
+
+Concluímos o Módulo 2: Elaboração do Edital de Leilão.
+Parabéns por completar este módulo!
+Até o próximo módulo!

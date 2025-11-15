@@ -50,7 +50,7 @@
             "folha_rosto": "Identificação do imóvel (endereço, dimensões, proprietário)",
             "registro": "Anotação de transação ou ônus (venda, hipoteca, penhora, etc)",
             "averbacao": "Anotação de fato relevante que não cria ônus"
-          ],
+          },
           "importancia": "Matrícula é prova de propriedade; sem ela, não se prova domínio"
         },
         {
@@ -64,7 +64,7 @@
             "prioridade": "Primeiro registro tem prioridade; ordem cronológica é essencial",
             "mutabilidade": "Registro pode ser alterado conforme mudanças de direito",
             "tracabilidade": "Histórico completo fica registrado"
-          ]
+          }
         }
       ]
     },

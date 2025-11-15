@@ -1,0 +1,75 @@
+Bem-vindo ao Módulo 1: Fundamentos Legais do Leilão Judicial.
+Eu sou Renato Gracie - Leiloeiro Oficial JUCEPE 366.
+Duração estimada deste módulo: 45min.
+
+Neste módulo, você irá:
+- Compreender a base legal dos leilões judiciais
+- Diferenciar tipos de execução judicial
+- Aplicar normas do CPC e Lei 9.514/97
+- Identificar responsabilidades legais
+
+Antes de começarmos, atenção aos seguintes alertas:
+
+ALERTA 1 - VÍCIO INSANÁVEL:
+Omissão de edital ou impugnação não levada ao juiz pode anular todo o leilão. Documentação perfeita é essencial.
+
+ALERTA 2 - JURISPRUDÊNCIA RECENTE:
+STJ tema 1.134/2024: Débitos de condomínio devem ser pagos pelo arrematante mesmo em leilão com não exclusão.
+
+ALERTA 3 - PRAZOS IMPRORROGÁVEIS:
+Todos os prazos processuais são improrrogáveis. Perder prazos pode gerar nulidade do procedimento.
+
+Vamos começar!
+
+
+SEÇÃO 1: Fundamento Constitucional e Legal
+Base legal para execução e leilão de bens
+
+Constituição Federal - Art. 5º e Art. 170
+A Constituição Federal garante o direito de propriedade com função social. O processo de execução judicial segue princípios constitucionais de devido processo legal. Art. 5º assegura acesso à justiça, e Art. 170 estabelece princípios da ordem econômica.
+
+Código de Processo Civil - Livro II (Execução)
+O CPC, em vigor desde janeiro de 2016, reformulou completamente o sistema de execução. Os artigos 824 a 897 tratam especificamente do leilão de bens de forma detalhada e estruturada.
+
+Lei 9.514/97 - Alienação Fiduciária
+Especialmente importante para leilões de imóveis financiados. Define procedimentos acelerados para leilão de bem constituído em garantia por alienação fiduciária. Procedimento mais célere que execução comum.
+
+Código Tributário Nacional - Art. 130
+CTN estabelece regime de responsabilidade tributária do arrematante. É Lei Complementar federal com hierarquia máxima. Art. 130 define responsabilidade solidária do arrematante por débitos tributários anteriores.
+
+
+SEÇÃO 2: Tipos de Execução e Competência
+Diferentes modalidades de processo executório
+
+Execução Comum (Arts. 824-902 CPC)
+Procedimento padrão para execução de sentença condenatória, título extrajudicial e outras modalidades de execução. Segue procedimento mais longo mas com maior segurança jurídica.
+
+Execução de Título Extrajudicial
+Para títulos como letras de câmbio, notas promissórias, duplicatas, cheques, contratos registrados. Documentos que têm força executiva própria sem necessidade de sentença prévia.
+
+Execução de Débito Fiscal
+Procedimento especial para débitos de tributos inscritos em dívida ativa. Feita pela Fazenda Pública (Federal, Estadual ou Municipal). Procedimento mais célere que execução comum.
+
+Execução Hipotecária e Fiduciária
+Procedimento especial (Lei 9.514/97) para alienação fiduciária ou hipoteca. Mais rápido que execução comum. Permite venda extrajudicial em caso de alienação fiduciária.
+
+
+SEÇÃO 3: Princípios Fundamentais e Responsabilidades
+Princípios que norteiam o leilão judicial
+
+Princípios do Processo Civil Executório
+Os princípios fundamentais do CPC aplicam-se a toda execução: due process, contraditório, amplitude de defesa, publicidade, motivação, e outros.
+
+Responsabilidade do Leiloeiro Oficial
+O leiloeiro oficial é oficial de justiça autorizado. Tem responsabilidades civis, criminais e administrativas. Deve agir com neutralidade, imparcialidade e rigor técnico.
+
+Responsabilidade do Arrematante
+Após arrematação, o arrematante tem direitos (transmissão de propriedade) e deveres (pagar valor, assumir certos débitos). Responsabilidades bem definidas na lei.
+
+Responsabilidade do Juiz Executor
+O magistrado tem papel crucial na supervisão de toda execução. Deve garantir legalidade, imparcialidade e eficácia. Responde por violações graves de dever funcional.
+
+
+Concluímos o Módulo 1: Fundamentos Legais do Leilão Judicial.
+Parabéns por completar este módulo!
+Até o próximo módulo!

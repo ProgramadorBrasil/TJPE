@@ -39,7 +39,8 @@ class AudioPlayer {
         player.innerHTML = `
             <div class="player-header">
                 <div class="player-title">${this.options.title}</div>
-                <div class="player-close">×</div>
+                <button class="player-minimize" title="Minimizar Player">─</button>
+                <button class="player-close" title="Fechar Player">×</button>
             </div>
 
             <div class="player-main">
@@ -118,6 +119,7 @@ class AudioPlayer {
         const speedOptions = this.playerEl.querySelectorAll('.speed-option');
         const loopBtn = this.playerEl.querySelector('.player-btn-loop');
         const downloadBtn = this.playerEl.querySelector('.player-btn-download');
+        const minimizeBtn = this.playerEl.querySelector('.player-minimize');
         const closeBtn = this.playerEl.querySelector('.player-close');
 
         // Play/Pause
@@ -164,6 +166,13 @@ class AudioPlayer {
                 a.click();
                 this.updateStatus('Download iniciado');
             }
+        });
+
+        // Minimize
+        minimizeBtn.addEventListener('click', () => {
+            this.playerEl.classList.toggle('minimized');
+            minimizeBtn.textContent = this.playerEl.classList.contains('minimized') ? '□' : '─';
+            minimizeBtn.title = this.playerEl.classList.contains('minimized') ? 'Maximizar Player' : 'Minimizar Player';
         });
 
         // Close

@@ -1,0 +1,86 @@
+Bem-vindo ao Módulo 7: Formas de Pagamento e Parcelamento.
+Eu sou Renato Gracie - Leiloeiro Oficial JUCEPE 366.
+Duração estimada deste módulo: 35min.
+
+Neste módulo, você irá:
+- Compreender as diferentes formas de pagamento em leilões judiciais
+- Aplicar as normas do Art. 895 do CPC
+- Implementar sistemas de parcelamento conforme permitido
+- Garantir segurança nas transações e recebimentos
+- Calcular corretamente valores com juros e multa
+
+Antes de começarmos, atenção aos seguintes alertas:
+
+ALERTA 1 - PAGAMENTO OBRIGATÓRIO NO ACT:
+O arrematante DEVE pagar na assinatura do auto de arrematação (ACT). Falta de pagamento pode resultar em perda do depósito caução e perda do bem para novo leilão.
+
+ALERTA 2 - JUROS DE MORA - Art. 895 CPC:
+Se houver parcelamento, incidem juros de mora de 1% ao mês (12% ao ano). Decisão judicial pode estipular taxa diferente. Documentar sempre.
+
+ALERTA 3 - CAUÇÃO E RISCO:
+Se não houver pagamento das parcelas, o bem volta para novo leilão e a caução é perdida. Imprescindível ter documentação clara do acordo.
+
+ALERTA 4 - MULTA POR ATRASO:
+Além dos juros, incide multa de 10% sobre a parcela atrasada. Total máximo de encargos deve estar no edital.
+
+Vamos começar!
+
+
+SEÇÃO 1: Formas de Pagamento Previstas no CPC
+Modalidades legalmente permitidas
+
+Pagamento À Vista
+É a forma padrão de pagamento em leilões judiciais. O arrematante paga a totalidade do lance imediatamente na assinatura do auto de arrematação (ACT). Aceita-se: cheque de terceiros, transferência bancária, cartão de crédito (conforme decisão judicial), dinheiro em espécie.
+
+Pagamento Parcelado - Quando é Permitido
+O CPC permite parcelamento, MAS só quando expressamente permitido pelo EDITAL ou autorizado pela DECISÃO JUDICIAL. Não é direito do comprador, é faculdade do tribunal. O parcelamento é exceção, não regra. Pode ser de 2 a 24 parcelas (máximo recomendado).
+
+Cheque, Transferência e Cartão de Crédito
+Diferentes instrumentos de pagamento utilizados em leilões. Cada um tem implicações legais diferentes. O leiloeiro deve estar preparado para receber qualquer forma autorizada pela decisão judicial. Documentação rigorosa é essencial.
+
+
+SEÇÃO 2: Cálculo de Juros, Multa e Atualização Monetária
+Fórmulas e aplicação correta
+
+Juros de Mora - 1% ao Mês
+Art. 895 CPC estipula juros de 1% ao mês para pagamentos parcelados. Equivalente a 12% ao ano. Deve ser calculado sobre CADA PARCELA que atrasar. Não acumula juros sobre juros (vedado por lei).
+
+Multa por Atraso - 10% da Parcela
+Incide sobre a parcela em atraso quando não é paga no prazo. É sanção pelo inadimplemento. Cumulativa com juros. Não pode exceder 10% do valor da parcela. Deve estar expressamente prevista no edital e decisão judicial.
+
+Atualização Monetária - IPCA ou TR
+As parcelas sofrem atualização monetária para preservar o poder de compra. Pode ser feita por IPCA (Índice de Preços ao Consumidor Amplo), TR (Taxa Referencial) ou índice previsto na decisão judicial. Essencial atualizar corretamente para não prejudicar credor ou devedor.
+
+Cálculo Integrado - Exemplo Completo
+Exercício prático integrando: parcela base, juros de mora, multa por atraso e atualização monetária. Este é o cálculo real feito em inadimplementos de leilão.
+
+
+SEÇÃO 3: Segurança nas Transações Financeiras
+Proteção de recursos e documentação
+
+Depósito Caução - Proteção e Devolução
+Valor depositado previamente ao leilão (geralmente 10-20% do valor base) como comprovação de capacidade de pagamento. Se arrematante não pagar, caução é perdida. Se pagar, caução é abatido do valor do lance.
+
+Contas Especiais e Segregação de Recursos
+Dinheiro arrecadado em leilão judicial é recurso público que deve ficar segregado. Não pode ser misturado com contas do leiloeiro. Regras de contabilidade rigorosa. Cada leilão tem sua conta separada ou números separados.
+
+PIX e Meios Eletrônicos de Pagamento
+PIX revolucionou pagamentos. Em leilões, pode ser utilizado se autorizado pela decisão judicial. Oferece segurança, rapidez e comprovação automática. Excelente para receber pagamentos de parcelamento.
+
+
+SEÇÃO 4: Problemas Comuns e Como Resolver
+Situações reais de inadimplemento
+
+Atraso no Pagamento de Parcelado
+Arrematante não paga na data contratada. Procedimento claro: notificação com prazos, cálculo de encargos, possível reintegração de posse ou novo leilão.
+
+Recusa em Retirar o Bem
+Arrematante pagou mas não retira o bem. Imóvel fica parado, tribunal ocupado. Procedimento para desocupação compulsória e transferência de posse.
+
+Cheque Devolvido Após o Leilão
+Arrematante pagou com cheque que foi devolvido (insuficiência de fundos, conta fechada, etc). Procedimento para regularização.
+
+
+Concluímos o Módulo 7: Formas de Pagamento e Parcelamento.
+Parabéns por completar este módulo!
+Até o próximo módulo!
