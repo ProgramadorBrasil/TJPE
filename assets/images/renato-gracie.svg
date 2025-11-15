@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#f5f5f5"/>
+
+  <!-- Gradient defs -->
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c9935f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001f3f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Head -->
+  <circle cx="150" cy="80" r="45" fill="url(#skinGrad)"/>
+
+  <!-- Hair -->
+  <path d="M 105 80 Q 105 40 150 35 Q 195 40 195 80" fill="#333"/>
+
+  <!-- Eyes -->
+  <circle cx="135" cy="75" r="6" fill="white"/>
+  <circle cx="165" cy="75" r="6" fill="white"/>
+  <circle cx="136" cy="76" r="3" fill="#333"/>
+  <circle cx="166" cy="76" r="3" fill="#333"/>
+
+  <!-- Nose -->
+  <path d="M 150 75 L 150 95" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Smile -->
+  <path d="M 135 105 Q 150 115 165 105" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="135" y="120" width="30" height="20" fill="url(#skinGrad)"/>
+
+  <!-- Judogi (Martial arts uniform) -->
+  <rect x="80" y="140" width="140" height="180" fill="url(#clothGrad)" rx="10"/>
+
+  <!-- Judogi sleeves -->
+  <ellipse cx="70" cy="160" rx="20" ry="50" fill="url(#clothGrad)"/>
+  <ellipse cx="230" cy="160" rx="20" ry="50" fill="url(#clothGrad)"/>
+
+  <!-- Obi (Belt) -->
+  <rect x="80" y="200" width="140" height="15" fill="#DAA520"/>
+
+  <!-- Arms -->
+  <ellipse cx="50" cy="170" rx="18" ry="55" fill="url(#skinGrad)"/>
+  <ellipse cx="250" cy="170" rx="18" ry="55" fill="url(#skinGrad)"/>
+
+  <!-- Legs (partially visible) -->
+  <rect x="120" y="320" width="25" height="70" fill="url(#skinGrad)"/>
+  <rect x="155" y="320" width="25" height="70" fill="url(#skinGrad)"/>
+
+  <!-- Feet -->
+  <ellipse cx="132" cy="390" rx="18" ry="12" fill="#333"/>
+  <ellipse cx="167" cy="390" rx="18" ry="12" fill="#333"/>
+
+  <!-- Badge/Medal -->
+  <circle cx="250" cy="280" r="30" fill="#DAA520" stroke="#003366" stroke-width="2"/>
+  <text x="250" y="285" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366" text-anchor="middle">EXPERT</text>
+</svg>

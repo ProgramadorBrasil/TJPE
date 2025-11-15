@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso TJPE - Plataforma de Aprendizado</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Design System V2 Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Cores Primárias V2 */
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+
+            /* Cores Secundárias */
+            --secondary: #10b981;
+            --secondary-dark: #059669;
+            --secondary-light: #34d399;
+
+            /* Cores Neutras */
+            --neutral-50: #f9fafb;
+            --neutral-100: #f3f4f6;
+            --neutral-200: #e5e7eb;
+            --neutral-300: #d1d5db;
+            --neutral-400: #9ca3af;
+            --neutral-500: #6b7280;
+            --neutral-600: #4b5563;
+            --neutral-700: #374151;
+            --neutral-800: #1f2937;
+            --neutral-900: #111827;
+
+            /* Acentos */
+            --accent-blue: #0ea5e9;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-orange: #f97316;
+
+            /* Gradientes */
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            --gradient-warm: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+
+            /* Sombras Fluent */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --shadow-glass: 0 8px 32px rgba(31, 38, 135, 0.37);
+
+            /* Espaçamento */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+
+            /* Tipografia */
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-mono: 'Fira Code', 'Courier New', monospace;
+
+            /* Transições */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: var(--neutral-700);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Header */
+        header {
+            backdrop-filter: blur(10px);
+            background: rgba(15, 23, 42, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-glass);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--space-lg) var(--space-xl);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: var(--space-lg);
+            align-items: center;
+        }
+
+        .user-badge {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm) var(--space-md);
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 50px;
+            color: var(--primary-light);
+            font-size: 0.875rem;
+            transition: all var(--transition-fast);
+        }
+
+        .user-badge:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-xl);
+        }
+
+        /* Page Sections */
+        .page-section {
+            display: none;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation Tabs */
+        .tabs-container {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-2xl);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: var(--space-lg);
+        }
+
+        .tab-button {
+            padding: var(--space-md) var(--space-lg);
+            background: none;
+            border: none;
+            color: var(--neutral-500);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            transition: color var(--transition-fast);
+            text-transform: capitalize;
+        }
+
+        .tab-button::after {
+            content: '';
+            position: absolute;
+            bottom: -var(--space-lg);
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px 3px 0 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-base);
+        }
+
+        .tab-button:hover {
+            color: var(--neutral-300);
+        }
+
+        .tab-button.active {
+            color: var(--primary-light);
+        }
+
+        .tab-button.active::after {
+            transform: scaleX(1);
+        }
+
+        /* Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            transition: all var(--transition-base);
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-glass);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all var(--transition-base);
+        }
+
+        .stat-card:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-sm);
+        }
+
+        .stat-label {
+            color: var(--neutral-400);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-bottom: var(--space-xl);
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+            color: var(--neutral-300);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-success);
+            border-radius: 10px;
+            transition: width var(--transition-slow);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
+        /* Objectives Section */
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .objective-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            backdrop-filter: blur(10px);
+            transition: all var(--transition-base);
+        }
+
+        .objective-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .objective-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--neutral-100);
+            margin-bottom: var(--space-md);
+        }
+
+        .objective-list {
+            list-style: none;
+        }
+
+        .objective-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            color: var(--neutral-400);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .objective-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .checkmark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 24px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--gradient-success);
+            color: white;
+            font-weight: bold;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            animation: scaleIn var(--transition-fast);
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* Module Cards */
+        .modules-grid {
+            display: grid;
+            gap: var(--space-lg);
+        }
+
+        .module-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            backdrop-filter: blur(10px);
+            transition: all var(--transition-base);
+            cursor: pointer;
+        }
+
+        .module-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+
+        .module-info {
+            flex: 1;
+        }
+
+        .module-number {
+            font-size: 0.75rem;
+            color: var(--neutral-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: var(--space-xs);
+        }
+
+        .module-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--neutral-100);
+            margin-bottom: var(--space-sm);
+        }
+
+        .module-description {
+            color: var(--neutral-400);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: var(--space-md);
+        }
+
+        .module-meta {
+            display: flex;
+            gap: var(--space-lg);
+            font-size: 0.875rem;
+            color: var(--neutral-500);
+        }
+
+        .module-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-light);
+            transition: all var(--transition-fast);
+            flex-shrink: 0;
+        }
+
+        .module-card.expanded .expand-icon {
+            transform: rotate(180deg);
+            background: rgba(99, 102, 241, 0.2);
+        }
+
+        .module-lessons {
+            display: none;
+            margin-top: var(--space-lg);
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideDown var(--transition-base);
+        }
+
+        .module-lessons.visible {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lesson-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-md);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            margin-bottom: var(--space-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .lesson-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .lesson-left {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            flex: 1;
+        }
+
+        .lesson-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--neutral-500);
+            border-radius: 50%;
+            flex-shrink: 0;
+            transition: all var(--transition-fast);
+        }
+
+        .lesson-item.completed .lesson-circle {
+            background: var(--gradient-success);
+            border-color: var(--secondary-light);
+        }
+
+        .lesson-title {
+            color: var(--neutral-300);
+            font-size: 0.95rem;
+        }
+
+        .lesson-right {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            color: var(--neutral-500);
+            font-size: 0.875rem;
+        }
+
+        .btn {
+            padding: var(--space-sm) var(--space-md);
+            border-radius: 8px;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-size: 0.875rem;
+            text-transform: capitalize;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-light);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neutral-100);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--neutral-100);
+            margin-bottom: var(--space-xl);
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--neutral-200);
+            margin-bottom: var(--space-lg);
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--neutral-400);
+            margin-bottom: var(--space-2xl);
+            line-height: 1.6;
+        }
+
+        /* Section Container */
+        .section-container {
+            margin-bottom: var(--space-2xl);
+        }
+
+        /* Audio Player Section */
+        .audio-section {
+            margin-top: var(--space-2xl);
+            padding: var(--space-lg);
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .audio-section h3 {
+            color: var(--neutral-200);
+            margin-bottom: var(--space-lg);
+        }
+
+        #audio-player {
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--space-xl) var(--space-md);
+            }
+
+            h1 {
+                font-size: 1.875rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .module-header {
+                flex-direction: column;
+            }
+
+            .lesson-right {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+
+            .tabs-container {
+                overflow-x: auto;
+                padding-bottom: var(--space-lg);
+            }
+
+            .tab-button {
+                white-space: nowrap;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">TJPE Academy</div>
+            <div class="nav-right">
+                <div class="user-badge">
+                    <span>👤</span>
+                    <span>Aprendiz</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Página: Sobre o Curso -->
+        <div id="sobre" class="page-section active">
+            <h1>Sobre o Curso TJPE</h1>
+            <p class="subtitle">Desenvolvimento completo e certificado em Tribunal de Justiça de Pernambuco. Aprenda na sua própria velocidade.</p>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">10</div>
+                    <div class="stat-label">Módulos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">9h</div>
+                    <div class="stat-label">Duração Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">✓</div>
+                    <div class="stat-label">Certificado</div>
+                </div>
+            </div>
+
+            <!-- Objectives -->
+            <div class="section-container">
+                <h2>Objetivos do Curso</h2>
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <div class="objective-title">Aprendizado Prático</div>
+                        <ul class="objective-list">
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Conceitos fundamentais do TJPE</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Procedimentos e regulamentações</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Casos práticos e aplicações reais</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="objective-title">Desenvolvimento Profissional</div>
+                        <ul class="objective-list">
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Certificação reconhecida</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Networking com profissionais</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Progressão de carreira</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="objective-title">Competências Técnicas</div>
+                        <ul class="objective-list">
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Domínio de ferramentas específicas</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Melhor performance profissional</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Atualizações contínuas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Audience -->
+            <div class="section-container">
+                <h2>Público-Alvo</h2>
+                <div class="card">
+                    <ul class="objective-list">
+                        <li class="objective-item">
+                            <div class="checkmark">→</div>
+                            <span>Profissionais do Tribunal de Justiça</span>
+                        </li>
+                        <li class="objective-item">
+                            <div class="checkmark">→</div>
+                            <span>Aspirantes a trabalhar no setor judiciário</span>
+                        </li>
+                        <li class="objective-item">
+                            <div class="checkmark">→</div>
+                            <span>Advogados e consultores jurídicos</span>
+                        </li>
+                        <li class="objective-item">
+                            <div class="checkmark">→</div>
+                            <span>Estudantes de Direito e Administração</span>
+                        </li>
+                        <li class="objective-item">
+                            <div class="checkmark">→</div>
+                            <span>Qualquer pessoa interessada em conhecimento institucional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="section-container">
+                <h2>O Que Você Vai Aprender</h2>
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <ul class="objective-list">
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Estrutura organizacional do TJPE</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Processos judiciais fundamentais</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Legislação aplicável</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Tecnologia judicial</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Boas práticas profissionais</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="objective-card">
+                        <ul class="objective-list">
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Resolução de conflitos</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Documentação e arquivo</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Atendimento ao público</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Ética profissional</span>
+                            </li>
+                            <li class="objective-item">
+                                <div class="checkmark">✓</div>
+                                <span>Desenvolvimento contínuo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Section -->
+            <div class="audio-section">
+                <h3>Reprodução de Conteúdo</h3>
+                <p style="color: var(--neutral-400); margin-bottom: var(--space-lg); font-size: 0.95rem;">Use o player abaixo para ouvir uma visão geral do curso com narração automática.</p>
+                <div id="audio-player"></div>
+            </div>
+        </div>
+
+        <!-- Página: Módulos do Curso -->
+        <div id="modulos" class="page-section">
+            <h1>Módulos do Curso</h1>
+            <p class="subtitle">Acesse e estude cada módulo no seu próprio ritmo. Acompanhe seu progresso em tempo real.</p>
+
+            <!-- Tabs -->
+            <div class="tabs-container">
+                <button class="tab-button active" data-tab="visao-geral">Visão Geral</button>
+                <button class="tab-button" data-tab="modulos-lista">Módulos do Curso</button>
+                <button class="tab-button" data-tab="meu-progresso">Meu Progresso</button>
+            </div>
+
+            <!-- Tab: Visão Geral -->
+            <div class="tab-content" data-content="visao-geral">
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Progresso Geral</span>
+                        <span><span id="progress-percentage">0</span>% de 10 módulos</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Horas de Estudo</span>
+                        <span><span id="hours-studied">0</span>h de 9h</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="hours-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: var(--space-2xl);">
+                    <h3>Bem-vindo ao Curso TJPE</h3>
+                    <p style="color: var(--neutral-400); line-height: 1.6; margin-top: var(--space-md);">
+                        Este é um curso completo sobre os procedimentos, estrutura e funcionamento do Tribunal de Justiça de Pernambuco.
+                        Você encontrará módulos interativos, aulas em vídeo, materiais de leitura e testes para consolidar seu aprendizado.
+                    </p>
+                    <p style="color: var(--neutral-400); line-height: 1.6; margin-top: var(--space-md);">
+                        Comece pelo primeiro módulo e siga em seu próprio ritmo. Todos os materiais estão disponíveis para acesso contínuo após a inscrição.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tab: Módulos do Curso -->
+            <div class="tab-content" data-content="modulos-lista">
+                <div class="modules-grid" id="modules-list">
+                    <!-- Modules will be rendered here -->
+                </div>
+            </div>
+
+            <!-- Tab: Meu Progresso -->
+            <div class="tab-content" data-content="meu-progresso">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="completed-modules">0</div>
+                        <div class="stat-label">Módulos Completos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="completed-lessons">0</div>
+                        <div class="stat-label">Aulas Concluídas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="completion-rate">0%</div>
+                        <div class="stat-label">Taxa de Conclusão</div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: var(--space-xl);">
+                    <h3>Histórico de Aprendizado</h3>
+                    <p style="color: var(--neutral-400); margin-top: var(--space-md);">
+                        Seu progresso está sendo rastreado automaticamente. Quanto mais você estuda, mais avança em sua jornada de aprendizado.
+                    </p>
+                    <div id="progress-history" style="margin-top: var(--space-lg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/scripts/audio-player.js"></script>
+    <script src="/scripts/sound-effects.js"></script>
+    <script src="/scripts/animations.js"></script>
+
+    <script>
+        // Course Data
+        const courseData = {
+            modules: [
+                {
+                    id: 1,
+                    number: 1,
+                    title: "Introdução ao TJPE",
+                    description: "Conheça a estrutura, história e funcionamento do Tribunal de Justiça de Pernambuco",
+                    duration: 45,
+                    lessons: [
+                        { id: 1, title: "História do TJPE", duration: 15 },
+                        { id: 2, title: "Estrutura Organizacional", duration: 15 },
+                        { id: 3, title: "Competências e Atribuições", duration: 15 }
+                    ]
+                },
+                {
+                    id: 2,
+                    number: 2,
+                    title: "Processo Civil Básico",
+                    description: "Fundamentos essenciais do processo civil e procedimentos judiciais",
+                    duration: 60,
+                    lessons: [
+                        { id: 4, title: "Conceitos Fundamentais", duration: 20 },
+                        { id: 5, title: "Fases do Processo", duration: 20 },
+                        { id: 6, title: "Recursos e Recursos Especiais", duration: 20 }
+                    ]
+                },
+                {
+                    id: 3,
+                    number: 3,
+                    title: "Legislação Aplicável",
+                    description: "Principais leis e regulamentações que governam o TJPE",
+                    duration: 55,
+                    lessons: [
+                        { id: 7, title: "Constituição Federal", duration: 15 },
+                        { id: 8, title: "Código de Processo Civil", duration: 20 },
+                        { id: 9, title: "Lei Orgânica do TJPE", duration: 20 }
+                    ]
+                },
+                {
+                    id: 4,
+                    number: 4,
+                    title: "Tecnologia e Sistemas",
+                    description: "Plataformas digitais e ferramentas utilizadas no tribunal",
+                    duration: 50,
+                    lessons: [
+                        { id: 10, title: "Processo Eletrônico", duration: 15 },
+                        { id: 11, title: "Sistema de Gerenciamento", duration: 18 },
+                        { id: 12, title: "Segurança Cibernética", duration: 17 }
+                    ]
+                },
+                {
+                    id: 5,
+                    number: 5,
+                    title: "Ética e Conduta Profissional",
+                    description: "Princípios de conduta e ética profissional no ambiente judiciário",
+                    duration: 40,
+                    lessons: [
+                        { id: 13, title: "Código de Ética", duration: 12 },
+                        { id: 14, title: "Responsabilidades Profissionais", duration: 14 },
+                        { id: 15, title: "Resolução de Conflitos de Interesse", duration: 14 }
+                    ]
+                },
+                {
+                    id: 6,
+                    number: 6,
+                    title: "Atendimento ao Público",
+                    description: "Boas práticas para comunicação efetiva com cidadãos",
+                    duration: 35,
+                    lessons: [
+                        { id: 16, title: "Protocolo e Etiqueta", duration: 12 },
+                        { id: 17, title: "Resolução de Conflitos", duration: 12 },
+                        { id: 18, title: "Comunicação Efetiva", duration: 11 }
+                    ]
+                },
+                {
+                    id: 7,
+                    number: 7,
+                    title: "Documentação e Arquivo",
+                    description: "Gerenciamento de documentos e práticas de arquivo no tribunal",
+                    duration: 50,
+                    lessons: [
+                        { id: 19, title: "Tipos de Documentos", duration: 15 },
+                        { id: 20, title: "Sistema de Arquivo", duration: 18 },
+                        { id: 21, title: "Preservação de Documentos", duration: 17 }
+                    ]
+                },
+                {
+                    id: 8,
+                    number: 8,
+                    title: "Processo Criminal",
+                    description: "Procedimentos específicos do processo criminal",
+                    duration: 65,
+                    lessons: [
+                        { id: 22, title: "Fase Policial e Investigação", duration: 20 },
+                        { id: 23, title: "Denúncia e Acusação", duration: 22 },
+                        { id: 24, title: "Recursos Criminais", duration: 23 }
+                    ]
+                },
+                {
+                    id: 9,
+                    number: 9,
+                    title: "Família e Sucessões",
+                    description: "Processos específicos de direito de família e sucessões",
+                    duration: 55,
+                    lessons: [
+                        { id: 25, title: "Direito Matrimonial", duration: 18 },
+                        { id: 26, title: "Guarda e Alimentos", duration: 18 },
+                        { id: 27, title: "Sucessões e Herança", duration: 19 }
+                    ]
+                },
+                {
+                    id: 10,
+                    number: 10,
+                    title: "Prática Jurídica Avançada",
+                    description: "Tópicos avançados e casos práticos de aplicação real",
+                    duration: 50,
+                    lessons: [
+                        { id: 28, title: "Jurisprudência do TJPE", duration: 16 },
+                        { id: 29, title: "Casos Práticos", duration: 17 },
+                        { id: 30, title: "Consolidação de Aprendizado", duration: 17 }
+                    ]
+                }
+            ]
+        };
+
+        // Page Navigation
+        function navigateTo(page) {
+            // Hide all sections
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected section
+            const selectedSection = document.getElementById(page);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+                SoundEffects.playSound('page-transition');
+                Animations.animatePageEntry();
+            }
+
+            // Update active nav button
+            document.querySelectorAll('.nav-button').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-page') === page) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Tab Management
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const tab = button.getAttribute('data-tab');
+
+                // Update active button
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+
+                // Show tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                const content = document.querySelector(`[data-content="${tab}"]`);
+                if (content) {
+                    content.style.display = 'block';
+                    SoundEffects.playSound('tab-switch');
+                    Animations.animatePageEntry();
+                }
+            });
+        });
+
+        // Render Modules
+        function renderModules() {
+            const modulesList = document.getElementById('modules-list');
+            modulesList.innerHTML = '';
+
+            courseData.modules.forEach(module => {
+                const moduleCard = document.createElement('div');
+                moduleCard.className = 'module-card';
+                moduleCard.innerHTML = `
+                    <div class="module-header">
+                        <div class="module-info">
+                            <div class="module-number">Módulo ${module.number}</div>
+                            <div class="module-title">${module.title}</div>
+                            <div class="module-description">${module.description}</div>
+                            <div class="module-meta">
+                                <div class="module-meta-item">
+                                    <span>📚</span>
+                                    <span>${module.lessons.length} aulas</span>
+                                </div>
+                                <div class="module-meta-item">
+                                    <span>⏱️</span>
+                                    <span>${module.duration} min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="module-lessons">
+                        ${module.lessons.map(lesson => `
+                            <div class="lesson-item" data-lesson-id="${lesson.id}">
+                                <div class="lesson-left">
+                                    <div class="lesson-circle"></div>
+                                    <div class="lesson-title">${lesson.title}</div>
+                                </div>
+                                <div class="lesson-right">
+                                    <span>⏱️ ${lesson.duration} min</span>
+                                    <button class="btn btn-primary" onclick="startLesson(${lesson.id}, '${lesson.title}')">Iniciar</button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+
+                moduleCard.addEventListener('click', (e) => {
+                    if (!e.target.closest('.btn')) {
+                        e.stopPropagation();
+                        moduleCard.classList.toggle('expanded');
+                        const lessons = moduleCard.querySelector('.module-lessons');
+                        lessons.classList.toggle('visible');
+                        SoundEffects.playSound('module-expand');
+                    }
+                });
+
+                modulesList.appendChild(moduleCard);
+            });
+        }
+
+        // Start Lesson
+        function startLesson(lessonId, lessonTitle) {
+            SoundEffects.playSound('lesson-start');
+            console.log(`Iniciando aula: ${lessonTitle}`);
+            alert(`Aula iniciada: ${lessonTitle}\n\nEm um ambiente produção, você seria redirecionado para o player de vídeo/áudio.`);
+        }
+
+        // Update Progress
+        function updateProgress() {
+            const completedLessons = document.querySelectorAll('.lesson-item.completed').length;
+            const totalLessons = courseData.modules.reduce((acc, m) => acc + m.lessons.length, 0);
+            const completedModules = courseData.modules.filter(m =>
+                m.lessons.every(l => document.querySelector(`[data-lesson-id="${l.id}"]`)?.classList.contains('completed'))
+            ).length;
+
+            const progressPercentage = Math.round((completedLessons / totalLessons) * 100);
+            const hoursStudied = Math.round((completedLessons / totalLessons) * 9);
+
+            document.getElementById('progress-percentage').textContent = progressPercentage;
+            document.getElementById('progress-fill').style.width = progressPercentage + '%';
+
+            document.getElementById('hours-studied').textContent = hoursStudied;
+            document.getElementById('hours-fill').style.width = (hoursStudied / 9) * 100 + '%';
+
+            document.getElementById('completed-modules').textContent = completedModules;
+            document.getElementById('completed-lessons').textContent = completedLessons;
+            document.getElementById('completion-rate').textContent = progressPercentage + '%';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderModules();
+            updateProgress();
+
+            // Initialize Audio Player
+            const playerContainer = document.getElementById('audio-player');
+            const audioPlayer = new AudioPlayer(playerContainer, {
+                title: 'Visão Geral do Curso TJPE',
+                url: '/assets/sounds/course-intro.mp3',
+                autoplay: false
+            });
+        });
+
+        // Lesson completion simulation (for demo)
+        window.addEventListener('click', (e) => {
+            if (e.target.closest('.lesson-circle')) {
+                const lessonItem = e.target.closest('.lesson-item');
+                lessonItem.classList.toggle('completed');
+                SoundEffects.playSound('lesson-complete');
+                updateProgress();
+            }
+        });
+    </script>
+</body>
+</html>

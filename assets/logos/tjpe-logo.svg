@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#003366" stroke="#DAA520" stroke-width="2"/>
+
+  <!-- TJPE Text -->
+  <text x="100" y="85" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">TJPE</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#DAA520" text-anchor="middle">Tribunal de Justiça</text>
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="12" fill="#DAA520" text-anchor="middle">de Pernambuco</text>
+
+  <!-- Scales of justice icon -->
+  <g transform="translate(100, 140)">
+    <!-- Balance beam -->
+    <rect x="-30" y="-5" width="60" height="4" fill="#DAA520"/>
+    <!-- Left pan -->
+    <rect x="-35" y="0" width="8" height="8" fill="#0066cc"/>
+    <!-- Right pan -->
+    <rect x="27" y="0" width="8" height="8" fill="#0066cc"/>
+    <!-- Center post -->
+    <rect x="-2" y="0" width="4" height="15" fill="#DAA520"/>
+  </g>
+</svg>
