@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Leilão Judicial - TJPE</title>
+    <link rel="stylesheet" href="styles/checklist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="checklist-container">
+        <!-- Header -->
+        <header class="checklist-header">
+            <div class="header-content">
+                <button class="btn-voltar" onclick="window.location.href='index.html'">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Curso
+                </button>
+                <div class="header-title">
+                    <h1><i class="fas fa-clipboard-check"></i> Checklist de Leilão Judicial</h1>
+                    <p>Guia completo passo a passo para servidores do TJPE</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-reset" onclick="resetarChecklist()">
+                        <i class="fas fa-redo"></i> Resetar
+                    </button>
+                    <button class="btn-print" onclick="imprimirChecklist()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <button class="btn-export" onclick="exportarPDF()">
+                        <i class="fas fa-file-pdf"></i> Exportar PDF
+                    </button>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="progress-text">0% Concluído</span>
+                    <span id="progress-count">0/0 tarefas</span>
+                </div>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill" id="progress-bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="todas" onclick="filtrarTarefas('todas')">
+                <i class="fas fa-list"></i> Todas
+            </button>
+            <button class="filter-btn" data-filter="pendentes" onclick="filtrarTarefas('pendentes')">
+                <i class="fas fa-circle"></i> Pendentes
+            </button>
+            <button class="filter-btn" data-filter="concluidas" onclick="filtrarTarefas('concluidas')">
+                <i class="fas fa-check-circle"></i> Concluídas
+            </button>
+            <button class="filter-btn" data-filter="criticas" onclick="filtrarTarefas('criticas')">
+                <i class="fas fa-exclamation-triangle"></i> Críticas
+            </button>
+        </div>
+
+        <!-- Checklist Content -->
+        <main class="checklist-main" id="checklist-content">
+            <!-- Will be populated by JavaScript -->
+        </main>
+
+        <!-- Observações Gerais -->
+        <aside class="observacoes-gerais" id="observacoes-gerais">
+            <!-- Will be populated by JavaScript -->
+        </aside>
+    </div>
+
+    <script src="scripts/checklist.js"></script>
+</body>
+</html>

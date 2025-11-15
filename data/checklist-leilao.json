@@ -1,0 +1,518 @@
+{
+  "titulo": "Checklist Completo para Realização de Leilão Judicial",
+  "descricao": "Guia passo a passo para servidores públicos do TJPE",
+  "versao": "1.0.0",
+  "autor": "Renato Gracie - Leiloeiro Oficial JUCEPE 366",
+  "fases": [
+    {
+      "id": 1,
+      "fase": "FASE 1: Preparação Inicial",
+      "icone": "📋",
+      "cor": "#667eea",
+      "tarefas": [
+        {
+          "id": "1.1",
+          "tarefa": "Verificar tipo de execução (comum, fiscal, hipotecária)",
+          "modulo": 1,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Define todo o procedimento subsequente"
+        },
+        {
+          "id": "1.2",
+          "tarefa": "Confirmar base legal aplicável (CPC, Lei 9.514/97, CTN)",
+          "modulo": 1,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Garante procedimento correto"
+        },
+        {
+          "id": "1.3",
+          "tarefa": "Identificar partes interessadas (credor, devedor, terceiros)",
+          "modulo": 1,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Para intimações futuras"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fase": "FASE 2: Elaboração do Edital",
+      "icone": "📄",
+      "cor": "#764ba2",
+      "tarefas": [
+        {
+          "id": "2.1",
+          "tarefa": "Solicitar avaliação atualizada do bem",
+          "modulo": 2,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Avaliação não pode ter mais de 1 ano (CPC 891)"
+        },
+        {
+          "id": "2.2",
+          "tarefa": "Reunir documentação obrigatória do imóvel",
+          "modulo": 2,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Matrícula, IPTU, certidões, CND, plantas"
+        },
+        {
+          "id": "2.3",
+          "tarefa": "Verificar débitos incidentes (IPTU, condomínio, tributos)",
+          "modulo": 2,
+          "critico": true,
+          "prazo": null,
+          "observacao": "STJ Tema 1.134: arrematante pode responder"
+        },
+        {
+          "id": "2.4",
+          "tarefa": "Incluir cláusulas obrigatórias no edital",
+          "modulo": 2,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Descrição, valor, débitos, condições de pagamento"
+        },
+        {
+          "id": "2.5",
+          "tarefa": "Definir modalidade (presencial ou eletrônico)",
+          "modulo": 2,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Eletrônico via site do leiloeiro ou plataforma oficial"
+        },
+        {
+          "id": "2.6",
+          "tarefa": "Submeter edital para aprovação judicial",
+          "modulo": 2,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Aguardar despacho homologatório"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fase": "FASE 3: Publicação e Intimações",
+      "icone": "📢",
+      "cor": "#f093fb",
+      "tarefas": [
+        {
+          "id": "3.1",
+          "tarefa": "Publicar edital em Diário Oficial ou jornal de grande circulação",
+          "modulo": 3,
+          "critico": true,
+          "prazo": "Mínimo 20 dias antes do leilão",
+          "observacao": "CPC 886: prazo mínimo de antecedência"
+        },
+        {
+          "id": "3.2",
+          "tarefa": "Publicar edital em site do Tribunal",
+          "modulo": 3,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Requisito de publicidade ampla"
+        },
+        {
+          "id": "3.3",
+          "tarefa": "Intimar devedor pessoalmente",
+          "modulo": 3,
+          "critico": true,
+          "prazo": "Até 5 dias antes do leilão",
+          "observacao": "Vício insanável se não feito"
+        },
+        {
+          "id": "3.4",
+          "tarefa": "Intimar credor (exequente)",
+          "modulo": 3,
+          "critico": true,
+          "prazo": "Até 5 dias antes do leilão",
+          "observacao": "Para exercer preferência de adjudicação"
+        },
+        {
+          "id": "3.5",
+          "tarefa": "Intimar cônjuge do devedor (se casado)",
+          "modulo": 3,
+          "critico": true,
+          "prazo": "Até 5 dias antes do leilão",
+          "observacao": "Necessário para validade do ato"
+        },
+        {
+          "id": "3.6",
+          "tarefa": "Verificar certidões de intimações nos autos",
+          "modulo": 3,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Comprovar que todos foram intimados"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "fase": "FASE 4: Gestão de Impugnações",
+      "icone": "⚖️",
+      "cor": "#4facfe",
+      "tarefas": [
+        {
+          "id": "4.1",
+          "tarefa": "Monitorar entrada de impugnações ao edital",
+          "modulo": 4,
+          "critico": true,
+          "prazo": "Até 5 dias antes do leilão",
+          "observacao": "CPC 887: prazo para impugnação"
+        },
+        {
+          "id": "4.2",
+          "tarefa": "Levar impugnações imediatamente ao juiz",
+          "modulo": 4,
+          "critico": true,
+          "prazo": "Imediatamente após protocolo",
+          "observacao": "NUNCA responder ou arquivar sem despacho judicial"
+        },
+        {
+          "id": "4.3",
+          "tarefa": "Aguardar decisão judicial sobre impugnação",
+          "modulo": 4,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Somente o juiz pode decidir sobre impugnação"
+        },
+        {
+          "id": "4.4",
+          "tarefa": "Se impugnação procedente: suspender leilão",
+          "modulo": 4,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Aguardar correção e nova publicação"
+        },
+        {
+          "id": "4.5",
+          "tarefa": "Se impugnação improcedente: prosseguir leilão",
+          "modulo": 4,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Documentar decisão nos autos"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "fase": "FASE 5: Averbação na Matrícula",
+      "icone": "📝",
+      "cor": "#43e97b",
+      "tarefas": [
+        {
+          "id": "5.1",
+          "tarefa": "Solicitar matrícula atualizada no Cartório de Imóveis",
+          "modulo": 5,
+          "critico": true,
+          "prazo": "Antes de elaborar edital",
+          "observacao": "Lei 6.015/73: verificar ônus e gravames"
+        },
+        {
+          "id": "5.2",
+          "tarefa": "Verificar princípio da continuidade registral",
+          "modulo": 5,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Cadeia de proprietários deve estar regular"
+        },
+        {
+          "id": "5.3",
+          "tarefa": "Após arrematação: preparar documentos para averbação",
+          "modulo": 5,
+          "critico": true,
+          "prazo": "Após pagamento integral",
+          "observacao": "Auto de arrematação, edital, carta, comprovante pagamento"
+        },
+        {
+          "id": "5.4",
+          "tarefa": "Protocolar averbação no Cartório de Registro de Imóveis",
+          "modulo": 5,
+          "critico": true,
+          "prazo": "5 dias após expedição da Carta de Arrematação",
+          "observacao": "CPC 901: prazo para registro"
+        },
+        {
+          "id": "5.5",
+          "tarefa": "Acompanhar processamento no cartório",
+          "modulo": 5,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Resolver pendências registrárias"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "fase": "FASE 6: Habilitação de Interessados",
+      "icone": "👥",
+      "cor": "#fa709a",
+      "tarefas": [
+        {
+          "id": "6.1",
+          "tarefa": "Receber e protocolar pedidos de habilitação",
+          "modulo": 6,
+          "critico": true,
+          "prazo": "Até dia do leilão",
+          "observacao": "Verificar documentação completa"
+        },
+        {
+          "id": "6.2",
+          "tarefa": "Verificar caução de 5% a 20% (se exigida)",
+          "modulo": 6,
+          "critico": true,
+          "prazo": "Antes do leilão",
+          "observacao": "CPC 890: garantia de seriedade"
+        },
+        {
+          "id": "6.3",
+          "tarefa": "Conferir documentos pessoais (RG, CPF, comprovante residência)",
+          "modulo": 6,
+          "critico": true,
+          "prazo": "No ato da habilitação",
+          "observacao": "PF ou PJ conforme regras do edital"
+        },
+        {
+          "id": "6.4",
+          "tarefa": "Verificar se há impedimentos (devedor, cônjuge, parentes)",
+          "modulo": 6,
+          "critico": true,
+          "prazo": "Antes de aceitar habilitação",
+          "observacao": "CPC 889: impedidos de arrematar"
+        },
+        {
+          "id": "6.5",
+          "tarefa": "Emitir credencial de participação",
+          "modulo": 6,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Para leilões presenciais"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "fase": "FASE 7: Realização do Leilão",
+      "icone": "🔨",
+      "cor": "#ff6b6b",
+      "tarefas": [
+        {
+          "id": "7.1",
+          "tarefa": "Verificar presença do leiloeiro oficial",
+          "modulo": 7,
+          "critico": true,
+          "prazo": "No dia do leilão",
+          "observacao": "Somente leiloeiro pode conduzir"
+        },
+        {
+          "id": "7.2",
+          "tarefa": "Abrir sessão no horário exato do edital",
+          "modulo": 7,
+          "critico": true,
+          "prazo": "Horário publicado no edital",
+          "observacao": "Atrasos devem ser justificados"
+        },
+        {
+          "id": "7.3",
+          "tarefa": "Realizar 1ª praça (valor mínimo: avaliação)",
+          "modulo": 7,
+          "critico": true,
+          "prazo": null,
+          "observacao": "CPC 891: lance mínimo = valor da avaliação"
+        },
+        {
+          "id": "7.4",
+          "tarefa": "Se deserta a 1ª praça: realizar 2ª praça (50% da avaliação)",
+          "modulo": 7,
+          "critico": false,
+          "prazo": "Conforme edital",
+          "observacao": "CPC 891 §1º"
+        },
+        {
+          "id": "7.5",
+          "tarefa": "Lavrar auto de arrematação",
+          "modulo": 7,
+          "critico": true,
+          "prazo": "Imediatamente após adjudicação",
+          "observacao": "Documento oficial da arrematação"
+        },
+        {
+          "id": "7.6",
+          "tarefa": "Determinar prazo de pagamento (máx. 15 dias)",
+          "modulo": 7,
+          "critico": true,
+          "prazo": null,
+          "observacao": "CPC 892: prazo para pagamento integral"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "fase": "FASE 8: Pós-Leilão e Pagamento",
+      "icone": "💰",
+      "cor": "#38ada9",
+      "tarefas": [
+        {
+          "id": "8.1",
+          "tarefa": "Aguardar depósito integral do arrematante",
+          "modulo": 8,
+          "critico": true,
+          "prazo": "15 dias após arrematação",
+          "observacao": "CPC 892"
+        },
+        {
+          "id": "8.2",
+          "tarefa": "Se não pago: aplicar multa de 20% + perda da caução",
+          "modulo": 8,
+          "critico": true,
+          "prazo": "Após vencimento do prazo",
+          "observacao": "CPC 897: penalidade por inadimplência"
+        },
+        {
+          "id": "8.3",
+          "tarefa": "Se pago: expedir Carta de Arrematação",
+          "modulo": 8,
+          "critico": true,
+          "prazo": "Após confirmação do pagamento",
+          "observacao": "Documento que transfere propriedade"
+        },
+        {
+          "id": "8.4",
+          "tarefa": "Calcular e separar valores (credor, custas, leiloeiro)",
+          "modulo": 8,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Rateio conforme ordem de preferência"
+        },
+        {
+          "id": "8.5",
+          "tarefa": "Efetuar pagamento ao credor",
+          "modulo": 8,
+          "critico": true,
+          "prazo": "Após liberação judicial",
+          "observacao": "Transferência ou alvará"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "fase": "FASE 9: Transferência de Propriedade",
+      "icone": "🏠",
+      "cor": "#786fa6",
+      "tarefas": [
+        {
+          "id": "9.1",
+          "tarefa": "Verificar se Carta de Arrematação foi expedida",
+          "modulo": 9,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Requisito para transferência"
+        },
+        {
+          "id": "9.2",
+          "tarefa": "Protocolar Carta no Cartório de Registro de Imóveis",
+          "modulo": 9,
+          "critico": true,
+          "prazo": "5 dias após expedição",
+          "observacao": "Lei 6.015/73"
+        },
+        {
+          "id": "9.3",
+          "tarefa": "Acompanhar registro da transferência",
+          "modulo": 9,
+          "critico": false,
+          "prazo": null,
+          "observacao": "Resolver pendências registrárias"
+        },
+        {
+          "id": "9.4",
+          "tarefa": "Obter certidão de matrícula atualizada",
+          "modulo": 9,
+          "critico": false,
+          "prazo": "Após registro",
+          "observacao": "Comprovar transferência"
+        },
+        {
+          "id": "9.5",
+          "tarefa": "Expedir mandado de imissão na posse (se necessário)",
+          "modulo": 9,
+          "critico": false,
+          "prazo": "Se imóvel ocupado",
+          "observacao": "CPC 806"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "fase": "FASE 10: Encerramento e Arquivo",
+      "icone": "📁",
+      "cor": "#22a6b3",
+      "tarefas": [
+        {
+          "id": "10.1",
+          "tarefa": "Verificar se todas as certidões foram juntadas",
+          "modulo": 10,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Intimações, auto, carta, comprovantes"
+        },
+        {
+          "id": "10.2",
+          "tarefa": "Elaborar relatório final do leilão",
+          "modulo": 10,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Resumo de todo procedimento"
+        },
+        {
+          "id": "10.3",
+          "tarefa": "Submeter prestação de contas ao juiz",
+          "modulo": 10,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Valores recebidos e pagos"
+        },
+        {
+          "id": "10.4",
+          "tarefa": "Aguardar homologação judicial",
+          "modulo": 10,
+          "critico": true,
+          "prazo": null,
+          "observacao": "Aprovação das contas"
+        },
+        {
+          "id": "10.5",
+          "tarefa": "Arquivar processo (execução satisfeita)",
+          "modulo": 10,
+          "critico": false,
+          "prazo": "Após homologação",
+          "observacao": "Baixa definitiva do processo"
+        }
+      ]
+    }
+  ],
+  "observacoes_gerais": [
+    {
+      "titulo": "⚠️ ALERTAS CRÍTICOS",
+      "itens": [
+        "Omissão de edital ou impugnação não levada ao juiz pode anular todo o leilão",
+        "Todos os prazos processuais são improrrogáveis",
+        "Intimação do devedor é requisito essencial (vício insanável se não feito)",
+        "STJ Tema 1.134/2024: Débitos de condomínio são responsabilidade do arrematante"
+      ]
+    },
+    {
+      "titulo": "📋 DOCUMENTAÇÃO ESSENCIAL",
+      "itens": [
+        "Matrícula atualizada do imóvel",
+        "Auto de arrematação assinado",
+        "Edital com todas as publicações",
+        "Certidões de intimações (devedor, credor, cônjuge)",
+        "Comprovante de pagamento integral",
+        "Carta de Arrematação judicial"
+      ]
+    }
+  ]
+}

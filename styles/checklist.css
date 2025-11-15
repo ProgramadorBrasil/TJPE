@@ -1,0 +1,465 @@
+/* ========================================
+   CHECKLIST LEILÃO JUDICIAL - STYLES
+   Design moderno e profissional
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.checklist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.checklist-header {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.header-title h1 {
+    font-size: 28px;
+    color: #1D1D1F;
+    margin-bottom: 8px;
+}
+
+.header-title p {
+    color: #666;
+    font-size: 14px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-voltar,
+.btn-reset,
+.btn-print,
+.btn-export {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-voltar {
+    background: #f5f5f7;
+    color: #1D1D1F;
+}
+
+.btn-voltar:hover {
+    background: #e8e8ea;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background: #ff6b6b;
+    color: white;
+}
+
+.btn-reset:hover {
+    background: #ee5a52;
+    transform: translateY(-2px);
+}
+
+.btn-print {
+    background: #667eea;
+    color: white;
+}
+
+.btn-print:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.btn-export {
+    background: #43e97b;
+    color: white;
+}
+
+.btn-export:hover {
+    background: #38d96a;
+    transform: translateY(-2px);
+}
+
+/* Progress Bar */
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.progress-bar-wrapper {
+    height: 8px;
+    background: #f5f5f7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    width: 0%;
+    transition: width 0.5s ease;
+    border-radius: 4px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: white;
+    color: #667eea;
+    border-color: white;
+}
+
+/* Main Content */
+.checklist-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Fase Card */
+.fase-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.fase-card:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.fase-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f5f5f7;
+}
+
+.fase-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.fase-info h2 {
+    font-size: 22px;
+    color: #1D1D1F;
+    margin-bottom: 5px;
+}
+
+.fase-progress {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Tarefas */
+.tarefas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tarefa-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f5f5f7;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tarefa-item:hover {
+    background: #e8e8ea;
+    transform: translateX(5px);
+}
+
+.tarefa-item.concluida {
+    opacity: 0.6;
+    background: #e8f5e9;
+}
+
+.tarefa-item.critica {
+    border-left: 4px solid #ff6b6b;
+}
+
+.tarefa-checkbox {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.tarefa-item.concluida .tarefa-checkbox {
+    background: #43e97b;
+    border-color: #43e97b;
+}
+
+.tarefa-checkbox i {
+    color: white;
+    font-size: 14px;
+    display: none;
+}
+
+.tarefa-item.concluida .tarefa-checkbox i {
+    display: block;
+}
+
+.tarefa-content {
+    flex: 1;
+}
+
+.tarefa-id {
+    font-size: 12px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.tarefa-texto {
+    font-size: 16px;
+    color: #1D1D1F;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.tarefa-item.concluida .tarefa-texto {
+    text-decoration: line-through;
+}
+
+.tarefa-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+}
+
+.tarefa-modulo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.tarefa-prazo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.tarefa-critica-badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.tarefa-observacao {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Observações Gerais */
+.observacoes-gerais {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.observacao-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.observacao-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1D1D1F;
+}
+
+.observacao-card ul {
+    list-style: none;
+}
+
+.observacao-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f7;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.observacao-card li:last-child {
+    border-bottom: none;
+}
+
+.observacao-card li::before {
+    content: '▸ ';
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .checklist-header {
+        padding: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .btn-voltar,
+    .btn-reset,
+    .btn-print,
+    .btn-export {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .fase-card {
+        padding: 20px;
+    }
+
+    .fase-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .observacoes-gerais {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .header-actions,
+    .filters {
+        display: none;
+    }
+
+    .checklist-header {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .fase-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .tarefa-item {
+        page-break-inside: avoid;
+    }
+}

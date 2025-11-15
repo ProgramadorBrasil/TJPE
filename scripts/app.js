@@ -107,6 +107,17 @@ async function renderizarNavegacao() {
             </div>
         `;
     });
+
+    // Adicionar botão de checklist
+    html += `
+        <div style="margin-top: 30px; padding: 0 20px;">
+            <a href="checklist.html" class="module-item" style="display: flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-decoration: none; justify-content: center; padding: 15px;">
+                <i class="fas fa-clipboard-check" style="font-size: 20px;"></i>
+                <span style="font-weight: 600;">Checklist de Leilão</span>
+            </a>
+        </div>
+    `;
+
     moduleList.innerHTML = html;
 }
 
