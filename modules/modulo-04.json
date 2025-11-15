@@ -2,7 +2,7 @@
   "id": 4,
   "titulo": "Avaliação de Bens e Atualização de Valores",
   "descricao": "Validade e procedimentos de atualização",
-  "duracao": "35min",
+  "duracao": "3min",
   "icone": "💰",
   "audioUrl": "assets/audio/modulo-04.mp3",
   "version": "1.0.0",
@@ -261,18 +261,54 @@
     {
       "nome": "Índices Mensais INPC 2024-2025",
       "dados": [
-        {"mes": "Janeiro/2024", "indice": 100.5},
-        {"mes": "Fevereiro/2024", "indice": 101.2},
-        {"mes": "Março/2024", "indice": 102.1},
-        {"mes": "Abril/2024", "indice": 102.8},
-        {"mes": "Maio/2024", "indice": 103.4},
-        {"mes": "Junho/2024", "indice": 104.1},
-        {"mes": "Julho/2024", "indice": 105.2},
-        {"mes": "Agosto/2024", "indice": 106.1},
-        {"mes": "Setembro/2024", "indice": 107.0},
-        {"mes": "Outubro/2024", "indice": 108.3},
-        {"mes": "Novembro/2024", "indice": 109.1},
-        {"mes": "Dezembro/2024", "indice": 110.0}
+        {
+          "mes": "Janeiro/2024",
+          "indice": 100.5
+        },
+        {
+          "mes": "Fevereiro/2024",
+          "indice": 101.2
+        },
+        {
+          "mes": "Março/2024",
+          "indice": 102.1
+        },
+        {
+          "mes": "Abril/2024",
+          "indice": 102.8
+        },
+        {
+          "mes": "Maio/2024",
+          "indice": 103.4
+        },
+        {
+          "mes": "Junho/2024",
+          "indice": 104.1
+        },
+        {
+          "mes": "Julho/2024",
+          "indice": 105.2
+        },
+        {
+          "mes": "Agosto/2024",
+          "indice": 106.1
+        },
+        {
+          "mes": "Setembro/2024",
+          "indice": 107.0
+        },
+        {
+          "mes": "Outubro/2024",
+          "indice": 108.3
+        },
+        {
+          "mes": "Novembro/2024",
+          "indice": 109.1
+        },
+        {
+          "mes": "Dezembro/2024",
+          "indice": 110.0
+        }
       ],
       "observacao": "Índices para referência educacional"
     }

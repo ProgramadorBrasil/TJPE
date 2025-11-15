@@ -2,7 +2,7 @@
   "id": 8,
   "titulo": "Publicação e Transparência",
   "descricao": "Publicação obrigatória e prazos",
-  "duracao": "25min",
+  "duracao": "7min",
   "icone": "📢",
   "audioUrl": "assets/audio/modulo-08.mp3",
   "version": "1.0.0",
@@ -684,13 +684,22 @@
         {
           "evento": "1ª Publicação - Diário da Justiça",
           "data": "10/09/2025",
-          "meios": ["Diário de Justiça", "Jornal do Commércio", "Portal TJPE", "Facebook Leilões Gracie"]
+          "meios": [
+            "Diário de Justiça",
+            "Jornal do Commércio",
+            "Portal TJPE",
+            "Facebook Leilões Gracie"
+          ]
         },
         {
           "evento": "2ª Publicação - Diário da Justiça",
           "data": "15/09/2025",
           "intervalo": "5 dias após primeira (10, 11, 12, 13, 14, 15)",
-          "meios": ["Diário de Justiça", "Jornal do Commércio", "Instagram"]
+          "meios": [
+            "Diário de Justiça",
+            "Jornal do Commércio",
+            "Instagram"
+          ]
         },
         {
           "evento": "Cálculo de prazos",

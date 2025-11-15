@@ -2,7 +2,7 @@
   "id": 6,
   "titulo": "Débitos Fiscais e Condominiais",
   "descricao": "Art. 130 CTN e Tema 1.134/2024 do STJ",
-  "duracao": "50min",
+  "duracao": "5min",
   "icone": "💳",
   "audioUrl": "assets/audio/modulo-06.mp3",
   "version": "1.0.0",
@@ -301,12 +301,42 @@
     {
       "nome": "Checklist de Débitos a Pesquisar",
       "itens": [
-        {"debito": "IPTU", "responsavel": "Prefeitura", "frequencia": "Muito frequente", "impacto": "Alto"},
-        {"debito": "Condomínio", "responsavel": "Síndico/Administradora", "frequencia": "Muito frequente", "impacto": "Alto"},
-        {"debito": "Água/Esgoto", "responsavel": "COMPESA ou similar", "frequencia": "Frequente", "impacto": "Médio"},
-        {"debito": "ITBI anterior", "responsavel": "Cartório/Prefeitura", "frequencia": "Frequente", "impacto": "Médio"},
-        {"debito": "Multas administrativas", "responsavel": "Prefeitura", "frequencia": "Ocasional", "impacto": "Variável"},
-        {"debito": "Receita Federal", "responsavel": "Receita Federal", "frequencia": "Raro", "impacto": "Alto"}
+        {
+          "debito": "IPTU",
+          "responsavel": "Prefeitura",
+          "frequencia": "Muito frequente",
+          "impacto": "Alto"
+        },
+        {
+          "debito": "Condomínio",
+          "responsavel": "Síndico/Administradora",
+          "frequencia": "Muito frequente",
+          "impacto": "Alto"
+        },
+        {
+          "debito": "Água/Esgoto",
+          "responsavel": "COMPESA ou similar",
+          "frequencia": "Frequente",
+          "impacto": "Médio"
+        },
+        {
+          "debito": "ITBI anterior",
+          "responsavel": "Cartório/Prefeitura",
+          "frequencia": "Frequente",
+          "impacto": "Médio"
+        },
+        {
+          "debito": "Multas administrativas",
+          "responsavel": "Prefeitura",
+          "frequencia": "Ocasional",
+          "impacto": "Variável"
+        },
+        {
+          "debito": "Receita Federal",
+          "responsavel": "Receita Federal",
+          "frequencia": "Raro",
+          "impacto": "Alto"
+        }
       ]
     }
   ],
