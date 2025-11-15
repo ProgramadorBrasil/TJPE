@@ -1,0 +1,22 @@
+⚠️ ARQUIVOS DE ÁUDIO PENDENTES
+
+O sistema está configurado para tocar áudio, mas os arquivos MP3 ainda não foram criados.
+
+ARQUIVOS NECESSÁRIOS:
+- modulo-01.mp3 (45min) - Fundamentos Legais
+- modulo-02.mp3 (60min) - Edital de Leilão
+- modulo-03.mp3 (40min) - Notificações
+- modulo-04.mp3 (35min) - Avaliação de Bens
+- modulo-05.mp3 (30min) - Averbação
+- modulo-06.mp3 (50min) - Débitos Fiscais
+- modulo-07.mp3 (35min) - Formas de Pagamento
+- modulo-08.mp3 (25min) - Publicação
+- modulo-09.mp3 (40min) - Pós-Leilão
+- modulo-10.mp3 (45min) - Casos Práticos
+
+SOLUÇÕES TEMPORÁRIAS:
+1. Desativar auto-play (editar app.js, linha 246: autoplay: false)
+2. Adicionar arquivos MP3 reais nesta pasta
+3. Usar TTS para gerar áudio automaticamente
+
+Ver: assets/audio/README.md para mais detalhes

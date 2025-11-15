@@ -1,0 +1,337 @@
+/* ========================================
+   LEGAL TOOLTIPS - SISTEMA DE REFERÊNCIAS
+   Tooltips interativos para artigos legais
+   Design moderno e acessível
+   ======================================== */
+
+/* Legal Reference Inline Styling */
+.legal-ref {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: underline dotted 2px;
+    text-decoration-color: rgba(102, 126, 234, 0.4);
+    text-underline-offset: 3px;
+    cursor: help;
+    position: relative;
+    padding: 0 2px;
+    border-radius: 2px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline;
+}
+
+.legal-ref:hover {
+    color: #764ba2;
+    text-decoration-color: #764ba2;
+    text-decoration-style: solid;
+    background: rgba(102, 126, 234, 0.08);
+}
+
+.legal-ref:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.legal-ref:active {
+    transform: translateY(1px);
+}
+
+/* Tooltip Container */
+.legal-tooltip {
+    position: absolute;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0;
+    border-radius: 16px;
+    box-shadow:
+        0 20px 60px rgba(102, 126, 234, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    max-width: 450px;
+    min-width: 320px;
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+    backdrop-filter: blur(20px);
+}
+
+.legal-tooltip.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Tooltip Header */
+.legal-tooltip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 16px 16px 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.legal-tooltip-title {
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: 0.3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.legal-tooltip-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.legal-tooltip-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+.legal-tooltip-close:active {
+    transform: rotate(90deg) scale(0.9);
+}
+
+/* Tooltip Body */
+.legal-tooltip-body {
+    padding: 1.5rem;
+    max-height: 400px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Custom scrollbar for tooltip */
+.legal-tooltip-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.legal-tooltip-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.legal-tooltip-body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.legal-tooltip-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Tooltip Sections */
+.legal-tooltip-section {
+    margin-bottom: 1rem;
+}
+
+.legal-tooltip-section:last-child {
+    margin-bottom: 0;
+}
+
+.legal-tooltip-label {
+    font-weight: 700;
+    opacity: 0.9;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legal-tooltip-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.legal-tooltip-text strong {
+    font-weight: 700;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .legal-tooltip {
+        max-width: calc(100vw - 40px);
+        min-width: 280px;
+        left: 20px !important;
+        right: 20px;
+        width: auto;
+    }
+
+    .legal-tooltip-header {
+        padding: 1rem 1.25rem;
+    }
+
+    .legal-tooltip-title {
+        font-size: 1rem;
+    }
+
+    .legal-tooltip-body {
+        padding: 1.25rem;
+        max-height: 300px;
+        font-size: 0.9rem;
+    }
+
+    .legal-tooltip-label {
+        font-size: 0.75rem;
+    }
+
+    .legal-tooltip-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-tooltip {
+        max-width: calc(100vw - 20px);
+        min-width: unset;
+        left: 10px !important;
+        right: 10px;
+        border-radius: 12px;
+    }
+
+    .legal-tooltip-header {
+        padding: 0.875rem 1rem;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .legal-tooltip-title {
+        font-size: 0.95rem;
+    }
+
+    .legal-tooltip-close {
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
+    }
+
+    .legal-tooltip-body {
+        padding: 1rem;
+        max-height: 250px;
+        font-size: 0.85rem;
+    }
+
+    .legal-tooltip-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .legal-tooltip-text {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+/* Dark Mode Support (if needed) */
+@media (prefers-color-scheme: dark) {
+    .legal-ref {
+        color: #818cf8;
+    }
+
+    .legal-ref:hover {
+        color: #a78bfa;
+        background: rgba(129, 140, 248, 0.1);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .legal-tooltip {
+        display: none !important;
+    }
+
+    .legal-ref {
+        color: #000;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+/* Accessibility - High Contrast Mode */
+@media (prefers-contrast: high) {
+    .legal-ref {
+        text-decoration-style: solid;
+        text-decoration-thickness: 2px;
+    }
+
+    .legal-tooltip {
+        border: 2px solid white;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Animation when multiple tooltips */
+.legal-tooltip:nth-of-type(2) {
+    animation-delay: 0.05s;
+}
+
+/* Tooltip pointer/arrow (optional enhancement) */
+.legal-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth entrance animation */
+@keyframes tooltip-enter {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Loading state (if needed) */
+.legal-tooltip.loading .legal-tooltip-body {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.legal-tooltip.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: tooltip-spin 0.8s linear infinite;
+}
+
+@keyframes tooltip-spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

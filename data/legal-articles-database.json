@@ -1,0 +1,217 @@
+{
+  "articles": {
+    "CPC-824": {
+      "codigo": "CPC",
+      "artigo": "824",
+      "livro": "Livro II - Execução",
+      "titulo": "Alienação de Bens - Disposições Gerais",
+      "texto": "Quando a execução recai sobre vários bens, a alienação far-se-á gradativamente, até que a execução esteja satisfeita, ou, se mais convier à venda, far-se-á alienação conjunta.",
+      "aplicacao": "Define a ordem e forma de alienação de bens na execução judicial, permitindo alienação gradual ou conjunta conforme o caso.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Regra fundamental para organização do leilão judicial. Em vigor desde 18/03/2016."
+    },
+    "CPC-825": {
+      "codigo": "CPC",
+      "artigo": "825",
+      "livro": "Livro II - Execução",
+      "titulo": "Formas de Alienação",
+      "texto": "A alienação em hasta pública far-se-á por leilão, por propostas ou por preço previamente ajustado.",
+      "aplicacao": "Estabelece as modalidades legais de alienação judicial: leilão (bens móveis), praça (bens imóveis), propostas ou acordo.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Base legal para todo leilão judicial. O termo 'hasta pública' engloba todas as formas de alienação judicial."
+    },
+    "CPC-826": {
+      "codigo": "CPC",
+      "artigo": "826",
+      "livro": "Livro II - Execução",
+      "titulo": "Publicação do Edital",
+      "texto": "Antes da hasta pública, o edital de alienação judicial será publicado, uma única vez, no prazo de 10 (dez) dias de antecedência, no órgão oficial e em jornal de grande circulação.",
+      "aplicacao": "Define prazos e requisitos mínimos de publicação do edital de leilão. Vício nesta publicação pode anular todo o procedimento.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "ATENÇÃO: Publicação é ato OBRIGATÓRIO. Omissão configura vício insanável."
+    },
+    "CPC-827": {
+      "codigo": "CPC",
+      "artigo": "827",
+      "livro": "Livro II - Execução",
+      "titulo": "Conteúdo do Edital",
+      "texto": "O edital de leilão conterá: I - descrição do bem penhorado; II - lugar, dia e hora da realização; III - valor da avaliação; IV - modalidade de venda.",
+      "aplicacao": "Lista elementos OBRIGATÓRIOS do edital de leilão. Falta de qualquer um pode gerar nulidade.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Checklist essencial. Servidor deve verificar todos os itens antes de publicar."
+    },
+    "CPC-835": {
+      "codigo": "CPC",
+      "artigo": "835",
+      "livro": "Livro II - Execução",
+      "titulo": "Ordem de Penhora",
+      "texto": "A penhora observará, preferencialmente, a seguinte ordem: I - dinheiro, em espécie ou em depósito ou aplicação; II - títulos da dívida pública; III - títulos e valores mobiliários; IV - veículos; V - bens imóveis; VI - bens móveis em geral.",
+      "aplicacao": "Ordem preferencial de bens para penhora. Deve ser observada salvo interesse das partes ou inviabilidade.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Ordem pode ser flexibilizada se mais eficaz para satisfação do crédito."
+    },
+    "CPC-880": {
+      "codigo": "CPC",
+      "artigo": "880",
+      "livro": "Livro II - Execução",
+      "titulo": "Praça e Leilão - Definição",
+      "texto": "A hasta pública para alienação de bens penhorados pode realizar-se por meio de LEILÃO (bens móveis) ou PRAÇA (bens imóveis).",
+      "aplicacao": "Diferencia as duas modalidades principais de hasta pública: leilão para móveis, praça para imóveis.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Terminologia oficial: LEILÃO = móveis | PRAÇA = imóveis."
+    },
+    "CPC-881": {
+      "codigo": "CPC",
+      "artigo": "881",
+      "livro": "Livro II - Execução",
+      "titulo": "Adjudicação Preferencial",
+      "texto": "O exequente pode requerer a adjudicação do bem penhorado antes da hasta pública, oferecendo preço não inferior ao da avaliação.",
+      "aplicacao": "Credor pode ficar com o bem antes do leilão, pagando valor da avaliação. Evita custos de leilão.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Direito do exequente. Encerra execução se valor cobrir dívida."
+    },
+    "CPC-895": {
+      "codigo": "CPC",
+      "artigo": "895",
+      "livro": "Livro II - Execução",
+      "titulo": "Formas de Pagamento",
+      "texto": "O arrematante deverá garantir o lance com depósito de, no mínimo, 5% (cinco por cento) do valor, podendo pagar o restante em até 15 dias após a arrematação, sob pena de perder o valor depositado.",
+      "aplicacao": "Regula sinal de arrematação e prazo para pagamento integral. Não cumprimento acarreta perda do depósito.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Depósito mínimo: 5% | Prazo pagamento: até 15 dias | Descumprimento = Perda do sinal"
+    },
+    "CPC-897": {
+      "codigo": "CPC",
+      "artigo": "897",
+      "livro": "Livro II - Execução",
+      "titulo": "Auto de Arrematação",
+      "texto": "Assinado o auto de arrematação e expedida a respectiva carta, considerar-se-á perfeita, acabada e irretratável a arrematação.",
+      "aplicacao": "Define momento em que arrematação se torna definitiva e irretratável. Marco temporal crucial.",
+      "referencia": "Lei 13.105/2015 - Código de Processo Civil",
+      "observacoes": "Após assinatura do auto + expedição da carta = IRRETRATÁVEL. Não cabe mais desistência."
+    },
+    "Lei-9514-Art-27": {
+      "codigo": "Lei 9.514/97",
+      "artigo": "27",
+      "titulo": "Alienação Fiduciária - Procedimento",
+      "texto": "Uma vez constituída a alienação fiduciária, o credor pode, em caso de inadimplemento, consolidar a propriedade em seu nome ou promover o leilão extrajudicial.",
+      "aplicacao": "Permite leilão extrajudicial acelerado em imóveis com alienação fiduciária, sem necessidade de execução judicial.",
+      "referencia": "Lei 9.514 de 20 de novembro de 1997 - Sistema de Financiamento Imobiliário",
+      "observacoes": "Procedimento mais rápido que execução judicial. Muito usado em financiamentos habitacionais."
+    },
+    "Lei-9514-Art-28": {
+      "codigo": "Lei 9.514/97",
+      "artigo": "28",
+      "titulo": "Intimação para Purga da Mora",
+      "texto": "O devedor fiduciante será intimado para pagar a integralidade da dívida em 15 dias, sob pena de consolidação da propriedade.",
+      "aplicacao": "Prazo legal para devedor quitar dívida antes de perder o imóvel. Conhecido como 'purga da mora'.",
+      "referencia": "Lei 9.514/97",
+      "observacoes": "Prazo improrrogável de 15 dias. Após isso, propriedade consolida em nome do credor."
+    },
+    "CTN-130": {
+      "codigo": "CTN",
+      "artigo": "130",
+      "titulo": "Responsabilidade Tributária do Arrematante",
+      "texto": "Os créditos tributários sub-rogam-se na pessoa do adquirente, salvo quando conste no edital a expressa ressalva de que a arrematação se faz livre de todos os ônus.",
+      "aplicacao": "Arrematante pode responder por dívidas tributárias do imóvel, salvo se edital expressamente excluir ('livre de ônus').",
+      "referencia": "Lei 5.172/1966 - Código Tributário Nacional",
+      "jurisprudencia": "STJ Tema 1.134/2024: Débitos condominiais SEMPRE acompanham o imóvel, mesmo com cláusula 'livre de ônus'.",
+      "observacoes": "ATENÇÃO: Jurisprudência recente ampliou responsabilidade. Sempre verificar ônus antes de arrematar."
+    },
+    "CTN-131": {
+      "codigo": "CTN",
+      "artigo": "131",
+      "titulo": "Responsabilidade Solidária - Adquirente",
+      "texto": "São pessoalmente responsáveis os adquirentes de bens imóveis, pelos tributos relativos aos bens adquiridos.",
+      "aplicacao": "Reforça responsabilidade tributária do arrematante. Aplica-se a IPTU, ITR e outros tributos reais.",
+      "referencia": "Lei 5.172/1966 - CTN",
+      "observacoes": "Combinado com art. 130, cria responsabilidade ampla por débitos fiscais do imóvel."
+    },
+    "CTN-132": {
+      "codigo": "CTN",
+      "artigo": "132",
+      "titulo": "Responsabilidade por Infrações",
+      "texto": "A pessoa jurídica de direito privado que resultar de fusão, transformação ou incorporação de outra responde pelos tributos devidos até a data do ato.",
+      "aplicacao": "Regula sucessão tributária em operações societárias. Relevante para leilão de empresas.",
+      "referencia": "Lei 5.172/1966 - CTN",
+      "observacoes": "Aplica-se quando o bem arrematado é empresa ou fundo de comércio."
+    },
+    "CF-5-XXII": {
+      "codigo": "CF",
+      "artigo": "5º, XXII",
+      "titulo": "Garantia do Direito de Propriedade",
+      "texto": "É garantido o direito de propriedade.",
+      "aplicacao": "Base constitucional do direito de propriedade. Toda execução deve respeitar este direito fundamental.",
+      "referencia": "Constituição Federal de 1988",
+      "observacoes": "Direito não absoluto. Deve cumprir função social (art. 5º, XXIII)."
+    },
+    "CF-5-XXIII": {
+      "codigo": "CF",
+      "artigo": "5º, XXIII",
+      "titulo": "Função Social da Propriedade",
+      "texto": "A propriedade atenderá a sua função social.",
+      "aplicacao": "Limita direito de propriedade. Justifica penhora e expropriação em favor do credor.",
+      "referencia": "Constituição Federal de 1988",
+      "observacoes": "Princípio que legitima o leilão judicial: propriedade serve para pagar dívidas."
+    },
+    "CF-170": {
+      "codigo": "CF",
+      "artigo": "170",
+      "titulo": "Princípios da Ordem Econômica",
+      "texto": "A ordem econômica, fundada na valorização do trabalho humano e na livre iniciativa, tem por fim assegurar a todos existência digna, conforme os ditames da justiça social.",
+      "aplicacao": "Fundamento econômico do leilão judicial: garantir cumprimento de obrigações e circulação de riqueza.",
+      "referencia": "Constituição Federal de 1988",
+      "observacoes": "Leilão promove justiça social ao garantir pagamento de credores e redistribuir propriedade."
+    },
+    "CC-1336": {
+      "codigo": "CC",
+      "artigo": "1.336",
+      "titulo": "Deveres do Condômino",
+      "texto": "São deveres do condômino: I - contribuir para as despesas do condomínio na proporção de suas frações ideais.",
+      "aplicacao": "Fundamenta cobrança de débitos condominiais. Base para penhora por dívida de condomínio.",
+      "referencia": "Lei 10.406/2002 - Código Civil",
+      "observacoes": "Débito condominial é obrigação propter rem (vinculada ao bem, não à pessoa)."
+    },
+    "CC-1345": {
+      "codigo": "CC",
+      "artigo": "1.345",
+      "titulo": "Aquisição da Propriedade Imóvel",
+      "texto": "A aquisição da propriedade imóvel deriva: I - do registro do título translativo no Cartório de Registro de Imóveis.",
+      "aplicacao": "Exige registro da arrematação na matrícula para transferir propriedade. Sem registro, não há transferência.",
+      "referencia": "Lei 10.406/2002 - Código Civil",
+      "observacoes": "ESSENCIAL: Carta de arrematação + registro = propriedade. Sem registro, arrematante não é dono."
+    },
+    "Lei-6015-Art-167": {
+      "codigo": "Lei 6.015/73",
+      "artigo": "167",
+      "titulo": "Atos de Registro de Imóveis",
+      "texto": "No Registro de Imóveis serão feitos os seguintes atos: I - registro das arrematações de imóveis.",
+      "aplicacao": "Define que arrematação deve ser registrada na matrícula do imóvel. Ato obrigatório.",
+      "referencia": "Lei 6.015/1973 - Lei de Registros Públicos",
+      "observacoes": "Carta de arrematação é título hábil para registro. Tabelião não pode recusar."
+    },
+    "Lei-6015-Art-237": {
+      "codigo": "Lei 6.015/73",
+      "artigo": "237",
+      "titulo": "Alienação Judicial - Averbação",
+      "texto": "Será averbada a arrematação de imóvel, com base na carta de arrematação ou mandado de transferência.",
+      "aplicacao": "Procedimento para registro da arrematação. Documento necessário: carta de arrematação.",
+      "referencia": "Lei 6.015/1973",
+      "observacoes": "Registro cancela eventuais hipotecas anteriores, salvo as que tenham preferência."
+    }
+  },
+  "metadata": {
+    "versao": "1.0.0",
+    "ultimaAtualizacao": "2025-11-15",
+    "totalArtigos": 23,
+    "fontes": [
+      "Lei 13.105/2015 - Código de Processo Civil",
+      "Lei 5.172/1966 - Código Tributário Nacional",
+      "Lei 9.514/1997 - Sistema de Financiamento Imobiliário",
+      "Constituição Federal de 1988",
+      "Lei 10.406/2002 - Código Civil",
+      "Lei 6.015/1973 - Lei de Registros Públicos"
+    ],
+    "observacoes": "Database criado especialmente para o curso de Leilão Judicial TJPE. Contém artigos mais citados nas 10 módulos do curso."
+  }
+}

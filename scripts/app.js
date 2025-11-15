@@ -13,9 +13,12 @@ let modulosData = {};
 let currentModule = null;
 let currentSection = null;
 let config = {};
+let articlesDatabase = {};
+let tooltipSystem = null;
 
 const API_BASE = 'modules/';
 const CONFIG_FILE = 'config.json';
+const LEGAL_ARTICLES_FILE = 'data/legal-articles-database.json';
 
 // ============================================================
 // INICIALIZAÇÃO
@@ -23,9 +26,31 @@ const CONFIG_FILE = 'config.json';
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Iniciando aplicação...');
+    carregarArtigosLegais();
     carregarConfiguracao();
     verificarSessao();
 });
+
+/**
+ * Carrega database de artigos legais
+ */
+async function carregarArtigosLegais() {
+    try {
+        const response = await fetch(LEGAL_ARTICLES_FILE);
+        const data = await response.json();
+        articlesDatabase = data.articles || {};
+        console.log('Artigos legais carregados:', Object.keys(articlesDatabase).length);
+
+        // Initialize tooltip system if LegalTooltipSystem is available
+        if (typeof LegalTooltipSystem !== 'undefined') {
+            tooltipSystem = new LegalTooltipSystem(articlesDatabase);
+            console.log('Sistema de tooltips inicializado');
+        }
+    } catch (error) {
+        console.error('Erro ao carregar artigos legais:', error);
+        // Non-critical error, continue without tooltips
+    }
+}
 
 /**
  * Carrega configuração global do curso
@@ -159,6 +184,9 @@ function renderizarModulo(moduleData) {
             </div>
         </div>
 
+        <!-- Audio Player Container -->
+        <div id="audio-player-module" class="audio-player-section"></div>
+
         <div class="progress-bar-custom">
             <div class="progress">
                 <div class="progress-bar" style="width: ${calcularProgresso()}%"></div>
@@ -230,6 +258,35 @@ function renderizarModulo(moduleData) {
 
     mainContent.innerHTML = html;
     window.scrollTo(0, 0);
+
+    // Initialize Audio Player if module has audio
+    if (moduleData.audioUrl && typeof AudioPlayer !== 'undefined') {
+        setTimeout(() => {
+            const audioContainer = document.getElementById('audio-player-module');
+            if (audioContainer) {
+                try {
+                    new AudioPlayer(audioContainer, {
+                        title: `${moduleData.icone} ${moduleData.titulo}`,
+                        url: moduleData.audioUrl,
+                        autoplay: false,  // Desativado até arquivos MP3 serem criados
+                        volume: 0.7,
+                        playbackRate: 1.0,
+                        loop: false
+                    });
+                    console.log('AudioPlayer inicializado para:', moduleData.titulo);
+                } catch (error) {
+                    console.error('Erro ao inicializar AudioPlayer:', error);
+                }
+            }
+        }, 100);
+    }
+
+    // Refresh legal tooltips for new content
+    if (tooltipSystem && typeof tooltipSystem.refresh === 'function') {
+        setTimeout(() => {
+            tooltipSystem.refresh();
+        }, 200);
+    }
 }
 
 /**
