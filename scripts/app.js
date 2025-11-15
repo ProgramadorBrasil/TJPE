@@ -15,6 +15,7 @@ let currentSection = null;
 let config = {};
 let articlesDatabase = {};
 let tooltipSystem = null;
+let currentAudioPlayer = null; // Controla o player de áudio atual
 
 const API_BASE = 'modules/';
 const CONFIG_FILE = 'config.json';
@@ -259,13 +260,24 @@ function renderizarModulo(moduleData) {
     mainContent.innerHTML = html;
     window.scrollTo(0, 0);
 
+    // Destroy previous audio player before creating new one
+    if (currentAudioPlayer) {
+        try {
+            currentAudioPlayer.destroy();
+            currentAudioPlayer = null;
+            console.log('AudioPlayer anterior destruído');
+        } catch (error) {
+            console.warn('Erro ao destruir AudioPlayer anterior:', error);
+        }
+    }
+
     // Initialize Audio Player if module has audio
     if (moduleData.audioUrl && typeof AudioPlayer !== 'undefined') {
         setTimeout(() => {
             const audioContainer = document.getElementById('audio-player-module');
             if (audioContainer) {
                 try {
-                    new AudioPlayer(audioContainer, {
+                    currentAudioPlayer = new AudioPlayer(audioContainer, {
                         title: `${moduleData.icone} ${moduleData.titulo}`,
                         url: moduleData.audioUrl,
                         autoplay: true,  // Ativado - áudios gerados com sucesso
